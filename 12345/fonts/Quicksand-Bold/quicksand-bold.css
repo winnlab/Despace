@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'QuicksandBold';
+    src: url('quicksand-bold.eot');
+    src: url('quicksand-bold.eot') format('embedded-opentype'),
+         url('quicksand-bold.woff2') format('woff2'),
+         url('quicksand-bold.woff') format('woff'),
+         url('quicksand-bold.ttf') format('truetype'),
+         url('quicksand-bold.svg#QuicksandBold') format('svg');
+}

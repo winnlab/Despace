@@ -1,439 +1,59 @@
-@charset "UTF-8";
-@import url(reset.css);
-div.pages {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+/*
+Error: File to import not found or unreadable: ../../../../css/bourbon/_bourbon.scss.
+       Load paths:
+         
+        on line 2 of style.scss
 
-@font-face {
-  font-family: QuicksandBold;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../../../fonts/Quicksand-Bold/quicksand-bold.eot");
-  src: url("../../../../fonts/Quicksand-Bold/quicksand-bold.eot?#iefix") format("embedded-opentype"), url("../../../../fonts/Quicksand-Bold/quicksand-bold.woff") format("woff"), url("../../../../fonts/Quicksand-Bold/quicksand-bold.ttf") format("truetype"), url("../../../../fonts/Quicksand-Bold/quicksand-bold.svg#QuicksandBold") format("svg"); }
-@font-face {
-  font-family: QuicksandRegular;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../../../fonts/Quicksand-Regular/quicksand-regular.eot");
-  src: url("../../../../fonts/Quicksand-Regular/quicksand-regular.eot?#iefix") format("embedded-opentype"), url("../../../../fonts/Quicksand-Regular/quicksand-regular.woff") format("woff"), url("../../../../fonts/Quicksand-Regular/quicksand-regular.ttf") format("truetype"), url("../../../../fonts/Quicksand-Regular/quicksand-regular.svg#QuicksandRegular") format("svg"); }
-@font-face {
-  font-family: QuicksandLight;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../../../fonts/Quicksand-Light/quicksand-light.eot");
-  src: url("../../../../fonts/Quicksand-Light/quicksand-light.eot?#iefix") format("embedded-opentype"), url("../../../../fonts/Quicksand-Light/quicksand-light.woff") format("woff"), url("../../../../fonts/Quicksand-Light/quicksand-light.ttf") format("truetype"), url("../../../../fonts/Quicksand-Light/quicksand-light.svg#QuicksandLight") format("svg"); }
-div#header #header-menu a.btm, div#header #header-lang {
-  font-family: "QuicksandLight";
-  font-weight: bold;
-  font-size: 20px; }
+1: @charset "UTF-8";
+2: @import "../../../../css/bourbon/_bourbon.scss";
+3: @import "../../../../scss/base/_placeholders.scss";
+4: @import "reset.css";
+5: 
+6: $fonts-patch: "../../../../fonts/";
+7: $img-patch: "../../../../img/user/";
 
-div.page1 #content-text-p1 .slg-text1, div.page1 #content-text-p1 .slg-text2 {
-  font-family: "QuicksandLight";
-  color: #ffffff;
-  font-size: 48px;
-  text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
-
-div.page2 #view-text-p2 .content-text1-p2, div.page3 #view-text-p3 .content-text1-p3 {
-  font-family: 'QuicksandBold';
-  color: #000000;
-  font-size: 30px; }
-
-div.page2 #view-text-p2 .content-text2-p2, div.page3 #view-text-p3 .content-text2-p3 {
-  font-family: "QuicksandLight";
-  color: #000000;
-  font-size: 30px; }
-
-div.page4 #view-text-p4 .text-head-p4, div.page4 #view-text-p4 .text-content-1-p4, div.page4 #view-text-p4 .text-content-2-p4, div.page4 #view-line-process-p4 .process-text1-p4, div.page4 #view-line-process-p4 .process-text2-p4 {
-  font-family: "QuicksandLight";
-  text-align: center; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-div.pages {
-  position: relative;
-  width: 100%; }
-
-div.page1 {
-  background-image: url("../../../../img/user/first-page-bg.png"); }
-  div.page1 #content-text-p1 {
-    top: 44%;
-    left: 4%;
-    position: absolute; }
-    div.page1 #content-text-p1 .slg-text1 {
-      width: 100%;
-      height: 50px; }
-    div.page1 #content-text-p1 .slg-text2 {
-      padding-top: 20px;
-      width: 100%;
-      height: 50px; }
-  div.page1 #button-scroll {
-    z-index: 2;
-    width: 59px;
-    height: 58px;
-    position: fixed;
-    bottom: 0;
-    left: 49%;
-    background-image: url("../../../../img/user/button-arrow.png");
-    background-repeat: no-repeat; }
-    div.page1 #button-scroll:hover {
-      cursor: pointer; }
-
-div#header {
-  z-index: 1;
-  padding-top: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 1%;
-  width: 90%;
-  height: 70px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 7px 5px 3px rgba(0, 0, 0, 0.7); }
-  div#header .logo {
-    float: left;
-    display: table-cell;
-    vertical-align: middle; }
-    div#header .logo:hover {
-      cursor: pointer; }
-  div#header #header-menu {
-    float: right;
-    padding-top: 4px; }
-    div#header #header-menu ul.menu {
-      margin: 0px;
-      padding: 0px; }
-      div#header #header-menu ul.menu li {
-        display: inline;
-        padding-right: 30px; }
-    div#header #header-menu a.btm {
-      color: #ffffff; }
-      div#header #header-menu a.btm:hover {
-        border-bottom: 4px solid;
-        border-bottom-color: #daa503;
-        cursor: pointer; }
-  div#header #header-scl {
-    float: right;
-    padding-left: 37px;
-    padding-right: 37px; }
-    div#header #header-scl ul.social {
-      margin: 0px;
-      padding: 0px; }
-      div#header #header-scl ul.social li {
-        display: inline;
-        padding-right: 7px; }
-    div#header #header-scl div.scl-btm {
-      display: inline-block;
-      width: 33px;
-      height: 33px; }
-      div#header #header-scl div.scl-btm:hover {
-        cursor: pointer; }
-    div#header #header-scl div.scl-facebook {
-      background-image: url("../../../../img/user/social/facebook.png");
-      background-repeat: no-repeat; }
-    div#header #header-scl div.scl-pinterest {
-      background-image: url("../../../../img/user/social/pinterest.png");
-      background-repeat: no-repeat; }
-    div#header #header-scl div.scl-tumblr {
-      background-image: url("../../../../img/user/social/tumblr.png");
-      background-repeat: no-repeat; }
-  div#header #header-lang {
-    float: right;
-    padding-top: 4px;
-    color: #767676; }
-    div#header #header-lang ul.lang {
-      margin: 0px;
-      padding: 0px; }
-      div#header #header-lang ul.lang li {
-        display: inline; }
-        div#header #header-lang ul.lang li:hover {
-          cursor: pointer; }
-
-div.page2 {
-  background-image: url("../../../../img/user/about-1-bg-2.png"); }
-  div.page2 #view-text-p2 {
-    position: absolute;
-    width: 40%;
-    top: 15%;
-    right: 5%; }
-    div.page2 #view-text-p2 .content-img-p2 {
-      width: 58px;
-      height: 59px;
-      margin-left: -7px;
-      background-image: url("../../../../img/user/btn-1.png");
-      background-repeat: no-repeat; }
-    div.page2 #view-text-p2 .content-text1-p2 {
-      margin: 20px 0px; }
-
-div.page3 {
-  background-image: url("../../../../img/user/about-2-bg-3.png"); }
-  div.page3 #view-text-p3 {
-    position: absolute;
-    width: 40%;
-    top: 15%;
-    left: 5%; }
-    div.page3 #view-text-p3 .content-img-p3 {
-      width: 58px;
-      height: 59px;
-      margin-left: -7px;
-      background-image: url("../../../../img/user/btn-2.png");
-      background-repeat: no-repeat; }
-    div.page3 #view-text-p3 .content-text1-p3 {
-      margin: 20px 0px; }
-
-div.page4 #view-line-process-p4 .circle-1-process-p4, div.page4 #view-line-process-p4 .circle-2-process-p4, div.page4 #view-line-process-p4 .circle-3-process-p4, div.page4 #view-line-process-p4 .circle-4-process-p4, div.page4 #view-line-process-p4 .circle-6-process-p4, div.page4 #view-line-process-p4 .circle-7-process-p4, div.page4 #view-line-process-p4 .circle-8-process-p4 {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-color: #213635;
-  border-radius: 25px;
-  border: 2px solid;
-  border-color: #d9e1bf;
-  bottom: -15px; }
-
-div.page4 #view-line-process-p4 .circle-1-process-p4 .delta-1-p4, div.page4 #view-line-process-p4 .circle-3-process-p4 .delta-3-p4, div.page4 #view-line-process-p4 .circle-8-process-p4 .delta-8-p4 {
-  position: absolute;
-  right: 0;
-  top: 83px;
-  width: 0;
-  height: 0;
-  border-style: solid; }
-
-div.page4 #view-line-process-p4 .circle-2-process-p4 .delta-2-p4, div.page4 #view-line-process-p4 .circle-4-process-p4 .delta-4-p4, div.page4 #view-line-process-p4 .circle-6-process-p4 .delta-6-p4, div.page4 #view-line-process-p4 .circle-7-process-p4 .delta-7-p4 {
-  position: absolute;
-  top: -25px;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid; }
-
-div.page4 {
-  background-image: url("../../../../img/user/how-it-work-bg-4.png"); }
-  div.page4 #view-text-p4 {
-    position: absolute;
-    width: 60%;
-    top: 20%;
-    left: 20%; }
-    div.page4 #view-text-p4 .text-head-p4 {
-      color: #ffffff;
-      font-size: 24px; }
-    div.page4 #view-text-p4 .text-content-1-p4 {
-      color: #ffffff;
-      margin-top: 35px;
-      font-size: 54px; }
-    div.page4 #view-text-p4 .text-content-2-p4 {
-      color: #ffffff;
-      line-height: 1.5;
-      font-size: 24px; }
-  div.page4 #view-line-process-p4 {
-    position: absolute;
-    width: 80%;
-    height: 17px;
-    left: 10%;
-    top: 70%;
-    border: 3px solid;
-    border-color: #d9e1bf; }
-    div.page4 #view-line-process-p4 .process-box-top-p4 {
-      padding: 10px 20px;
-      position: absolute;
-      bottom: 90px;
-      right: 20px;
-      background-color: #d9e1bf; }
-    div.page4 #view-line-process-p4 .process-box-bot-p4 {
-      padding: 10px 20px;
-      position: absolute;
-      bottom: -133px;
-      right: 20px;
-      background-color: #d9e1bf; }
-    div.page4 #view-line-process-p4 .process-text1-p4 {
-      white-space: nowrap;
-      font-weight: bold;
-      color: #000000;
-      font-size: 42px; }
-    div.page4 #view-line-process-p4 .process-text2-p4 {
-      white-space: nowrap;
-      font-weight: bold;
-      color: #000000;
-      font-size: 22px; }
-    div.page4 #view-line-process-p4 .circle-1-process-p4 {
-      left: 6%; }
-      div.page4 #view-line-process-p4 .circle-1-process-p4 .delta-1-p4 {
-        float: right;
-        border-width: 0 27px 27px 0;
-        border-color: transparent #d9e1bf transparent transparent; }
-    div.page4 #view-line-process-p4 .circle-2-process-p4 {
-      left: 16%; }
-      div.page4 #view-line-process-p4 .circle-2-process-p4 .delta-2-p4 {
-        float: right;
-        border-width: 0 0 27px 27px;
-        border-color: transparent transparent #d9e1bf transparent; }
-    div.page4 #view-line-process-p4 .circle-3-process-p4 {
-      left: 25%; }
-      div.page4 #view-line-process-p4 .circle-3-process-p4 .delta-3-p4 {
-        float: right;
-        border-width: 0 27px 27px 0;
-        border-color: transparent #d9e1bf transparent transparent; }
-    div.page4 #view-line-process-p4 .circle-4-process-p4 {
-      left: 40%; }
-      div.page4 #view-line-process-p4 .circle-4-process-p4 .delta-4-p4 {
-        float: right;
-        border-width: 0 0 27px 27px;
-        border-color: transparent transparent #d9e1bf transparent; }
-    div.page4 #view-line-process-p4 .circle-5-process-p4 {
-      position: absolute;
-      width: 42px;
-      height: 42px;
-      bottom: -15px;
-      left: 50%;
-      border-radius: 25px;
-      border: 2px solid;
-      border-color: #d9e1bf;
-      background-color: #213635; }
-      div.page4 #view-line-process-p4 .circle-5-process-p4 .process-box-top-l-p4 {
-        padding: 10px 20px;
-        position: absolute;
-        bottom: 90px;
-        right: -162px;
-        background-color: #d9e1bf; }
-      div.page4 #view-line-process-p4 .circle-5-process-p4 .delta-5-p4 {
-        position: absolute;
-        left: 0;
-        top: 83px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 27px 27px 0 0;
-        border-color: #d9e1bf transparent transparent transparent; }
-    div.page4 #view-line-process-p4 .circle-6-process-p4 {
-      left: 65%; }
-      div.page4 #view-line-process-p4 .circle-6-process-p4 .delta-6-p4 {
-        float: right;
-        border-width: 0 0 27px 27px;
-        border-color: transparent transparent #d9e1bf transparent; }
-    div.page4 #view-line-process-p4 .circle-7-process-p4 {
-      left: 75%; }
-      div.page4 #view-line-process-p4 .circle-7-process-p4 .process-box-bot-1-p4 {
-        padding: 10px 20px;
-        position: absolute;
-        bottom: -133px;
-        right: -118px;
-        background-color: #d9e1bf; }
-      div.page4 #view-line-process-p4 .circle-7-process-p4 .delta-7-p4 {
-        left: 0px;
-        top: -24px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 27px 0 0 27px;
-        border-color: transparent transparent transparent #d9e1bf; }
-    div.page4 #view-line-process-p4 .circle-8-process-p4 {
-      left: 90%; }
-      div.page4 #view-line-process-p4 .circle-8-process-p4 .delta-8-p4 {
-        float: right;
-        border-width: 0 27px 27px 0;
-        border-color: transparent #d9e1bf transparent transparent; }
-
-div.footer-contacts {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 3% 0 5% 7%; }
-  div.footer-contacts .line-cont {
-    width: 70px;
-    height: 3px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    box-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
-  div.footer-contacts .font-stl-contacts {
-    font-family: "QuicksandLight";
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
-  div.footer-contacts .font-stl-content-con {
-    font-family: "QuicksandLight";
-    font-size: 16px;
-    font-weight: 100;
-    color: #ffffff;
-    margin-top: 20px;
-    text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
-  div.footer-contacts #partners-cont {
-    float: left;
-    width: 30%; }
-    div.footer-contacts #partners-cont .content-text1 {
-      width: 99px;
-      height: 31px;
-      background-image: url("../../../../img/user/vitrage-life.png"); }
-    div.footer-contacts #partners-cont .content-text2 {
-      font-family: "QuicksandLight";
-      font-size: 16px;
-      font-weight: 100;
-      color: #ffffff;
-      text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
-  div.footer-contacts #follow-cont {
-    float: left;
-    padding: 0 10%;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-color: #ffffff; }
-    div.footer-contacts #follow-cont ul.social-cont {
-      margin: 0px;
-      padding: 0px; }
-      div.footer-contacts #follow-cont ul.social-cont li {
-        display: inline;
-        padding-right: 7px; }
-    div.footer-contacts #follow-cont div.scl-btm-cont {
-      display: inline-block;
-      width: 33px;
-      height: 33px; }
-      div.footer-contacts #follow-cont div.scl-btm-cont:hover {
-        cursor: pointer; }
-    div.footer-contacts #follow-cont div.scl-pinterest-cnt {
-      background-image: url("../../../../img/user/social/pinterest-cnt.png");
-      background-repeat: no-repeat; }
-    div.footer-contacts #follow-cont div.scl-facebook-cnt {
-      background-image: url("../../../../img/user/social/facebook-cnt.png");
-      background-repeat: no-repeat; }
-    div.footer-contacts #follow-cont div.scl-vk-cnt {
-      background-image: url("../../../../img/user/social/vk-cnt.png");
-      background-repeat: no-repeat; }
-    div.footer-contacts #follow-cont div.scl-vimeo-cnt {
-      background-image: url("../../../../img/user/social/vimeo-cnt.png");
-      background-repeat: no-repeat; }
-    div.footer-contacts #follow-cont div.scl-google-cnt {
-      background-image: url("../../../../img/user/social/google-cnt.png");
-      background-repeat: no-repeat; }
-  div.footer-contacts #contact-cont {
-    float: left;
-    padding-left: 5%; }
-
-div.page5 {
-  background-image: url("../../../../img/user/work-bg.png"); }
-  div.page5 #view-text-work {
-    position: absolute;
-    width: 40%;
-    top: 15%;
-    left: 5%; }
-    div.page5 #view-text-work .title-work {
-      font-family: "QuicksandRegular";
-      font-size: 46px;
-      font-weight: 100;
-      color: #000000;
-      width: 50%;
-      float: left; }
-    div.page5 #view-text-work .btn-arrow-work {
-      background-image: url("../../../../img/user/btn-arrow-r.png");
-      width: 59px;
-      height: 63px;
-      float: left; }
-      div.page5 #view-text-work .btn-arrow-work:hover {
-        cursor: pointer; }
-    div.page5 #view-text-work .content-box-work {
-      font-family: "QuicksandLight";
-      font-size: 28px;
-      font-weight: 200;
-      color: #000000;
-      padding-top: 30px;
-      float: left; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:2
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/import_node.rb:45:in `import'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.3/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../../../css/bourbon/_bourbon.scss.\A        Load paths:\A          \A         on line 2 of style.scss\A \A 1: @charset \"UTF-8\";\A 2: @import \"../../../../css/bourbon/_bourbon.scss\";\A 3: @import \"../../../../scss/base/_placeholders.scss\";\A 4: @import \"reset.css\";\A 5: \A 6: $fonts-patch: \"../../../../fonts/\";\A 7: $img-patch: \"../../../../img/user/\";"; }

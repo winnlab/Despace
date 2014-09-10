@@ -1,65 +1,52 @@
-module {
+div.pages {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
+div#header #header-menu a.btm, div#header #header-lang {
+  font-family: "QuicksandLight";
+  font-weight: bold;
+  font-size: 20px; }
+
 @-webkit-keyframes disappearing {
   0% {
     opacity: 0; }
-
   50% {
     opacity: 1; }
-
   100% {
     opacity: 0; } }
 @-moz-keyframes disappearing {
   0% {
     opacity: 0; }
-
   50% {
     opacity: 1; }
-
   100% {
     opacity: 0; } }
 @keyframes disappearing {
   0% {
     opacity: 0; }
-
   50% {
     opacity: 1; }
-
   100% {
     opacity: 0; } }
 @font-face {
-  font-family: PFDinTextCondPro;
-  font-weight: 500;
+  font-family: QuicksandBold;
+  font-weight: normal;
   font-style: normal;
-  src: url("/fonts/PFDinTextCondPro-Medium/_.eot");
-  src: url("/fonts/PFDinTextCondPro-Medium/_.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDinTextCondPro-Medium/_.woff") format("woff"), url("/fonts/PFDinTextCondPro-Medium/_.ttf") format("truetype"), url("/fonts/PFDinTextCondPro-Medium/_.svg#PFDinTextCondPro") format("svg"); }
+  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot");
+  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Bold/quicksand-bold.woff") format("woff"), url("/fonts/Quicksand-Bold/quicksand-bold.ttf") format("truetype"), url("/fonts/Quicksand-Bold/quicksand-bold.svg#QuicksandBold") format("svg"); }
 @font-face {
-  font-family: PFDinTextCondPro;
-  font-weight: 200;
+  font-family: QuicksandRegular;
+  font-weight: normal;
   font-style: normal;
-  src: url("/fonts/PFDinTextCondPro-Thin/_.eot");
-  src: url("/fonts/PFDinTextCondPro-Thin/_.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDinTextCondPro-Thin/_.woff") format("woff"), url("/fonts/PFDinTextCondPro-Thin/_.ttf") format("truetype"), url("/fonts/PFDinTextCondPro-Thin/_.svg#PFDinTextCondPro") format("svg"); }
+  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot");
+  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Regular/quicksand-regular.woff") format("woff"), url("/fonts/Quicksand-Regular/quicksand-regular.ttf") format("truetype"), url("/fonts/Quicksand-Regular/quicksand-regular.svg#QuicksandRegular") format("svg"); }
 @font-face {
-  font-family: PFDinTextCompPro;
-  font-weight: 200;
+  font-family: QuicksandLight;
+  font-weight: normal;
   font-style: normal;
-  src: url("/fonts/PFDinTextCompPro-Thin/_.eot");
-  src: url("/fonts/PFDinTextCompPro-Thin/_.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDinTextCompPro-Thin/_.woff") format("woff"), url("/fonts/PFDinTextCompPro-Thin/_.ttf") format("truetype"), url("/fonts/PFDinTextCompPro-Thin/_.svg#PFDinTextCompPro") format("svg"); }
-@font-face {
-  font-family: PFDinTextPro;
-  font-weight: 100;
-  font-style: normal;
-  src: url("/fonts/PFDinTextPro-Light/_.eot");
-  src: url("/fonts/PFDinTextPro-Light/_.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDinTextPro-Light/_.woff") format("woff"), url("/fonts/PFDinTextPro-Light/_.ttf") format("truetype"), url("/fonts/PFDinTextPro-Light/_.svg#PFDinTextPro") format("svg"); }
-@font-face {
-  font-family: PFDinTextPro;
-  font-weight: 200;
-  font-style: normal;
-  src: url("/fonts/PFDinTextPro-Thin/_.eot");
-  src: url("/fonts/PFDinTextPro-Thin/_.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDinTextPro-Thin/_.woff") format("woff"), url("/fonts/PFDinTextPro-Thin/_.ttf") format("truetype"), url("/fonts/PFDinTextPro-Thin/_.svg#PFDinTextPro") format("svg"); }
+  src: url("/fonts/Quicksand-Light/quicksand-light.eot");
+  src: url("/fonts/Quicksand-Light/quicksand-light.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Light/quicksand-light.woff") format("woff"), url("/fonts/Quicksand-Light/quicksand-light.ttf") format("truetype"), url("/fonts/Quicksand-Light/quicksand-light.svg#QuicksandLight") format("svg"); }
 *,
 *:before,
 *:after {
@@ -71,13 +58,83 @@ module {
 html {
   font-size: 16px; }
 
-html, body {
+body {
+  margin: 0;
+  padding: 0; }
+
+div.pages {
+  position: relative;
+  width: 100%; }
+
+div#header {
+  z-index: 1;
+  padding: 2% 5% 4% 5%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  min-height: 42rem; }
+  height: 70px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 7px 5px 3px rgba(0, 0, 0, 0.7); }
+  div#header .logo {
+    float: left;
+    display: table-cell;
+    vertical-align: middle; }
+    div#header .logo:hover {
+      cursor: pointer; }
+  div#header #header-menu {
+    float: right;
+    padding-top: 4px; }
+    div#header #header-menu ul.menu {
+      margin: 0px;
+      padding: 0px; }
+      div#header #header-menu ul.menu li {
+        display: inline;
+        padding-right: 30px; }
+    div#header #header-menu a.btm {
+      color: #ffffff; }
+      div#header #header-menu a.btm:hover {
+        border-bottom: 4px solid;
+        border-bottom-color: #daa503;
+        cursor: pointer; }
+  div#header #header-scl {
+    float: right;
+    padding-left: 37px;
+    padding-right: 37px; }
+    div#header #header-scl ul.social {
+      margin: 0px;
+      padding: 0px; }
+      div#header #header-scl ul.social li {
+        display: inline;
+        padding-right: 7px; }
+    div#header #header-scl div.scl-btm {
+      display: inline-block;
+      width: 33px;
+      height: 33px; }
+      div#header #header-scl div.scl-btm:hover {
+        cursor: pointer; }
+    div#header #header-scl div.scl-facebook {
+      background-image: url("/img/user/social/facebook.png");
+      background-repeat: no-repeat; }
+    div#header #header-scl div.scl-pinterest {
+      background-image: url("/img/user/social/pinterest.png");
+      background-repeat: no-repeat; }
+    div#header #header-scl div.scl-tumblr {
+      background-image: url("/img/user/social/tumblr.png");
+      background-repeat: no-repeat; }
+  div#header #header-lang {
+    float: right;
+    padding-top: 4px;
+    color: #767676; }
+    div#header #header-lang ul.lang {
+      margin: 0px;
+      padding: 0px; }
+      div#header #header-lang ul.lang li {
+        display: inline; }
+        div#header #header-lang ul.lang li:hover {
+          cursor: pointer; }
 
 body {
-  font-family: PFDinTextCondPro;
   min-width: 1000px;
   position: relative; }
 
@@ -88,8 +145,7 @@ body {
 
 module {
   display: none;
-  min-height: 100%;
-  background-image: url("/img/user/introBg.jpg"); }
+  min-height: 100%; }
   module.active {
     display: block; }
   module .moduleContent {
@@ -100,41 +156,6 @@ module {
   cursor: pointer; }
   .module:hover p, .module:hover span, .module:hover h1, .module:hover h2, .module:hover h3, .module:hover h4, .module:hover h5, .module:hover h6 {
     cursor: pointer; }
-
-.content {
-  width: 54rem;
-  margin: 0 auto;
-  position: relative; }
-
-/* 
-	Text styles
-*/
-.text-bold {
-  font-weight: 500; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
-.text-justify {
-  text-align: justify; }
-
-.text-nowrap {
-  white-space: nowrap; }
-
-.text-lowercase {
-  text-transform: lowercase; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
-.text-capitalize {
-  text-transform: capitalize; }
 
 @media (min-width: 1150px) {
   html {
@@ -157,3 +178,5 @@ module {
 @media (min-width: 1920px) {
   html {
     font-size: 22px; } }
+
+/*# sourceMappingURL=global.css.map */

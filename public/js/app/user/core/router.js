@@ -1,139 +1,136 @@
 define([
-	'canjs',
-	'core/appState',
-	'underscore',
-	'core/hub'	
+    'canjs',
+    'core/appState',
+    'underscore',
+    'core/hub'
 ],
-	function (can, appState, _, hub) {
+    function (can, appState, _, hub) {
 
-		var Modules = can.Map.extend({
-			loaderShown: true,
+        var Modules = can.Map.extend({
+            loaderShown: true,
 
-			modules: [],
+            modules: [],
 
-			silentInit: function (ev, module, id) {				
-				this.initModule(module, id, true);
-			},
+            silentInit: function (ev, module, id) {
+                this.initModule(module, id, true);
+            },
 
-			initModule: function (moduleName, id, silent) {
-				var self = this,
-					module = _.find(self.moduleTypes, function (module) {
-						return module.name === moduleName
-					});
+            initModule: function (moduleName, id, silent, data) {
+                var self = this,
+                    module = _.find(self.moduleTypes, function (module) {
+                        return module.name === moduleName
+                    });
 
-				if (!module) {
-					throw new Error("There no such module '" + moduleName + "', please check your configuration file");
-				}
+                if (!module) {
+                    throw new Error("There no such module '" + moduleName + "', please check your configuration file");
+                }
 
-				if (self.checkModule(id, silent)) {
-					return;
-				}
+                if (self.checkModule(id, silent)) {
+                    return;
+                }
 
-				if (!silent) {
-					this.showPreloader();
-				}
+                if (!silent) {
+                    this.showPreloader();
+                }
 
-				require([module.path], function (Module) {
-					if (Module) {
-						self.addModule(id);
-						var isReady = can.Deferred();
-						new Module('#' + id, {
-							isReady: isReady
-						});
-						if (!silent) {
-							self.activateModule(id, isReady);
-						}
-					} else {
-						if (module.path) {
-							throw new Error('Please check constructor of ' + module.path + '.js');
-						} else {
-							throw new Error('Please check existing of module "' + module.name + '"');
-						}
-					}
-				});
-				
-			},
+                require([module.path], function (Module) {
+                    if (Module) {
+                        self.addModule(id);
+                        var isReady = can.Deferred();
+                        new Module('#' + id, {
+                            isReady: isReady,
+                            data: data
+                        });
+                        if (!silent) {
+                            self.activateModule(id, isReady);
+                        }
+                    } else {
+                        if (module.path) {
+                            throw new Error('Please check constructor of ' + module.path + '.js');
+                        } else {
+                            throw new Error('Please check existing of module "' + module.name + '"');
+                        }
+                    }
+                });
 
-			checkModule: function (id, silent) {
-				var module = _.find(this.modules, function(module){
-						return module.id === id;
-					}),
-					exist = !_.isEmpty(module);
+            },
 
-				if (exist && !silent) {
-					this.activateModule(id);
-				}
-				return exist;
-			},
+            checkModule: function (id, silent) {
+                var module = _.find(this.modules, function(module){
+                        return module.id === id;
+                    }),
+                    exist = !_.isEmpty(module);
 
-			addModule: function (id) {				
-				this.modules.push({
-					id: id,
-					active: false
-				});
-			},
+                if (exist && !silent) {
+                    this.activateModule(id);
+                }
+                return exist;
+            },
 
-			activateModule: function (id, isReady) {
-				_.map(this.modules, function (module) {
-					module.attr('active', module.id === id);
-				});
+            addModule: function (id) {
+                this.modules.push({
+                    id: id,
+                    active: false
+                });
+            },
 
-				this.hidePreloader(isReady);
-			},
+            activateModule: function (id, isReady) {
+                _.map(this.modules, function (module) {
+                    module.attr('active', module.id === id);
+                });
 
-			showPreloader: function () {
-				if (!this.attr('loaderShown')) {
-					this.attr('loaderShown', true);
-					$('#preloader').show();
-				}
-			},
+                this.hidePreloader(isReady);
+            },
 
-			hidePreloader: function (isReady) {
-				if (this.attr('loaderShown')) {
-					isReady.then(function() {
-						this.attr('loaderShown', false);
-						$('#preloader').hide();
-					}.bind(this));
-				}
-			}
+            showPreloader: function () {
+                if (!this.attr('loaderShown')) {
+                    this.attr('loaderShown', true);
+                    $('#preloader').show();
+                }
+            },
 
-		});
+            hidePreloader: function (isReady) {
+                if (this.attr('loaderShown')) {
+                    isReady.then(function() {
+                        this.attr('loaderShown', false);
+                        $('#preloader').hide();
+                    }.bind(this));
+                }
+            }
 
-		return can.Control.extend({
-			defaults: {
-				viewpath: '../app/user/core/views/',
-				langBtn: '.isoLang'
-			}
-		}, {
-			init: function (el, options) {
-				this.Modules = new Modules({
-					moduleTypes: this.options.modules
-				});
+        });
 
-				var html = can.view(this.options.viewpath + 'route.stache', {
-						modules: this.Modules.attr('modules')
-					}),
-					self = this;
+        return can.Control.extend({
+            defaults: {
+                viewpath: '../app/user/core/views/',
+                langBtn: '.isoLang'
+            }
+        }, {
+            init: function (el, options) {
+                this.Modules = new Modules({
+                    moduleTypes: this.options.modules
+                });
 
-				$(options.modulesContainer).prepend(html);
+                var html = can.view(this.options.viewpath + 'route.stache', {
+                        modules: this.Modules.attr('modules')
+                    }),
+                    self = this;
 
-				_.each(options.routes, function (route) {
-					can.route(route.route, route.defaults ? route.defaults : {});
-				});
+                $(options.modulesContainer).prepend(html);
 
-				can.on.call(hub, 'silentModule', can.proxy(this.Modules.silentInit, this.Modules));
+                can.on.call(hub, 'silentModule', can.proxy(this.Modules.silentInit, this.Modules));
 
-				can.route.bindings.pushstate.root = appState.lang;
-				can.route.ready(false);
+                can.route.bindings.pushstate.root = appState.lang;
+                can.route.ready(false);
 
-			},
+            },
 
-			'.module click': function (el, ev) {
-				ev.preventDefault();
+            '.module click': function (el, ev) {
+                ev.preventDefault();
 
                 var href = el.attr('href') ? el.attr('href') : el.attr('data-href');
 
-				try {
+                try {
                     if ( href ) {
 
                         var routeObj = can.route.deparam(href);
@@ -147,30 +144,34 @@ define([
                     } else {
                         throw new  Error("href parameter is undefined");
                     }
-				} catch (e) {
-					console.error(e);
-				}
-			},
+                } catch (e) {
+                    console.error(e);
+                }
+            },
 
-			':module route': 'routeChanged',
-			':module/:id route': 'routeChanged',
+            ' route': 'routeChanged',
+            ':module route': 'routeChanged',
+            ':module/:id route': 'routeChanged',
 
-			routeChanged: function(data) {
-				var moduleName = data.module,
-					id = moduleName + (data.id ? '-' + data.id : '');					
-								
-				this.Modules.initModule(moduleName, id);				
-			},
+            routeChanged: function(data) {
+                if (_.isEmpty(data)) {
+                    data = this.options.defaultRoute;
+                }
+                var moduleName = data.module,
+                    id = moduleName + (data.id ? '-' + data.id : '');
 
-			'{langBtn} click': function (el, ev) {
-				ev.preventDefault();
-				
-				var lang = el.attr('href').replace(/\//, ''),
-					currentLink = '/' + can.route.param(can.route.attr());
+                this.Modules.initModule(moduleName, id, false, data);
+            },
 
-				document.location.href = (lang ? '/' + lang : '') + currentLink;
-			}
+            '{langBtn} click': function (el, ev) {
+                ev.preventDefault();
 
-		});
-	}
+                var lang = el.attr('href').replace(/\//, ''),
+                    currentLink = '/' + can.route.param(can.route.attr());
+
+                document.location.href = (lang ? '/' + lang : '') + currentLink;
+            }
+
+        });
+    }
 );

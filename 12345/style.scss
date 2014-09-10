@@ -91,11 +91,7 @@ div.page1 {
 
 div#header {
 	z-index: 1;
-//	padding: 1% 5% 1% 5%;
-	padding-top: 2%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 1%;
+	padding: 2% 5% 1% 5%;
 	width: 90%;
 	height: 70px;
 	position: fixed;
@@ -110,7 +106,6 @@ div#header {
 			}
 		}
 		#header-menu {
-//			height: 40px;
 			float: right;
 			padding-top: 4px;
 			ul.menu {
@@ -132,7 +127,6 @@ div#header {
 			}
 		}
 		#header-scl {
-//			height: 40px;
 			float: right;
 			padding-left: 37px;
 			padding-right: 37px;
@@ -168,7 +162,6 @@ div#header {
 			}
 		}
 		#header-lang {
-//			height: 40px;
 			float: right;
 			padding-top: 4px;
 			@extend %font-stl-header;

@@ -47,13 +47,9 @@ require.config({
 
 require([
 		'core/router',
-		'app/viewport/viewport',
-		'app/menu/menu',
 		'core/config',
 		'core/appState',
 		'app/global/global',
-		'core/helpers/preloader',		
-		'app/soundCloudWidget/soundCloudWidget',
 		'core/helpers/viewHelpers',
 
 		'css!core/css/reset.css',
@@ -61,32 +57,16 @@ require([
 	],
 	function (
 		Router,
-		Viewport,
-		Menu,
 		config,
 		appState,
-		Global,
-		Preloader
+		Global
 	) {
 		var body = $('body');
-
-		new Viewport(body, {
-			state: appState
-		});
-
-		new Menu(body, {
-			state: appState
-		});
 
 		new Router(body, config.router);
 
 		new Global(body);
 
-		setTimeout(function () {
-			new Preloader({
-				images: appState.getProductImages()
-			});
-		}, 2000);
-		
+
 	}
 );

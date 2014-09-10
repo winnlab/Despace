@@ -13,24 +13,8 @@ define({
 			path: 'app/dashboard/dashboard',
 			title: ''
 		}, {
-			name: 'products',
-			path: 'app/products/products',
-			title: ''
-		}, {
-			name: 'days',
-			path: 'app/days/days',
-			title: ''
-		}, {
-			name: 'fragments',
-			path: 'app/fragments/fragments',
-			title: ''
-		}, {
-            name: 'newPodcasts',
-            path: 'app/newPodcasts/newPodcasts',
-            title: ''
-        }, {
-            name: 'soundCloudImages',
-            path: 'app/soundCloudImages/soundCloudImages',
+            name: 'simplePages',
+            path: 'app/simplePages/simplePages',
             title: ''
         }]
 	}

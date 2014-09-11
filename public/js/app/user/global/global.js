@@ -20,8 +20,12 @@ define([
 					});
 
 				self.element.append(html);
-			}
+			},
 
+            '.scroll click': function(el, ev) {
+                var navi = el.data();
+                $('html, body').animate({scrollTop: $(navi['scroll']).offset().top}, 1000);
+            }
 		});
 	}
 );

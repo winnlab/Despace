@@ -17,3 +17,7 @@
 	-o-transition: $transition-property $transition-time $method;
 	transition: $transition-property $transition-time $method;
 }
+
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}

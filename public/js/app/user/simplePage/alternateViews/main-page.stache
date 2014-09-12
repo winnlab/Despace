@@ -7,7 +7,7 @@
             <h1>OUR INSPIRATION</h1>
         </div>
     </div>
-    <div id="button-scroll"> </div>
+    <div id="scroll-down" class="button-scroll"> </div>
 </div>
 
 <div id="about" class="pages page2">

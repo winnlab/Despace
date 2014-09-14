@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+%font-stl-header {
+  font-family: "QuicksandLight";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+%font-stl-slg {
+  font-family: "QuicksandLight";
+  color: #ffffff;
+  font-size: 48px;
+  text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
+}
+
+%font-stl-text-head {
+  font-family: 'QuicksandBold';
+  color: #000000;
+  font-size: 30px;
+}
+
+%font-stl-text-body {
+  font-family: "QuicksandLight";
+  color: #000000;
+  font-size: 30px;
+}
+
+%font-stl-text-process {
+  font-family: "QuicksandLight";
+  text-align: center;
+}

@@ -1,0 +1,140 @@
+'use strict';
+
+define([
+	'canjs',
+	'core/appState',
+	'core/helpers/preloader',
+	'css!app/simplePage/css/simplePage.css'
+],
+	function (can, appState, preloader) {
+
+		return can.Control.extend({
+			defaults: {
+				viewpath: 'app/simplePage/',
+				alternateViewpath: 'app/simplePage/alternateViews/'
+			}
+		}, {
+			init: function () {
+				var self = this;
+                self.$header = $('#header');
+                self.$body_html= $('html, body');
+                self.windowHeight = $(window).height();
+                self.scrollPage = 0;
+                self.scrollBox = [];
+
+
+				var simplePage = self.getSimplePage();
+
+				var viewfile =
+					simplePage.alternate_view_path.length > 0 ?
+					self.options.alternateViewpath + simplePage.alternate_view_path + '.stache' :
+					self.options.viewpath + 'index.stache';
+
+                can.view(viewfile, {
+                    simplePage: simplePage,
+                    appState: appState
+                }, function(html) {
+                    self.element.html(html);
+
+                    if (self.options.isReady) {
+                        self.options.isReady.resolve();
+                    }
+
+                    self.calculateBlockSizes();
+                    self.calculateScrollArray();
+                });
+			},
+
+			getSimplePage: function () {
+  				var id = this.options.data.id;
+				return _.find(appState.attr('simplePages'), function(element) {
+					return element.url == id;
+				});
+			},
+
+            '{window} scroll': function (el, ev) {
+                var self = this;
+
+                var $window = $(window),
+                    max_scroll = 200,// промежуток за который все должно быть
+                    start = 70, // размер блока
+                    max = 30, // размер блока стремится к размеру
+                    ratio,
+                    scroll_top,
+                    result_header,
+                    result_header_top,
+                    result_header_bot,
+                    i;
+
+                scroll_top = $window.scrollTop(); // реальное положение скролла
+                scroll_top = scroll_top <= max_scroll ? scroll_top : max_scroll; // определяем позицию
+                ratio = scroll_top / max_scroll; // подсчет коэффициента
+
+                result_header = start + (max - start) * ratio;
+                result_header_top = 2 + (1 - 2) * ratio; // подсчет padding-top (2 - начальное, 1 - нужный)
+                result_header_bot = 4 + (3 - 4) * ratio; // подсчет padding-bottom
+
+                self.$header.css({'height': result_header,
+                                  'padding-top': result_header_top + '%',
+                                  'padding-bottom': result_header_bot + '%'
+                });
+
+                scroll_top = $window.scrollTop();
+
+                for(i = this.scrollBox.length; i--;) { // считаем индексы положения блоков для скролла
+                    if(scroll_top >= this.scrollBox[i]){
+                        self.scrollPage = i;
+                        break;
+                    }
+                }
+
+                if(self.scrollPage == 5){
+                    console.log('up');
+                    $('#scroll-down').attr('id', 'scroll-up');
+
+                }
+
+                if(scroll_top == 0) {
+                    $('#scroll-up').attr('id', 'scroll-down');
+                    console.log('down');
+                }
+            },
+
+            calculateBlockSizes: function () {
+                var self = this;
+
+                $('.pages').css('height', self.windowHeight); // подгоняем background под разрешение пользователя
+
+            },
+
+            'calculateScrollArray': function () {
+                var self = this;
+
+                for(var i = 0; i < 6; i++) {
+                    if(i == 5) {
+                        self.scrollBox[i] = ($('.footer-contacts').outerHeight() + (self.windowHeight * 4));
+                        return;
+                    }
+                    self.scrollBox[i] = self.windowHeight * i;
+                }
+            },
+
+            '#scroll-down click': function () {
+                var self = this;
+
+                self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage+1]},'slow');
+            },
+
+            '#scroll-up click': function () {
+                var self = this;
+
+                if($(window).scrollTop() == self.scrollBox[self.scrollPage]) {
+                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage-1]},'slow');
+
+                } else {
+                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage]},'slow');
+                }
+            }
+		});
+	}
+);

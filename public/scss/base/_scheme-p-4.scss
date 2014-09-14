@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+%circle-process {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background-color: #213635;
+	border-radius: 25px;
+	border: 2px solid;
+	border-color: #d9e1bf;
+	bottom: -15px;
+}
+
+%delta-top-process {
+	position: absolute;
+	right: 0;
+	top: 83px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+%delta-bot-process {
+	position: absolute;
+	top: -25px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}

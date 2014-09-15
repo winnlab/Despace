@@ -76,13 +76,13 @@
             <div class="process-box-top-p5">
                 <div class="process-text1-p5"> 12% </div>
                 <div class="process-text2-p5"> coffee </div>
-                <div class="delta-1-p4"> </div>
+                <div class="delta-1-p5"> </div>
             </div>
         </div>
         <div class="circle-2-process-p5">
 
             <div class="process-box-bot-p5">
-                <div class="delta-2-p4"> </div>
+                <div class="delta-2-p5"> </div>
                 <h1 class="process-text1-p5"> 25% </h1>
                 <h1 class="process-text2-p5"> design brief </h1>
             </div>
@@ -91,7 +91,7 @@
             <div class="process-box-top-p5">
                 <h1 class="process-text1-p5"> 28% </h1>
                 <h1 class="process-text2-p5"> analysis </h1>
-                <div class="delta-3-p4"> </div>
+                <div class="delta-3-p5"> </div>
             </div>
         </div>
         <div class="circle-4-process-p5">
@@ -110,14 +110,14 @@
         </div>
         <div class="circle-6-process-p5">
             <div class="process-box-bot-p5">
-                <div class="delta-6-p4"> </div>
+                <div class="delta-6-p5"> </div>
                 <h1 class="process-text1-p5"> 85% </h1>
                 <h1 class="process-text2-p5"> conclusion </h1>
             </div>
         </div>
         <div class="circle-7-process-p5">
             <div class="process-box-bot-1-p5">
-                <div class="delta-7-p4"> </div>
+                <div class="delta-7-p5"> </div>
                 <h1 class="process-text1-p5"> 90% </h1>
                 <h1 class="process-text2-p5"> approval </h1>
             </div>

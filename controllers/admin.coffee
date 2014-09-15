@@ -5,6 +5,8 @@ View = require '../lib/view'
 Main = require './admin/main'
 SimplePage = require './admin/simplePages'
 
+Project = require './admin/projects'
+
 Router = express.Router()
 
 #########################
@@ -24,6 +26,11 @@ Router.put '/simplePage/:id?', SimplePage.save
 Router.delete '/simplePage/:id?', SimplePage.delete
 
 #----------------#
+
+Router.get '/project', Project.findAll
+Router.post '/project', Project.save
+Router.put '/project/:id?', Project.save
+Router.delete '/project/:id?', Project.delete
 
 exports.Router = Router
 exports.layoutPage = Main.dashboard

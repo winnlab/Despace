@@ -28,7 +28,7 @@ div.page5 #view-line-process-p5 .circle-1-process-p5, div.page5 #view-line-proce
   border-color: #d9e1bf;
   bottom: -15px; }
 
-div.page5 #view-line-process-p5 .circle-1-process-p5 .delta-1-p4, div.page5 #view-line-process-p5 .circle-3-process-p5 .delta-3-p4, div.page5 #view-line-process-p5 .circle-8-process-p5 .delta-8-p5 {
+div.page5 #view-line-process-p5 .circle-1-process-p5 .delta-1-p5, div.page5 #view-line-process-p5 .circle-3-process-p5 .delta-3-p5, div.page5 #view-line-process-p5 .circle-8-process-p5 .delta-8-p5 {
   position: absolute;
   right: 0;
   top: 83px;
@@ -36,7 +36,7 @@ div.page5 #view-line-process-p5 .circle-1-process-p5 .delta-1-p4, div.page5 #vie
   height: 0;
   border-style: solid; }
 
-div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p4, div.page5 #view-line-process-p5 .circle-4-process-p5 .delta-4-p4, div.page5 #view-line-process-p5 .circle-6-process-p5 .delta-6-p4, div.page5 #view-line-process-p5 .circle-7-process-p5 .delta-7-p5 {
+div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p5, div.page5 #view-line-process-p5 .circle-4-process-p5 .delta-4-p5, div.page5 #view-line-process-p5 .circle-6-process-p5 .delta-6-p5, div.page5 #view-line-process-p5 .circle-7-process-p5 .delta-7-p5 {
   position: absolute;
   top: -25px;
   right: 0;
@@ -308,25 +308,25 @@ div.page5 {
       font-size: 22px; }
     div.page5 #view-line-process-p5 .circle-1-process-p5 {
       left: 6%; }
-      div.page5 #view-line-process-p5 .circle-1-process-p5 .delta-1-p4 {
+      div.page5 #view-line-process-p5 .circle-1-process-p5 .delta-1-p5 {
         float: right;
         border-width: 0 27px 27px 0;
         border-color: transparent #d9e1bf transparent transparent; }
     div.page5 #view-line-process-p5 .circle-2-process-p5 {
       left: 16%; }
-      div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p4 {
+      div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p5 {
         float: right;
         border-width: 0 0 27px 27px;
         border-color: transparent transparent #d9e1bf transparent; }
     div.page5 #view-line-process-p5 .circle-3-process-p5 {
       left: 25%; }
-      div.page5 #view-line-process-p5 .circle-3-process-p5 .delta-3-p4 {
+      div.page5 #view-line-process-p5 .circle-3-process-p5 .delta-3-p5 {
         float: right;
         border-width: 0 27px 27px 0;
         border-color: transparent #d9e1bf transparent transparent; }
     div.page5 #view-line-process-p5 .circle-4-process-p5 {
       left: 40%; }
-      div.page5 #view-line-process-p5 .circle-4-process-p5 .delta-4-p4 {
+      div.page5 #view-line-process-p5 .circle-4-process-p5 .delta-4-p5 {
         float: right;
         border-width: 0 0 27px 27px;
         border-color: transparent transparent #d9e1bf transparent; }
@@ -357,7 +357,7 @@ div.page5 {
         border-color: #d9e1bf transparent transparent transparent; }
     div.page5 #view-line-process-p5 .circle-6-process-p5 {
       left: 65%; }
-      div.page5 #view-line-process-p5 .circle-6-process-p5 .delta-6-p4 {
+      div.page5 #view-line-process-p5 .circle-6-process-p5 .delta-6-p5 {
         float: right;
         border-width: 0 0 27px 27px;
         border-color: transparent transparent #d9e1bf transparent; }

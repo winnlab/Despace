@@ -126,7 +126,7 @@ define(
 
 			'.removeSimplePage click': function (el) {
 				var simplePage = el.parents('.simplePage').data('simplePage');
-
+                console.log(simplePage);
 				if (confirm('Вы действительно хотите удалить страницу: "' + simplePage.attr('name') + '"?')) {
 					simplePage.destroy().always(function (simplePage, status, def) {
 						appState.attr('notification', {

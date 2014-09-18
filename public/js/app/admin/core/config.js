@@ -16,6 +16,10 @@ define({
             name: 'simplePages',
             path: 'app/simplePages/simplePages',
             title: ''
+        }, {
+            name: 'projects',
+            path: 'app/projects/projects',
+            title: ''
         }]
 	}
 });

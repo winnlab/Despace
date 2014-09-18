@@ -36,7 +36,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="author">Контент:</label>
                         <div class="col-md-10">
-                            <textarea name="content" id="" cols="30" rows="10">{{simplePage.content}}</textarea>
+                            <textarea name="content" id="" cols="30" rows="10" class="form-control">{{simplePage.content}}</textarea>
                             <div class="help help-block"></div>
                         </div>
                     </div>

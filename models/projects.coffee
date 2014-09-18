@@ -19,7 +19,7 @@ ProjectSchemaFields =
 		trim: true
 		required: true
 	img:
-		type: String
+		type: Array
 	content:
 		type: String
 		trim: true

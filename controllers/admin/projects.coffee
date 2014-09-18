@@ -21,9 +21,9 @@ exports.findAll = (req, res) ->
 	query = if req.query then req.query else {}
 	async.waterfall [
 		(next)->
-			Model 'Product', 'find', next, query, null, {sort: 'position'}
-		(products)->
-			View.clientSuccess {products}, res
+			Model 'Project', 'find', next, query, null, {sort: 'position'}
+		(projects)->
+			View.clientSuccess {projects}, res
 	], (err)->
 		setFail err, res
 
@@ -37,17 +37,17 @@ exports.save = (req, res) ->
 
 		(next) ->
 			if _id
-				Model 'Product', 'findOne', next, {_id}
+				Model 'Project', 'findOne', next, {_id}
 			else
 				next null, null
-		(product, next) ->
-			if product
-				product = Document.setDocumentData product, data
-				product.save next
+		(project, next) ->
+			if project
+				project = Document.setDocumentData project, data
+				project.save next
 			else
-				Model 'Product', 'create', next, data
-		(product) ->
-			View.clientSuccess _id: product._id, res
+				Model 'Project', 'create', next, data
+		(project) ->
+			View.clientSuccess _id: project._id, res
 	], (err)->
 		setFail err, res
 
@@ -58,18 +58,18 @@ exports.delete = (req, res) ->
 
 	async.waterfall [
 		(next) ->
-			Model 'Product', 'findOne', next, {_id}
+			Model 'Project', 'findOne', next, {_id}
 		(doc, next) ->
 			if doc
-				img = _.pick doc.img, imgTypes
+				`//img = _.pick doc.img, imgTypes`
 				Files.unlinkArray _.values(img), uploadPath, (err) ->
 					next err, doc
 			else
-				next "Продукт который Вы хотите удалить не существует."
+				next "Проект который Вы хотите удалить не существует."
 		(doc, next) ->
 			doc.remove next
 		(next) ->
-			View.clientSuccess 'Продукт успешно удален!', res
+			View.clientSuccess 'Проект успешно удален!', res
 	], (err) ->
 		setFail err, res
 
@@ -81,15 +81,15 @@ exports.imgSave = (req, res) ->
 
 	async.waterfall [
 		(next) ->
-			Model 'Product', 'findById', next, _id
-		(product, next) ->
-			Files.unlinkArray [product?.img?[imgName]], uploadPath, (err) ->
-				next err, product
-		(product, next) ->
+			Model 'Project', 'findById', next, _id
+		(project, next) ->
+			Files.unlinkArray [project.img?[imgName]], uploadPath, (err) ->
+				next err, project
+		(project, next) ->
 			if req.files?[imgName]?.name
-				product.img[imgName] = req.files[imgName].name
+				project.img[imgName] = req.files[imgName].name
 
-			product.save next
+			project.save next
 		(doc, numberAffected) ->
 			View.clientSuccess name: doc.img[imgName], res
 	], (err) ->
@@ -103,13 +103,13 @@ exports.imgDelete = (req, res) ->
 
 	async.waterfall [
 		(next) ->
-			Model 'Product', 'findOne', next, {_id}
-		(product, next) ->
-			Files.unlinkArray [product?.img?[imgName]], uploadPath, (err) ->
-				next err, product
-		(product, next) ->
-			product.img[imgName] = undefined
-			product.save next
+			Model 'Project', 'findOne', next, {_id}
+		(project, next) ->
+			Files.unlinkArray [project?.img?[imgName]], uploadPath, (err) ->
+				next err, project
+		(project, next) ->
+			project.img[imgName] = undefined
+			project.save next
 		(doc, numberAffected) ->
 			View.clientSuccess 'Картинка успешно удалена', res
 	], (err) ->

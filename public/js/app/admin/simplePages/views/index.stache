@@ -27,7 +27,7 @@
                             </thead>
                             <tbody>
                             {{#each simplePages}}
-                                <tr class="simplePages" {{data 'simplePage'}}>
+                                <tr class="simplePage" {{data 'simplePage'}}>
                                     <td>{{name}}</td>
                                     <td>{{url}}</td>
                                     <td>{{#if ready}}<span class="btn- btn-info">готов</span>{{else}}<span class="btn- btn-danger">не готов</span>{{/if}}</td>

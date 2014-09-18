@@ -1,0 +1,22 @@
+#projects {
+  position: relative; }
+  #projects .toList {
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    top: 30px; }
+
+.project {
+  background-size: cover;
+  background-position: center center; }
+  .project a, .project .small-box-footer {
+    color: #fff;
+    display: inline-block; }
+  .project .small-box-footer {
+    cursor: pointer;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.15); }
+    .project .small-box-footer:hover {
+      background: rgba(0, 0, 0, 0.3); }
+
+/*# sourceMappingURL=projects.css.map */

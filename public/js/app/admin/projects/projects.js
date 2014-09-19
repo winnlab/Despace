@@ -1,3 +1,5 @@
+'use strict';
+
 define(
 	[
 		'canjs',
@@ -106,6 +108,7 @@ define(
 
 			'.editProject click': function (el) {
 				var project = el.parents('.project').data('project');
+                console.log(project);
 				this.viewModel.toEntity(project.attr('_id'));
 			},
 
@@ -127,13 +130,9 @@ define(
 
 			'.removeProject click': function (el) {
 				var project = el.parents('.project').data('project');
-
-				if (confirm('Вы действительно хотите удалить проект: "' + project.attr('name') + '"?')) {
+                var name = project.attr('lang.0.name') ? project.attr('lang.0.name') : '';
+				if (confirm('Вы действительно хотите удалить проект: "' + name + '"?')) {
                     project.destroy().always(function (project, status, def) {
-						console.log(arguments);
-						console.log(project.attr());
-						console.log(status);
-						console.log(def);
 
 						appState.attr('notification', {
 							status: status,
@@ -148,8 +147,8 @@ define(
 			},
 
 			'{ProjectsModel} created': function (Model, ev, project) {
-				var self = this;
-                projects = self.viewModel.attr('projects');
+				var self = this,
+                    projects = self.viewModel.attr('projects');
                 projects.push(project);
 				this.viewModel.reOrderProjects();
 			}

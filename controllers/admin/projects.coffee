@@ -61,8 +61,7 @@ exports.delete = (req, res) ->
 			Model 'Project', 'findOne', next, {_id}
 		(doc, next) ->
 			if doc
-				`//img = _.pick doc.img, imgTypes`
-				Files.unlinkArray _.values(img), uploadPath, (err) ->
+#				Files.unlinkArray _.values(img), uploadPath, (err) ->
 					next err, doc
 			else
 				next "Проект который Вы хотите удалить не существует."

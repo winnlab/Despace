@@ -19,7 +19,7 @@
 									<div class="inner">
 										<h2>{{getName}}</h2>
 										<p>Языки:
-                                            {{{checkLanguages lang 'name' 'description'}}}
+                                            {{{checkLanguages lang 'name' 'content'}}}
                                         </p>
 										<p>
 											Картики: 

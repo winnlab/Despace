@@ -14,19 +14,15 @@ ProjectSchemaFields =
 			type: String
 			trim: true
 	]
-	name:
-		type: String
-		trim: true
-		required: true
 	img:
 		type: Array
-	content:
-		type: String
-		trim: true
 	url:
 		type: String
 		trim: true
 		required: true
+	position:
+		type: String
+		trim: true
 	alternateView:
 		type: String
 

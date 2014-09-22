@@ -73,48 +73,15 @@
 					<div class="box-body clearfix">
 						<upload 
 							class="col-md-6"
-							name="bottle"
-							url="/admin/product/img"
-							delete-url="/admin/product/img"
-							entity="{product}"
-							uploaded="{product.img.bottle}"
+							name="project-img"
+							url="/admin/project/img"
+							delete-url="/admin/project/img"
+							entity="{project}"
+							uploaded="{project.img}"
+                            multiple="true"
 							accept="image/*"
 						>
-							Загрузить картинку бутылки
-						</upload>
-						<upload 
-							class="col-md-6"
-							name="bottle_list"
-							url="/admin/product/img"
-							delete-url="/admin/product/img"
-							entity="{product}"
-							uploaded="{product.img.bottle_list}"
-							accept="image/*"
-						>
-							Загрузить картинку бутылки для списка
-						</upload>
-						<div class="clearfix"></div>
-						<upload 
-							class="col-md-6"
-							name="can"
-							url="/admin/product/img"
-							delete-url="/admin/product/img"
-							entity="{product}"
-							uploaded="{product.img.can}"
-							accept="image/*"
-						>
-							Загрузить картинку банки
-						</upload>
-						<upload 
-							class="col-md-6"
-							name="can_list"
-							url="/admin/product/img"
-							delete-url="/admin/product/img"
-							entity="{product}"
-							uploaded="{product.img.can_list}"
-							accept="image/*"
-						>
-							Загрузить картинку банки для списка
+							Загрузить картинки проекта
 						</upload>
 					</div>
 				</div>

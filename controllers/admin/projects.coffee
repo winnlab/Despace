@@ -61,7 +61,7 @@ exports.delete = (req, res) ->
 			Model 'Project', 'findOne', next, {_id}
 		(doc, next) ->
 			if doc
-#				Files.unlinkArray _.values(img), uploadPath, (err) ->
+				Files.unlinkArray doc.img, uploadPath, (err) ->
 					next err, doc
 			else
 				next "Проект который Вы хотите удалить не существует."
@@ -78,19 +78,22 @@ exports.imgSave = (req, res) ->
 	_id = req.body.id
 	imgName = req.body.name
 
+
 	async.waterfall [
 		(next) ->
 			Model 'Project', 'findById', next, _id
+#		(project, next) ->
+#			Files.unlinkArray [project.img?[imgName]], uploadPath, (err) ->
+#				next err, project
 		(project, next) ->
-			Files.unlinkArray [project.img?[imgName]], uploadPath, (err) ->
-				next err, project
-		(project, next) ->
+			console.log req.files
 			if req.files?[imgName]?.name
-				project.img[imgName] = req.files[imgName].name
+				console.log req.files.name
+				project.img.push req.files[imgName].name
 
 			project.save next
-		(doc, numberAffected) ->
-			View.clientSuccess name: doc.img[imgName], res
+		(doc) ->
+			View.clientSuccess name: req.files[imgName].name, res
 	], (err) ->
 		setFail err, res
 

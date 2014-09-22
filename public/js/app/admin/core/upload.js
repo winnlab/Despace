@@ -31,11 +31,17 @@ define([
 						files.replace([]);
 						if (newVal) {
 							if (this.attr('multiple')) {
-								uploaded.push(newVal);
+//                                uploaded = new can.List(newVal);
+                                if (typeof newVal === 'string') {
+                                    uploaded.push(newVal);
+                                } else {
+                                    uploaded.replace(newVal);
+                                }
 							} else {
 								uploaded.splice(0, 1, newVal);
 							}
 						}
+                        console.log(uploaded.attr());
 						return uploaded;
 					}
 				}
@@ -44,7 +50,7 @@ define([
 			upload: function (form) {
 				var self = this,
 					files = self.attr('files'),
-					name = self.attr('name'),
+					name = self.attr('name') + (self.attr('multiple') ? '[]' : ''),
 					entity = self.attr('entity'),
 					entity_id = entity.attr('id') || entity.attr('_id'),
 					options;
@@ -191,9 +197,20 @@ define([
 				renderUploaded: function (options) {
 					var accept = this.attr('accept') || 'image',
 						source = options.context,
-						html;					
+    					html = '';
+
 					if (accept.indexOf('image') !== -1) {
-						html = '<span class="uploaded thumbnail" style="background-image: url(\'/uploads/' + source + '\')"></span>';
+//                        if(source.attr() instanceof Array) {
+//                            var img = source.attr();
+//
+//                            img.forEach(function(val){
+//                                console.log(val);
+//                                html += '<span class="uploaded thumbnail" style="background-image: url(\'/uploads/' + val + '\')"></span>';
+//                            });
+//
+//                        } else {
+						    html = '<span class="uploaded thumbnail" style="background-image: url(\'/uploads/' + source + '\')"></span>';
+//                        }
 					} else {
 						html = '<span>' + source + '</span>&nbsp;';
 					}

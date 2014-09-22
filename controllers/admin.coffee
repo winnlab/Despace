@@ -32,5 +32,7 @@ Router.post '/project', Project.save
 Router.put '/project/:id?', Project.save
 Router.delete '/project/:id?', Project.delete
 
+Router.post '/project/img', Project.imgSave
+
 exports.Router = Router
 exports.layoutPage = Main.dashboard

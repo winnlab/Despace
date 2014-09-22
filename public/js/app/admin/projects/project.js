@@ -15,6 +15,8 @@ define(
 			init: function () {
 				var self = this,
                     project = self.options.project;
+                    console.log('ok: ');
+                    console.log(self.options.project);
 
 				self.element.html(can.view(self.options.viewpath + 'set.stache', {
                     project: project,
@@ -38,11 +40,11 @@ define(
                 project.save()
 				.done(function() {					
 					can.route.attr({'entity_id': project.attr('_id')});
-					self.setNotification('success', 'Продукт "' + project.getName() + '" успешно сохранен!')
+					self.setNotification('success', 'Проект "' + project.getName() + '" успешно сохранен!')
 				})
 				.fail(function (project) {
 					console.error(project);
-					self.setNotification('error', 'Ошибка сохранения продукта "' + project.getName() + '"!')
+					self.setNotification('error', 'Ошибка сохранения проекта "' + project.getName() + '"!')
 				});
 				
 			},

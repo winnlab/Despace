@@ -26,12 +26,12 @@ define([
 				},
 				'uploaded': {
 					set: function (newVal) {
+                        console.log('uploaded set');
 						var uploaded = new can.List([]),
 							files = this.attr('files');						
 						files.replace([]);
 						if (newVal) {
 							if (this.attr('multiple')) {
-//                                uploaded = new can.List(newVal);
                                 if (typeof newVal === 'string') {
                                     uploaded.push(newVal);
                                 } else {
@@ -78,7 +78,7 @@ define([
 						// self.attr('uploaded', data.message.name);
 
 						if (entity.uploaded) {
-							entity.uploaded(name, data.message.name);
+							entity.uploaded(self.attr('name'), data.message.name);
 						}
 
 						appState.attr('notification', {
@@ -119,7 +119,7 @@ define([
 				}).done(function (data) {
 					uploaded.splice(sourceIndex, 1);
 					if (entity.removeUploaded) {
-						entity.removeUploaded(name);
+						entity.removeUploaded(name, sourceIndex);
 					}
 					appState.attr('notification', {
 						status: 'success',

@@ -1,7 +1,7 @@
 define(
 	[
-		'canjs'		
-	], 
+		'canjs'
+	],
 
 	function (can) {
 
@@ -27,17 +27,34 @@ define(
 				return name ? name : '';
 			},
 			uploaded: function (name, value) {
-				if (!this.attr('img')) {
-					this.attr('img', {});
-				}
-				var imgs = this.attr('img');
-				imgs.attr(name, value);
+                console.log(value);
+
+                var images = this.attr('img').attr();
+
+//                if(value instanceof Object){
+//                    images.push(value.name);
+//                    this.attr('img', images);
+//                } else {
+                    value.forEach(function (val){
+                       images.push(val.name);
+                        console.log(val.name);
+                    });
+                    this.attr('img', images);
+//                }
+
+//                if (typeof this.attr('img') === 'object') {
+//                    this.attr('img').push(value.name);
+//                } else {
+//                    this.attr('img', [value]);
+//                }
+
+
+
 			},
-			removeUploaded: function (name) {
-				var imgs = this.attr('img');				
-				imgs.attr(name, undefined);
+			removeUploaded: function (name, index) {
+                this.attr('img').splice(index, 1);
 			}
 		});
 
 	}
-); 
+);

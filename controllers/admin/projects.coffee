@@ -9,8 +9,6 @@ _ = require 'underscore'
 
 uploadPath = './uploads/'
 
-
-
 setFail = (err, res) ->
 	msg = "Error in #{__filename}: #{err.message or err}"
 	Logger.log 'error', msg
@@ -26,8 +24,6 @@ exports.findAll = (req, res) ->
 			View.clientSuccess {projects}, res
 	], (err)->
 		setFail err, res
-
-
 
 exports.save = (req, res) ->
 	data = req.body
@@ -51,8 +47,6 @@ exports.save = (req, res) ->
 	], (err)->
 		setFail err, res
 
-
-
 exports.delete = (req, res) ->
 	_id = req.params.id
 
@@ -72,45 +66,40 @@ exports.delete = (req, res) ->
 	], (err) ->
 		setFail err, res
 
-
-
 exports.imgSave = (req, res) ->
 	_id = req.body.id
 	imgName = req.body.name
 
-
 	async.waterfall [
 		(next) ->
 			Model 'Project', 'findById', next, _id
-#		(project, next) ->
-#			Files.unlinkArray [project.img?[imgName]], uploadPath, (err) ->
-#				next err, project
 		(project, next) ->
-			console.log req.files
-			if req.files?[imgName]?.name
-				console.log req.files.name
-				project.img.push req.files[imgName].name
-
+			if req.files?
+				if Array.isArray req.files[imgName]
+					req.files[imgName].forEach (val) ->
+						project.img.push(val.name)
+				else
+					project.img.push(req.files[imgName].name)
 			project.save next
 		(doc) ->
-			View.clientSuccess name: req.files[imgName].name, res
+			View.clientSuccess name: req.files[imgName], res
 	], (err) ->
 		setFail err, res
 
-
-
 exports.imgDelete = (req, res) ->
 	_id = req.body.id
-	imgName = req.body.name
+	sourceName = req.body.sourceName
 
 	async.waterfall [
 		(next) ->
 			Model 'Project', 'findOne', next, {_id}
 		(project, next) ->
-			Files.unlinkArray [project?.img?[imgName]], uploadPath, (err) ->
-				next err, project
-		(project, next) ->
-			project.img[imgName] = undefined
+			index = project.img.indexOf(sourceName)
+			fs.unlink uploadPath + project?.img?[index], (err) ->
+						next err, project, index
+
+		(project, index, next) ->
+			project.img.splice(index, 1)
 			project.save next
 		(doc, numberAffected) ->
 			View.clientSuccess 'Картинка успешно удалена', res

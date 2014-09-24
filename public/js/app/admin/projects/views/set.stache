@@ -72,7 +72,7 @@
 				<div class="box box-primary">
 					<div class="box-body clearfix">
 						<upload 
-							class="col-md-6"
+							class="col-md-12"
 							name="project-img"
 							url="/admin/project/img"
 							delete-url="/admin/project/img"

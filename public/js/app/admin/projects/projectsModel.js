@@ -27,28 +27,18 @@ define(
 				return name ? name : '';
 			},
 			uploaded: function (name, value) {
-                console.log(value);
 
                 var images = this.attr('img').attr();
 
-//                if(value instanceof Object){
-//                    images.push(value.name);
-//                    this.attr('img', images);
-//                } else {
+                if(value instanceof Array){
                     value.forEach(function (val){
-                       images.push(val.name);
-                        console.log(val.name);
-                    });
+                        images.push(val.name);
+                     });
                     this.attr('img', images);
-//                }
-
-//                if (typeof this.attr('img') === 'object') {
-//                    this.attr('img').push(value.name);
-//                } else {
-//                    this.attr('img', [value]);
-//                }
-
-
+                } else if(value instanceof Object) {
+                    images.push(value.name);
+                    this.attr('img', images);
+                }
 
 			},
 			removeUploaded: function (name, index) {

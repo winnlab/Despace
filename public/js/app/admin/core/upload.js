@@ -181,6 +181,7 @@ define([
 					scope.upload(el.parents('form'));
 				},
 				'.remove click': function (el, ev) {
+                    console.log(el.data('uploaded'))
 					var sourceName = el.data('uploaded');
 					if (confirm('Вы действительно хотите удалить этот файл?')) {
 						this.scope.remove(sourceName);
@@ -200,17 +201,9 @@ define([
     					html = '';
 
 					if (accept.indexOf('image') !== -1) {
-//                        if(source.attr() instanceof Array) {
-//                            var img = source.attr();
-//
-//                            img.forEach(function(val){
-//                                console.log(val);
-//                                html += '<span class="uploaded thumbnail" style="background-image: url(\'/uploads/' + val + '\')"></span>';
-//                            });
-//
-//                        } else {
+
 						    html = '<span class="uploaded thumbnail" style="background-image: url(\'/uploads/' + source + '\')"></span>';
-//                        }
+
 					} else {
 						html = '<span>' + source + '</span>&nbsp;';
 					}

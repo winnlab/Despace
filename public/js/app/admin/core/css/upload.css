@@ -8,10 +8,12 @@ upload {
     vertical-align: middle;
     width: 250px;
     height: 150px;
-    margin-right: 10px;
+    margin-left: 20px;
     background-size: cover;
     background-position: center center; }
   upload label {
     cursor: pointer; }
   upload form {
     display: none; }
+
+/*# sourceMappingURL=upload.css.map */

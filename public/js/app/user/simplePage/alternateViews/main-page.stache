@@ -43,7 +43,7 @@
 <div id="work" class="pages page4">
     <div id="view-text-work">
         <h1 class="title-work"> Our Works </h1>
-        <div class="btn-arrow-work"> </div>
+        <div class="module btn-arrow-work" data-href="/projects"> </div>
         <div class="clear"></div>
         <h1 class="content-box-work">
             How we do it<br><br>

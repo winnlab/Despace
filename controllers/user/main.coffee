@@ -26,6 +26,8 @@ getData = (req, lang, cb) ->
 	async.parallel
 		simplePages: (proceed) ->
 			Model 'SimplePage', 'find', proceed
+		projects: (proceed) ->
+			Model 'Project', 'find', proceed
 
 	, (err, data) ->
 		return cb err if err
@@ -65,3 +67,13 @@ exports.index = (req, res) ->
 
 exports.ie = (req, res) ->
 	View.render 'user/ie', res, {}
+
+#exports.getAllProjects = (req, res) ->
+#	query = if req.query then req.query else {}
+#	async.waterfall [
+#		(next)->
+#			Model 'Project', 'find', next, query, null, {sort: 'position'}
+#		(projects)->
+#			View.clientSuccess {projects}, res
+#	], (err)->
+#		setFail err, res

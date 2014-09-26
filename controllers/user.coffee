@@ -18,5 +18,6 @@ Router.use (req, res, next) ->
 
 Router.get '/', Main.index
 Router.get '/simplePage/:id', Main.index
+Router.get '/projects', Main.index
 
 exports.Router = Router

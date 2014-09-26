@@ -61,14 +61,7 @@ define(
 				}
 
 				self.element.html(can.view(self.options.viewpath + 'index.stache', this.viewModel, {
-                    langs: langs,
-					getBg: function (img, options) {
-						img = img();						
-						var bg = img && img.attr('bottle')
-							? 'background-image: url("/uploads/' + img.attr('bottle') + '");'
-							: '';						
-						return bg;
-					}
+                    langs: langs
 				}));
 
 				var projects = self.viewModel.attr('projects');
@@ -108,7 +101,6 @@ define(
 
 			'.editProject click': function (el) {
 				var project = el.parents('.project').data('project');
-                console.log(project);
 				this.viewModel.toEntity(project.attr('_id'));
 			},
 

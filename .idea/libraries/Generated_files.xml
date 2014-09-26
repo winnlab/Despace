@@ -2,12 +2,17 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/controllers/admin/projects.js" />
+        <item url="file://$PROJECT_DIR$/controllers/user/main.js" />
+        <item url="file://$PROJECT_DIR$/controllers/user.js" />
         <item url="file://$PROJECT_DIR$/controllers/admin.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/controllers/admin/projects.js" />
+      <root url="file://$PROJECT_DIR$/controllers/admin/projects.js" />
+      <root url="file://$PROJECT_DIR$/controllers/admin/projects.js" />
+      <root url="file://$PROJECT_DIR$/controllers/user/main.js" />
+      <root url="file://$PROJECT_DIR$/controllers/user.js" />
       <root url="file://$PROJECT_DIR$/controllers/admin.js" />
     </CLASSES>
     <SOURCES />

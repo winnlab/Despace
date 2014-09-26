@@ -116,7 +116,7 @@ define([
 
             'calculateScrollArray': function () {
                 var self = this;
-                console.log('tut');
+
                 for(var i = 0; i < 6; i++) {
                     if(i == 5) {
                         self.scrollBox[i] = ($('.footer-contacts').outerHeight() + (self.windowHeight * 4));

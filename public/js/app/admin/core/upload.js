@@ -26,7 +26,7 @@ define([
 				},
 				'uploaded': {
 					set: function (newVal) {
-                        console.log('uploaded set');
+
 						var uploaded = new can.List([]),
 							files = this.attr('files');						
 						files.replace([]);
@@ -41,7 +41,7 @@ define([
 								uploaded.splice(0, 1, newVal);
 							}
 						}
-                        console.log(uploaded.attr());
+
 						return uploaded;
 					}
 				}
@@ -181,7 +181,6 @@ define([
 					scope.upload(el.parents('form'));
 				},
 				'.remove click': function (el, ev) {
-                    console.log(el.data('uploaded'))
 					var sourceName = el.data('uploaded');
 					if (confirm('Вы действительно хотите удалить этот файл?')) {
 						this.scope.remove(sourceName);

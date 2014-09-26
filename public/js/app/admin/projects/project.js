@@ -15,8 +15,6 @@ define(
 			init: function () {
 				var self = this,
                     project = self.options.project;
-                    console.log('ok: ');
-                    console.log(self.options.project);
 
 				self.element.html(can.view(self.options.viewpath + 'set.stache', {
                     project: project,

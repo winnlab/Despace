@@ -5,6 +5,7 @@ View = require '../../lib/view'
 Files = require '../../lib/files'
 Model = require '../../lib/model'
 Logger = require '../../lib/logger'
+Document = require '../../utils/document'
 _ = require 'underscore'
 
 uploadPath = './uploads/'
@@ -99,7 +100,7 @@ exports.imgDelete = (req, res) ->
 						next err, project, index
 
 		(project, index, next) ->
-			project.img.splice(index, 1)
+			project.img.splice index, 1
 			project.save next
 		(doc, numberAffected) ->
 			View.clientSuccess 'Картинка успешно удалена', res

@@ -1,0 +1,190 @@
+@-webkit-keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes rotate-btn {
+  10% {
+    -webkit-transform: rotate(-18deg); }
+  20% {
+    -webkit-transform: rotate(-36deg); }
+  30% {
+    -webkit-transform: rotate(-54deg); }
+  40% {
+    -webkit-transform: rotate(-72deg); }
+  50% {
+    -webkit-transform: rotate(-90deg); }
+  60% {
+    -webkit-transform: rotate(-108deg); }
+  70% {
+    -webkit-transform: rotate(-126deg); }
+  80% {
+    -webkit-transform: rotate(-144deg); }
+  90% {
+    -webkit-transform: rotate(-162deg); }
+  100% {
+    -webkit-transform: rotate(-180deg); } }
+@-moz-keyframes rotate-btn {
+  10% {
+    -moz-transform: rotate(-18deg); }
+  20% {
+    -moz-transform: rotate(-36deg); }
+  30% {
+    -moz-transform: rotate(-54deg); }
+  40% {
+    -moz-transform: rotate(-72deg); }
+  50% {
+    -moz-transform: rotate(-90deg); }
+  60% {
+    -moz-transform: rotate(-108deg); }
+  70% {
+    -moz-transform: rotate(-126deg); }
+  80% {
+    -moz-transform: rotate(-144deg); }
+  90% {
+    -moz-transform: rotate(-162deg); }
+  100% {
+    -moz-transform: rotate(-180deg); } }
+@keyframes rotate-btn {
+  10% {
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    transform: rotate(-18deg); }
+  20% {
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    transform: rotate(-36deg); }
+  30% {
+    -webkit-transform: rotate(-54deg);
+    -moz-transform: rotate(-54deg);
+    -ms-transform: rotate(-54deg);
+    -o-transform: rotate(-54deg);
+    transform: rotate(-54deg); }
+  40% {
+    -webkit-transform: rotate(-72deg);
+    -moz-transform: rotate(-72deg);
+    -ms-transform: rotate(-72deg);
+    -o-transform: rotate(-72deg);
+    transform: rotate(-72deg); }
+  50% {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  60% {
+    -webkit-transform: rotate(-108deg);
+    -moz-transform: rotate(-108deg);
+    -ms-transform: rotate(-108deg);
+    -o-transform: rotate(-108deg);
+    transform: rotate(-108deg); }
+  70% {
+    -webkit-transform: rotate(-126deg);
+    -moz-transform: rotate(-126deg);
+    -ms-transform: rotate(-126deg);
+    -o-transform: rotate(-126deg);
+    transform: rotate(-126deg); }
+  80% {
+    -webkit-transform: rotate(-144deg);
+    -moz-transform: rotate(-144deg);
+    -ms-transform: rotate(-144deg);
+    -o-transform: rotate(-144deg);
+    transform: rotate(-144deg); }
+  90% {
+    -webkit-transform: rotate(-162deg);
+    -moz-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    -o-transform: rotate(-162deg);
+    transform: rotate(-162deg); }
+  100% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
+body {
+  background-color: greenyellow; }
+
+div.projects {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  div.projects div.btn-project {
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 59px;
+    height: 63px; }
+    div.projects div.btn-project:hover {
+      cursor: pointer; }
+  div.projects .btn-proj-t {
+    top: 15%;
+    left: 49%;
+    background-image: url("/img/user/btn-arrow-proj-t.png"); }
+  div.projects .btn-proj-r {
+    top: 49%;
+    right: 1%;
+    background-image: url("/img/user/btn-arrow-proj-r.png"); }
+  div.projects .btn-proj-l {
+    top: 49%;
+    left: 1%;
+    background-image: url("/img/user/btn-arrow-proj-l.png"); }
+  div.projects .btn-proj-b {
+    position: fixed;
+    width: 59px;
+    height: 58px;
+    bottom: 0%;
+    left: 49%;
+    background-image: url("/img/user/btn-arrow-proj-b.png"); }
+    div.projects .btn-proj-b:hover {
+      cursor: pointer; }
+  div.projects .btn-proj-info {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    bottom: 1%;
+    background-repeat: no-repeat;
+    background-image: url("/img/user/btn-info-proj.png"); }
+    div.projects .btn-proj-info:hover {
+      cursor: pointer; }
+    div.projects .btn-proj-info .info-proj {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      padding: 20px;
+      bottom: 80px;
+      left: 25px; }
+      div.projects .btn-proj-info .info-proj:hover {
+        cursor: default; }
+      div.projects .btn-proj-info .info-proj .info-triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        bottom: -25px;
+        border-style: solid;
+        border-width: 25px 35px 0 0;
+        border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; }
+        div.projects .btn-proj-info .info-proj .info-triangle:hover {
+          cursor: default; }
+
+/*# sourceMappingURL=projects.css.map */

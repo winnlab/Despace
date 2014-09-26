@@ -52,7 +52,6 @@ define([
 		});
 
         can.mustache.registerHelper('checkLanguages', function (languages, name, description) {
-            console.log(languages().attr());
         });
 
 	}

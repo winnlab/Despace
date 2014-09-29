@@ -21,7 +21,7 @@ define([
 			appState = new AppState();
 
 		window['appState'] = appState;
-		// delete window.data;
+		delete window.data;
 
 		return appState;
 	}

@@ -122,18 +122,20 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg); } }
-body {
-  background-color: greenyellow; }
-
 div.projects {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%; }
+  div.projects .projectsWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
   div.projects div.btn-project {
     background-repeat: no-repeat;
     position: fixed;
     width: 59px;
-    height: 63px; }
+    height: 63px;
+    z-index: 999; }
     div.projects div.btn-project:hover {
       cursor: pointer; }
   div.projects .btn-proj-t {
@@ -154,6 +156,7 @@ div.projects {
     height: 58px;
     bottom: 0%;
     left: 49%;
+    z-index: 999;
     background-image: url("/img/user/btn-arrow-proj-b.png"); }
     div.projects .btn-proj-b:hover {
       cursor: pointer; }
@@ -172,7 +175,8 @@ div.projects {
       position: absolute;
       padding: 20px;
       bottom: 80px;
-      left: 25px; }
+      left: 25px;
+      white-space: nowrap; }
       div.projects .btn-proj-info .info-proj:hover {
         cursor: default; }
       div.projects .btn-proj-info .info-proj .info-triangle {
@@ -186,5 +190,22 @@ div.projects {
         border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; }
         div.projects .btn-proj-info .info-proj .info-triangle:hover {
           cursor: default; }
+
+.projectItem {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .projectItem .bgWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .projectItem .bgWrapper .projectBg {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .projectItem .bgWrapper .left {
+      display: block; }
+    .projectItem .bgWrapper .right {
+      display: block; }
 
 /*# sourceMappingURL=projects.css.map */

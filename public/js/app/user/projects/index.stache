@@ -3,10 +3,8 @@
     <div class="btn-project btn-proj-r"> </div>
     <div class="btn-project btn-proj-l"> </div>
     <div class="btn-proj-b"> </div>
-    <div class="btn-proj-info">
-        <div class="info-proj">
-            <h1> ahahahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhha<br>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h1>
-            <div class="info-triangle"> </div>
-        </div>
+
+    <div class="projectsWrapper">
+
     </div>
 </div>

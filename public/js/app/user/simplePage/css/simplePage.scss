@@ -178,7 +178,7 @@ div.page5 {
 			white-space: nowrap;
 			font-weight: bold;
 			color: #000000;
-			font-size: 42px;
+			font-size: rem(42);
 		}
 		.process-text2-p5 {
 			@extend %font-stl-text-process;

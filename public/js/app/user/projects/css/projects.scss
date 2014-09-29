@@ -5,44 +5,53 @@
 @import '../../../../../scss/base/_fonts.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
-body {
-	background-color: greenyellow;
-}
-
 div.projects {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
+
+	.projectsWrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
 	div.btn-project {
 		background-repeat: no-repeat;
 		position: fixed;
 		width: 59px;
 		height: 63px;
+		z-index: 999;
 		&:hover {
 			cursor: pointer;
 		}
 	}
+
 	.btn-proj-t {
 		top: 15%;
 		left: 49%;
 		background-image: url(("#{$img-patch}btn-arrow-proj-t.png"));
 	}
+
 	.btn-proj-r {
 		top: 49%;
 		right: 1%;
 		background-image: url(("#{$img-patch}btn-arrow-proj-r.png"));
 	}
+
 	.btn-proj-l {
 		top: 49%;
 		left: 1%;
 		background-image: url(("#{$img-patch}btn-arrow-proj-l.png"));
 	}
+
 	.btn-proj-b {
 		position: fixed;
 		width: 59px;
 		height: 58px;
 		bottom: 0%;
 		left: 49%;
+		z-index: 999;
 		background-image: url(("#{$img-patch}btn-arrow-proj-b.png"));
 		&:hover {
 			cursor: pointer;
@@ -59,15 +68,18 @@ div.projects {
 		&:hover {
 			cursor: pointer;
 		}
+
 		.info-proj {
 			background-color: rgba(255, 255, 255, 0.5);
 			position: absolute;
 			padding: 20px;
 			bottom: 80px;
 			left: 25px;
+			white-space: nowrap;
 			&:hover {
 				cursor: default;
 			}
+
 			.info-triangle {
 				position: absolute;
 				width: 0;
@@ -86,4 +98,32 @@ div.projects {
 	}
 }
 
+.projectItem {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
+	.bgWrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		.projectBg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		.left {
+			display: block;
+		}
+
+		.current {
+//			overflow: hidden;
+		}
+
+		.right {
+			display: block;
+		}
+	}
+}

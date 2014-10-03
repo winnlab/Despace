@@ -1,10 +1,11 @@
 <div class="projects">
-    <div class="btn-project btn-proj-t"> </div>
-    <div class="btn-project btn-proj-r"> </div>
-    <div class="btn-project btn-proj-l"> </div>
-    <div class="btn-proj-b"> </div>
-
     <div class="projectsWrapper">
 
+        <div class="btn-project btn-proj-t"></div>
+        <div class="btn-proj-b"></div>
+
+        {{#each projects}}
+            <project class="{{getClassName @index}} {{direction}}" images="{img}"></project>
+        {{/each}}
     </div>
 </div>

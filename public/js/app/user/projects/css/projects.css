@@ -122,35 +122,35 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg); } }
-div.projects {
+.projects {
   position: fixed;
   width: 100%;
   height: 100%; }
-  div.projects .projectsWrapper {
+  .projects .projectsWrapper {
     position: absolute;
     width: 100%;
     height: 100%; }
-  div.projects div.btn-project {
+  .projects .btn-project {
     background-repeat: no-repeat;
     position: fixed;
     width: 59px;
     height: 63px;
     z-index: 999; }
-    div.projects div.btn-project:hover {
+    .projects .btn-project:hover {
       cursor: pointer; }
-  div.projects .btn-proj-t {
+  .projects .btn-proj-t {
     top: 15%;
     left: 49%;
     background-image: url("/img/user/btn-arrow-proj-t.png"); }
-  div.projects .btn-proj-r {
+  .projects .btn-proj-r {
     top: 49%;
     right: 1%;
     background-image: url("/img/user/btn-arrow-proj-r.png"); }
-  div.projects .btn-proj-l {
+  .projects .btn-proj-l {
     top: 49%;
     left: 1%;
     background-image: url("/img/user/btn-arrow-proj-l.png"); }
-  div.projects .btn-proj-b {
+  .projects .btn-proj-b {
     position: fixed;
     width: 59px;
     height: 58px;
@@ -158,9 +158,9 @@ div.projects {
     left: 49%;
     z-index: 999;
     background-image: url("/img/user/btn-arrow-proj-b.png"); }
-    div.projects .btn-proj-b:hover {
+    .projects .btn-proj-b:hover {
       cursor: pointer; }
-  div.projects .btn-proj-info {
+  .projects .btn-proj-info {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -168,18 +168,18 @@ div.projects {
     bottom: 1%;
     background-repeat: no-repeat;
     background-image: url("/img/user/btn-info-proj.png"); }
-    div.projects .btn-proj-info:hover {
+    .projects .btn-proj-info:hover {
       cursor: pointer; }
-    div.projects .btn-proj-info .info-proj {
+    .projects .btn-proj-info .info-proj {
       background-color: rgba(255, 255, 255, 0.5);
       position: absolute;
       padding: 20px;
       bottom: 80px;
       left: 25px;
       white-space: nowrap; }
-      div.projects .btn-proj-info .info-proj:hover {
+      .projects .btn-proj-info .info-proj:hover {
         cursor: default; }
-      div.projects .btn-proj-info .info-proj .info-triangle {
+      .projects .btn-proj-info .info-proj .info-triangle {
         position: absolute;
         width: 0;
         height: 0;
@@ -188,24 +188,30 @@ div.projects {
         border-style: solid;
         border-width: 25px 35px 0 0;
         border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; }
-        div.projects .btn-proj-info .info-proj .info-triangle:hover {
+        .projects .btn-proj-info .info-proj .info-triangle:hover {
           cursor: default; }
 
 .projectItem {
   position: absolute;
-  width: 100%;
-  height: 100%; }
+  left: 40%;
+  top: 40%;
+  width: 300px;
+  height: 280px; }
   .projectItem .bgWrapper {
     position: absolute;
     width: 100%;
     height: 100%; }
     .projectItem .bgWrapper .projectBg {
       position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100%;
       width: 100%;
       height: 100%; }
     .projectItem .bgWrapper .left {
-      display: block; }
+      display: block;
+      left: -300px; }
     .projectItem .bgWrapper .right {
-      display: block; }
+      display: block;
+      left: 300px; }
 
 /*# sourceMappingURL=projects.css.map */

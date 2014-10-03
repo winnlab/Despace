@@ -1,31 +1,33 @@
 @charset "UTF-8";
+@import '../../css/bourbon/_bourbon.scss';
 
 %font-stl-header {
   font-family: "QuicksandLight";
   font-weight: bold;
-  font-size: 20px;
+  font-size: rem(18);
 }
 
 %font-stl-slg {
   font-family: "QuicksandLight";
   color: #ffffff;
-  font-size: 48px;
+  font-size: rem(38);
   text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 }
 
 %font-stl-text-head {
   font-family: 'QuicksandBold';
   color: #000000;
-  font-size: 30px;
+  font-size: rem(24);
 }
 
 %font-stl-text-body {
   font-family: "QuicksandLight";
   color: #000000;
-  font-size: 30px;
+  font-size: rem(22);
 }
 
 %font-stl-text-process {
   font-family: "QuicksandLight";
   text-align: center;
 }
+

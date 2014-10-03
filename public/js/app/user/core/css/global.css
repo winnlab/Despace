@@ -122,24 +122,6 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg); } }
-@font-face {
-  font-family: QuicksandBold;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot");
-  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Bold/quicksand-bold.woff") format("woff"), url("/fonts/Quicksand-Bold/quicksand-bold.ttf") format("truetype"), url("/fonts/Quicksand-Bold/quicksand-bold.svg#QuicksandBold") format("svg"); }
-@font-face {
-  font-family: QuicksandRegular;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot");
-  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Regular/quicksand-regular.woff") format("woff"), url("/fonts/Quicksand-Regular/quicksand-regular.ttf") format("truetype"), url("/fonts/Quicksand-Regular/quicksand-regular.svg#QuicksandRegular") format("svg"); }
-@font-face {
-  font-family: QuicksandLight;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Light/quicksand-light.eot");
-  src: url("/fonts/Quicksand-Light/quicksand-light.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Light/quicksand-light.woff") format("woff"), url("/fonts/Quicksand-Light/quicksand-light.ttf") format("truetype"), url("/fonts/Quicksand-Light/quicksand-light.svg#QuicksandLight") format("svg"); }
 *,
 *:before,
 *:after {
@@ -149,7 +131,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 14px; }
 
 body {
   margin: 0;
@@ -180,24 +162,24 @@ module {
 
 @media (min-width: 1150px) {
   html {
-    font-size: 10px; } }
+    font-size: 14px; } }
 @media (min-width: 1366px) {
   html {
     font-size: 16px; } }
 @media (min-width: 1440px) {
   html {
-    font-size: 17px; } }
+    font-size: 18px; } }
 @media (min-width: 1536px) {
   html {
-    font-size: 18px; } }
+    font-size: 20px; } }
 @media (min-width: 1600px) {
   html {
-    font-size: 19px; } }
+    font-size: 22px; } }
 @media (min-width: 1680px) {
   html {
-    font-size: 20px; } }
+    font-size: 24px; } }
 @media (min-width: 1920px) {
   html {
-    font-size: 22px; } }
+    font-size: 26px; } }
 
 /*# sourceMappingURL=global.css.map */

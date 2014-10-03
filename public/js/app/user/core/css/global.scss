@@ -6,10 +6,6 @@
 @import '../../../../../scss/base/_fonts.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
-@include font-face(QuicksandBold, '#{$fonts-patch}Quicksand-Bold/quicksand-bold');
-@include font-face(QuicksandRegular,'#{$fonts-patch}Quicksand-Regular/quicksand-regular');
-@include font-face(QuicksandLight, '#{$fonts-patch}Quicksand-Light/quicksand-light');
-
 *,
 *:before,
 *:after {
@@ -18,7 +14,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 body {

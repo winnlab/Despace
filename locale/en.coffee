@@ -1,7 +1,4 @@
 module.exports =
-	checkAge: 'ARE YOU OVER 18 YEARS OLD?'
-	yes: 'Yes'
-	no: 'No'
 	healthWarn: 'Excessive consumption of alcohol harm your health'
 	consume: 'consume <span class="clearfix"></span> reasonable'
 	allCocktails: 'All cocktails'

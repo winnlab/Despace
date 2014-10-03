@@ -6,7 +6,7 @@ div.pages {
 div#header #header-menu a.btm, div#header #header-lang {
   font-family: "QuicksandLight";
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 1.125rem; }
 
 @-webkit-keyframes disappearing {
   0% {
@@ -157,6 +157,7 @@ div.pages {
 div#header {
   z-index: 1;
   padding: 2% 5% 4% 5%;
+  min-width: 1000px;
   top: 0;
   left: 0;
   width: 100%;

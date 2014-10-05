@@ -220,7 +220,13 @@ div#header {
       padding: 0px; }
       div#header #header-lang ul.lang li {
         display: inline; }
-        div#header #header-lang ul.lang li:hover {
-          cursor: pointer; }
+        div#header #header-lang ul.lang li a.lang-btm {
+          text-decoration: none; }
+          div#header #header-lang ul.lang li a.lang-btm:hover {
+            cursor: pointer; }
+          div#header #header-lang ul.lang li a.lang-btm:link {
+            color: #767676; }
+          div#header #header-lang ul.lang li a.lang-btm:visited {
+            color: #767676; }
 
 /*# sourceMappingURL=global.css.map */

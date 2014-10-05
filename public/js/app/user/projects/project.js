@@ -1,53 +1,45 @@
 define([
     'canjs',
+    'carousel',
     'core/appState',
     'css!app/projects/css/projects.css'
 ],
-    function (can, appState) {
+    function (can, carousel, appState) {
 
         var Gallery = can.Map.extend({
             'uploadPath': appState.attr('uploadPath'),
+            'imagesArr': [],
+            'imagesPageArr': [],
             'index': 0,
-            'visible': true,
-            'size': 0,
+            'visibleClass': true,
+            'visibleInfo': false,
+            'visibleButtons': true,
 
-            setImage: function() {
+            setImg: function () {
                 var self = this,
-                    index = this.attr('index'),
-                    img = $('project').find('.img_' + index),
-                    imgPrev = (index-1),
-                    imgNext = (index+1),
-                    classCurrent = 'current',
-                    classRight = 'right',
-                    classLeft = 'left';
+                    arrIndex = self.attr('imagesArr').length -1,
+                    arrPageIndex = self.attr('imagesPageArr').length -1,
+                    index = self.attr('index');
 
-                if(!img.length) {
-                    console.log(self.attr('images')[index]);
-                    img = $('<img />').attr({
-                        'class': 'projectBg img_' + index,
-                        'src': self.attr('uploadPath') + self.attr('images')[index]
-                    });
-                    img.appendTo($('project').find('.bgWrapper'));
+                if (arrPageIndex < arrIndex) {
+                    if (!self.findImg(index)) {
+                    self.attr('imagesPageArr').push(self.attr('imagesArr')[index]);
+                    }
                 }
 
-                if (imgPrev == -1) {
-                    imgPrev = $('project').find('.img_' + (this.images.length -1)); //  need length el page last
-                } else {
-                    imgPrev = $('project').find('.img_' + (index-1));
+            },
+
+            findImg: function (index) {
+                var self = this,
+                    arr = self.attr('imagesArr'),
+                    arrPage= self.attr('imagesPageArr');
+
+                for (var i = arr.length -1; i >= 0; i--) {
+                    if (arr[i] == arrPage[index]) {
+                        return true;
+                    }
                 }
-
-                if (imgNext == this.images.length) { // need length el page first
-                    imgNext = $('project').find('.img_' + 0);
-                } else {
-                    imgNext = $('project').find('.img_' + (index+1));
-                }
-
-                $('project').find('.projectBg').removeClass(classRight).removeClass(classLeft).removeClass(classCurrent).css({opacity: 0});
-
-                imgPrev.addClass(classLeft).css({opacity: 1});
-                imgNext.addClass(classRight).css({opacity: 1});
-                img.addClass(classCurrent).css({opacity: 1});
-
+                return false;
             }
 
         });
@@ -56,14 +48,39 @@ define([
             tag: "project",
             scope:  Gallery,
 
-            template: '<div class="projectItem">' +
-                            '<div class="btn-project btn-proj-r"> </div>' +
-                            '<div class="btn-project btn-proj-l"> </div>' +
-                            '<div class="bgWrapper">' +
+            init: function () {
+                var self = this,
+                    arr = self.scope.attr('images').attr(),
+                    firstImg = arr[0];
 
-                            '</div>' +
+                if (arr.length -1 >= 1) {
+                    self.scope.attr('imagesArr', arr);
+                    self.scope.attr('imagesPageArr').push(firstImg);
+                } else {
+                    self.scope.attr('imagesPageArr').push(firstImg);
+                    self.scope.attr('visibleButtons', false);
+                }
+
+
+            },
+
+            template: '<div class="projectItem">' +
+                                '<div class="bgWrapper">' +
+                                '<div id="carousel" class="carousel slide" data-ride="carousel">' +
+                                    '<div class="carousel-inner">' +
+                                        '{{#each imagesPageArr}}' +
+                                        '<div class="item {{setClass @index}}">' +
+                                            '<img src="{{uploadPath}}{{.}}">' +
+                                        '</div>' +
+                                        '{{/each}}' +
+                                    '{{#if visibleButtons}}' +
+                                    '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel" role="button" data-slide="prev"> </a>' +
+                                    '<a class="btn-project btn-proj-r carousel-control" data-gallery="#carousel" role="button" data-slide="next"> </a>' +
+                                    '{{/if}}' +
+                                    '</div>' +
+                                '</div>' +
                             '<div class="btn-proj-info">' +
-                            '{{#if visible}}' +
+                            '{{#if visibleInfo}}' +
                                 '<div class="info-proj">' +
                                     '<p> Donec ut lorem justo. Cras in. </p>' +
                                     '<p> Donec ut lorem justo. Cras in. </p>' +
@@ -77,55 +94,56 @@ define([
                 '.btn-proj-r click': function(){
                     var index = this.scope.attr('index');
 
-                    if (index == this.scope.attr('images').length - 1) {
-
+                    if (index == this.scope.attr('imagesArr').length - 1) {
                         this.scope.attr('index', 0);
                     } else {
-
                         this.scope.attr('index', index + 1);
                     }
 
-                    this.scope.setImage();
+                        this.scope.setImg();
                 },
 
                 '.btn-proj-l click': function(){
                     var index = this.scope.attr('index');
 
                     if (index == 0) {
-
-                        this.scope.attr('index', this.scope.attr('images').length - 1);
+                        this.scope.attr('index', this.scope.attr('imagesArr').length - 1);
                     } else {
-
                         this.scope.attr('index', index - 1);
                     }
 
-                    this.scope.setImage();
+                    this.scope.setImg();
                 },
 
                 '.btn-proj-info click': function(){
 
-                    if(this.scope.attr('visible')) {
-
-                        this.scope.attr('visible', false);
+                    if(this.scope.attr('visibleInfo')) {
+                        this.scope.attr('visibleInfo', false);
                     } else {
-
-                        this.scope.attr('visible', true);
+                        this.scope.attr('visibleInfo', true);
                     }
 
                 },
 
                 inserted: function () {
-                    var self = this;
 
-//                    var test = self.scope.attr('images');
-//                    self.scope.attr('images').push(test[0]);
-//                    self.scope.attr('images').push(test[1]);
+//                    console.log(self.scope.attr('images').attr());
 
-                    self.scope.setImage();
+                }
+            },
 
+            helpers: {
+                setClass: function (index, options) {
+                    var index = index(),
+                        active;
 
-                    console.log(self.scope.attr('images').attr());
+                    if (index == 0) {
+                        active = 'active';
+                    } else {
+                        active = '';
+                    }
 
+                    return active;
                 }
             }
         });

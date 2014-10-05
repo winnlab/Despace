@@ -1,10 +1,11 @@
 define([
     'canjs',
     'core/appState',
+    'carousel',
     'app/projects/project',
     'css!app/projects/css/projects.css'
 ],
-    function (can, appState) {
+    function (can, appState, carousel) {
 
         return can.Control.extend({
             defaults: {
@@ -41,7 +42,7 @@ define([
                                 }
                             }
 
-                            if (direction == 'btm') {
+                            if (direction == 'bottom') {
                                 if (current === projectsLength - 1 && index === 0) {
                                     result = 'next';
                                 } else if (current < projectsLength - 1 && index === current + 1) {
@@ -57,6 +58,7 @@ define([
 
                         if (self.options.isReady) {
                             self.options.isReady.resolve();
+                            $('.carousel').carousel({interval: 0});
                         }
                     }
                 );
@@ -87,7 +89,7 @@ define([
                     current = self.module.attr('projects.length') - 1;
                 }
 
-                self.module.attr('direction', 'btm');
+                self.module.attr('direction', 'bottom');
 
                 setTimeout(function () {
                     self.module.attr('direction', '');

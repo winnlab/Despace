@@ -1,10 +1,10 @@
 <div id="start" class="pages page1">
     <div id="content-text-p1">
         <div class="slg-text1">
-            <h1>YOUR STORY.</h1>
+            <h1>{{appState.locale.slogan.partOne}}</h1>
         </div>
         <div class="slg-text2">
-            <h1>OUR INSPIRATION</h1>
+            <h1>{{appState.locale.slogan.partTwo}}</h1>
         </div>
     </div>
     <div id="scroll-down" class="button-scroll"> </div>
@@ -14,13 +14,10 @@
     <div id="view-text-p2">
         <div class="content-img-p2"> </div>
         <div class="content-text1-p2">
-            <p>We</p>
+            <p>{{appState.locale.we.we}}</p>
         </div>
-        <div class="content-text2-p2"> <p>Ut purus felis, mattis a lobortis ac, dictum at nulla.
-            Nam porta tincidunt odio id imperdiet. Aliquam egestas vehicula purus.
-            Vestibulum volutpat aliquam nisi vitae placerat.
-            Duis fringilla volutpat nisi quis rutrum. Donec malesuada imperdiet justo ac iaculis.
-            Proin sed sodales ante. Fusce in nibh lobortis, tempus mi et, laoreet erat.</p>
+        <div class="content-text2-p2">
+            {{{appState.locale.we.content}}}
         </div>
     </div>
 </div>
@@ -29,29 +26,21 @@
     <div id="view-text-p3">
         <div class="content-img-p3"> </div>
         <div class="content-text1-p3">
-            <p>What we do</p>
+            <p>{{appState.locale.whatWeDo.whatWeDo}}</p>
         </div>
-        <div class="content-text2-p3"> <p>Ut purus felis, mattis a lobortis ac, dictum at nulla.
-            Nam porta tincidunt odio id imperdiet. Aliquam egestas vehicula purus.
-            Vestibulum volutpat aliquam nisi vitae placerat.
-            Duis fringilla volutpat nisi quis rutrum. Donec malesuada imperdiet justo ac iaculis.
-            Proin sed sodales ante. Fusce in nibh lobortis, tempus mi et, laoreet erat.</p>
+        <div class="content-text2-p3">
+            {{{appState.locale.whatWeDo.content}}}
         </div>
     </div>
 </div>
 
 <div id="work" class="pages page4">
     <div id="view-text-work">
-        <h1 class="title-work"> Our Works </h1>
+        <h1 class="title-work">{{appState.locale.ourWorks.ourWorks}}</h1>
         <div class="module btn-arrow-work" data-href="/projects"> </div>
         <div class="clear"></div>
         <h1 class="content-box-work">
-            How we do it<br><br>
-            Donec quis accumsan neque. Proin at urna sed justo lobortis rutrum vel laoreet nisi.
-            Integer augue lorem, malesuada at ex a, semper varius turpis.
-            Nulla imperdiet lacus a massa lacinia sodales. Nullam ac justo in diam venenatis lobortis.
-            Phasellus posuere scelerisque felis ac sodales.
-            Aenean felis nibh, venenatis a hendrerit vitae, tincidunt quis risus.
+            {{{appState.locale.ourWorks.content}}}
         </h1>
     </div>
 </div>
@@ -59,23 +48,20 @@
 <div class="pages page5">
     <div id="view-text-p5">
         <div class="text-head-p5">
-            <h1>THE PROCESS</h1>
+            <h1>{{appState.locale.theProcess.theProcess}}</h1>
         </div>
         <div class="text-content-1-p5">
-            <h1>DESIGN? COME TO OUR SPACE</h1>
+            <h1>{{appState.locale.theProcess.design}}</h1>
         </div>
         <div class="text-content-2-p5">
-            <h1> <br>If you want a unique design
-                <br>and a lot of positive experiences
-                <br>from the process of its creation - welcome to us
-            </h1>
+            <h1>{{{appState.locale.theProcess.content}}}</h1>
         </div>
     </div>
     <div id="view-line-process-p5">
         <div class="circle-1-process-p5">
             <div class="process-box-top-p5">
                 <div class="process-text1-p5"> 12% </div>
-                <div class="process-text2-p5"> coffee </div>
+                <div class="process-text2-p5"> {{appState.locale.theProcess.coffee}}</div>
                 <div class="delta-1-p5"> </div>
             </div>
         </div>
@@ -84,13 +70,13 @@
             <div class="process-box-bot-p5">
                 <div class="delta-2-p5"> </div>
                 <h1 class="process-text1-p5"> 25% </h1>
-                <h1 class="process-text2-p5"> design brief </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.designBrief }}</h1>
             </div>
         </div>
         <div class="circle-3-process-p5">
             <div class="process-box-top-p5">
                 <h1 class="process-text1-p5"> 28% </h1>
-                <h1 class="process-text2-p5"> analysis </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.analysis }}</h1>
                 <div class="delta-3-p5"> </div>
             </div>
         </div>
@@ -98,13 +84,13 @@
             <div class="process-box-bot-p5">
                 <div class="delta-4-p5"> </div>
                 <h1 class="process-text1-p5"> 30% </h1>
-                <h1 class="process-text2-p5"> conceptualizing </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.conceptualizing}}</h1>
             </div>
         </div>
         <div class="circle-5-process-p5">
             <div class="process-box-top-l-p5">
                 <h1 class="process-text1-p5"> 74% </h1>
-                <h1 class="process-text2-p5"> development </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.development}}</h1>
                 <div class="delta-5-p5"> </div>
             </div>
         </div>
@@ -112,20 +98,20 @@
             <div class="process-box-bot-p5">
                 <div class="delta-6-p5"> </div>
                 <h1 class="process-text1-p5"> 85% </h1>
-                <h1 class="process-text2-p5"> conclusion </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.conclusion}}</h1>
             </div>
         </div>
         <div class="circle-7-process-p5">
             <div class="process-box-bot-1-p5">
                 <div class="delta-7-p5"> </div>
                 <h1 class="process-text1-p5"> 90% </h1>
-                <h1 class="process-text2-p5"> approval </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.approval}}</h1>
             </div>
         </div>
         <div class="circle-8-process-p5">
             <div class="process-box-top-p5">
                 <h1 class="process-text1-p5"> 100% </h1>
-                <h1 class="process-text2-p5"> the final </h1>
+                <h1 class="process-text2-p5"> {{appState.locale.theProcess.theFinal}}</h1>
                 <div class="delta-8-p5"> </div>
             </div>
         </div>
@@ -135,13 +121,13 @@
 <div id="contact" class="footer-contacts">
     <div id="partners-cont">
         <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> our partners </h1>
+        <h1 class="font-stl-contacts"> {{appState.locale.conctact.ourPartners}} </h1>
         <div class="content-text1"></div>
         <h1 class="content-text2"> Vitrage-life </h1>
     </div>
     <div id="follow-cont">
         <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> follow us </h1>
+        <h1 class="font-stl-contacts"> {{appState.locale.conctact.followUs}}</h1>
         <div id="header-scl-cont">
             <ul class="social-cont">
                 <li> <div class="scl-btm-cont scl-pinterest-cnt"> </div> </li>
@@ -150,14 +136,19 @@
                 <li> <div class="scl-btm-cont scl-vimeo-cnt"> </div> </li>
                 <li> <div class="scl-btm-cont scl-google-cnt"> </div> </li>
             </ul>
-            <h1 class="font-stl-content-con"> Follow us to in the loop <br> on what`s new with Despace</h1>
+            <h1 class="font-stl-content-con"> {{{appState.locale.conctact.content}}}</h1>
         </div>
     </div>
     <div id="contact-cont">
         <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> contact us </h1>
-        <h1 class="font-stl-content-con"> Ukraine, Kyiv, Povitroflotsky Avenue, 11/15
-            <br><br> T: 00000000 <br> Cell: 0000000 <br> Email: </h1>
+        <h1 class="font-stl-contacts"> {{appState.locale.conctact.contactUs}}</h1>
+        <h1 class="font-stl-content-con">
+            <p>{{appState.locale.conctact.address}}</p>
+            <br>
+            <p>{{appState.locale.conctact.tel}}</p>
+            <p>{{appState.locale.conctact.cell}}</p>
+            <p>{{appState.locale.conctact.email}}</p>
+        </h1>
     </div>
     <div class="clear"></div>
 </div>

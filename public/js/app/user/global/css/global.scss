@@ -53,6 +53,7 @@ div#header {
 				border-bottom-color: #daa503;
 				cursor: pointer;
 			}
+
 		}
 	}
 	#header-scl {
@@ -100,10 +101,20 @@ div#header {
 			padding: 0px;
 			li {
 				display: inline;
-				&:hover {
-					cursor: pointer;
+				a.lang-btm {
+					text-decoration: none;
+					&:hover {
+						cursor: pointer;
+					}
+					&:link {
+						color: #767676;
+					}
+					&:visited {
+						color: #767676;
+					}
 				}
 			}
+
 		}
 	}
 }

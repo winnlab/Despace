@@ -1,5 +1,5 @@
 define({
-    router: {
+      router: {
         base: '/',
         modulesContainer: 'body',
         defaultRoute: {

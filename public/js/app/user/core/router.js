@@ -103,7 +103,7 @@ define([
         return can.Control.extend({
             defaults: {
                 viewpath: '../app/user/core/views/',
-                langBtn: '.isoLang'
+                langBtn: '.lang-btm'
             }
         }, {
             init: function (el, options) {

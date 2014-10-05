@@ -122,6 +122,54 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg); } }
+img {
+  max-width: 100% !important; }
+
+.carousel {
+  position: relative; }
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+  -o-transition: .6s ease-in-out left;
+  transition: .6s ease-in-out left; }
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block; }
+
+.carousel-inner > .active {
+  left: 0; }
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.carousel-inner > .next {
+  left: 100%; }
+
+.carousel-inner > .prev {
+  left: -100%; }
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0; }
+
+.carousel-inner > .active.left {
+  left: -100%; }
+
+.carousel-inner > .active.right {
+  left: 100%; }
+
 .projects {
   position: fixed;
   width: 100%;
@@ -207,11 +255,17 @@
       background-size: 100%;
       width: 100%;
       height: 100%; }
-    .projectItem .bgWrapper .left {
-      display: block;
-      left: -300px; }
-    .projectItem .bgWrapper .right {
-      display: block;
-      left: 300px; }
+
+.current {
+  display: block; }
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 40%; }
+
+.projectsItems {
+  position: relative;
+  display: none; }
 
 /*# sourceMappingURL=projects.css.map */

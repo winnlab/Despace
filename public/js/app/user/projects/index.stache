@@ -5,7 +5,7 @@
         <div class="btn-proj-b"></div>
 
         {{#each projects}}
-            <project class="{{getClassName @index}} {{direction}}" images="{img}"></project>
+            <project class="{{getClassName @index}} {{direction}}" images="{img}" gid="{@index}" ></project>
         {{/each}}
     </div>
 </div>

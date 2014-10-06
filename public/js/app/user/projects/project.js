@@ -53,6 +53,8 @@ define([
                     arr = self.scope.attr('images').attr(),
                     firstImg = arr[0];
 
+
+
                 if (arr.length -1 >= 1) {
                     self.scope.attr('imagesArr', arr);
                     self.scope.attr('imagesPageArr').push(firstImg);
@@ -66,7 +68,7 @@ define([
 
             template: '<div class="projectItem">' +
                                 '<div class="bgWrapper">' +
-                                '<div id="carousel" class="carousel slide" data-ride="carousel">' +
+                                '<div id="carousel{{gid}}" class="carousel slide" data-ride="carousel">' +
                                     '<div class="carousel-inner">' +
                                         '{{#each imagesPageArr}}' +
                                         '<div class="item {{setClass @index}}">' +
@@ -75,8 +77,8 @@ define([
                                         '{{/each}}' +
                                     '</div>' +
                                 '{{#if visibleButtons}}' +
-                                '<a class="btn-project btn-proj-r carousel-control" data-gallery="#carousel" role="button" data-slide="next"> </a>' +
-                                '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel" role="button" data-slide="prev"> </a>' +
+                                '<a class="btn-project btn-proj-r carousel-control" data-gallery="#carousel{{gid}}" role="button" data-slide="next"> </a>' +
+                                '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel{{gid}}" role="button" data-slide="prev"> </a>' +
                                 '{{/if}}' +
                                 '</div>' +
                             '<div class="btn-proj-info">' +
@@ -127,7 +129,8 @@ define([
 
                 inserted: function () {
 
-//                    console.log(self.scope.attr('images').attr());
+//                    console.log(this.scope.attr('images').attr());
+//                    console.log(this.scope.attr('gid'));
 
                 }
             },

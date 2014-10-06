@@ -34,9 +34,9 @@ define([
                     arr = self.attr('imagesArr'),
                     arrPage= self.attr('imagesPageArr');
 
-                for (var i = arr.length -1; i >= 0; i--) {
-                    if (arr[i] == arrPage[index]) {
-                        return true;
+                for (var i = (arrPage.length -1); i >= 0; i--) {
+                        if (arr[index] == arrPage[i]) {
+                         return true;
                     }
                 }
                 return false;
@@ -73,11 +73,11 @@ define([
                                             '<img src="{{uploadPath}}{{.}}">' +
                                         '</div>' +
                                         '{{/each}}' +
-                                    '{{#if visibleButtons}}' +
-                                    '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel" role="button" data-slide="prev"> </a>' +
-                                    '<a class="btn-project btn-proj-r carousel-control" data-gallery="#carousel" role="button" data-slide="next"> </a>' +
-                                    '{{/if}}' +
                                     '</div>' +
+                                '{{#if visibleButtons}}' +
+                                '<a class="btn-project btn-proj-r carousel-control" data-gallery="#carousel" role="button" data-slide="next"> </a>' +
+                                '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel" role="button" data-slide="prev"> </a>' +
+                                '{{/if}}' +
                                 '</div>' +
                             '<div class="btn-proj-info">' +
                             '{{#if visibleInfo}}' +
@@ -91,7 +91,7 @@ define([
                         '</div>',
 
             events: {
-                '.btn-proj-r click': function(){
+                '.btn-proj-r click': function (){
                     var index = this.scope.attr('index');
 
                     if (index == this.scope.attr('imagesArr').length - 1) {
@@ -103,7 +103,7 @@ define([
                         this.scope.setImg();
                 },
 
-                '.btn-proj-l click': function(){
+                '.btn-proj-l click': function (){
                     var index = this.scope.attr('index');
 
                     if (index == 0) {

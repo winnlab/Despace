@@ -10,21 +10,37 @@ define([
             'uploadPath': appState.attr('uploadPath'),
             'imagesArr': [],
             'imagesPageArr': [],
-            'index': 0,
+            'index': 1,
+            'indexSplice': 2,
             'visibleClass': true,
             'visibleInfo': false,
             'visibleButtons': true,
 
-            setImg: function () {
+            setImg: function (direction) {
                 var self = this,
                     arrIndex = self.attr('imagesArr').length -1,
                     arrPageIndex = self.attr('imagesPageArr').length -1,
+                    indexSplice = self.attr('indexSplice'),
                     index = self.attr('index');
 
-                if (arrPageIndex < arrIndex) {
-                    if (!self.findImg(index)) {
-                    self.attr('imagesPageArr').push(self.attr('imagesArr')[index]);
-                    }
+                switch(direction) {
+                    case -1:
+                        if (arrPageIndex < arrIndex) {
+                            if (!self.findImg(index)) {
+                                self.attr('imagesPageArr').splice(indexSplice, 0, self.attr('imagesArr')[index]);
+                            }
+                        }
+                        break;
+                    case 1:
+                        if (arrPageIndex < arrIndex) {
+                            if (!self.findImg(index)) {
+                                  self.attr('indexSplice', indexSplice +1);
+                                  self.attr('imagesPageArr').splice(index, 0, self.attr('imagesArr')[index]);
+                            }
+                        }
+                        break;
+                    default:
+                        console.error('Error!');
                 }
 
             },
@@ -50,20 +66,26 @@ define([
 
             init: function () {
                 var self = this,
-                    arr = self.scope.attr('images').attr(),
-                    firstImg = arr[0];
+                    arr = self.scope.attr('images').attr();
 
-
-
-                if (arr.length -1 >= 1) {
                     self.scope.attr('imagesArr', arr);
+
+                if (arr.length -1 >= 2) {
+                    var firstImg = arr[0],
+                        secondImg = arr[1],
+                        lastImg = arr[arr.length-1];
+
                     self.scope.attr('imagesPageArr').push(firstImg);
+                    self.scope.attr('imagesPageArr').push(secondImg);
+                    self.scope.attr('imagesPageArr').push(lastImg);
+
+                } else if (arr.length -1 == 1) {
+                    self.scope.attr('imagesPageArr', arr);
+
                 } else {
-                    self.scope.attr('imagesPageArr').push(firstImg);
+                    self.scope.attr('imagesPageArr', arr);
                     self.scope.attr('visibleButtons', false);
                 }
-
-
             },
 
             template: '<div class="projectItem">' +
@@ -96,25 +118,25 @@ define([
                 '.btn-proj-r click': function (){
                     var index = this.scope.attr('index');
 
-                    if (index == this.scope.attr('imagesArr').length - 1) {
-                        this.scope.attr('index', 0);
+                    if (index == this.scope.attr('imagesArr').length - 2) {
+                        this.scope.attr('index', 1);
                     } else {
                         this.scope.attr('index', index + 1);
                     }
 
-                        this.scope.setImg();
+                        this.scope.setImg(1);
                 },
 
                 '.btn-proj-l click': function (){
                     var index = this.scope.attr('index');
 
-                    if (index == 0) {
-                        this.scope.attr('index', this.scope.attr('imagesArr').length - 1);
+                    if (index == 1) {
+                        this.scope.attr('index', this.scope.attr('imagesArr').length - 2);
                     } else {
                         this.scope.attr('index', index - 1);
                     }
 
-                    this.scope.setImg();
+                    this.scope.setImg(-1);
                 },
 
                 '.btn-proj-info click': function(){

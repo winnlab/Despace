@@ -49,7 +49,7 @@
 										<div class="form-group">
 											<label class="col-md-2 control-label" for="content">Описание:</label>
 											<div class="col-md-10">
-												<textarea class="textarea form-control" name="lang[{{@index}}]content" placeholder="Описание проекта">{{getArrayObjValue project.lang @index 'content'}}</textarea>
+												<textarea class="textarea form-control" {{wysihtml5}} name="lang[{{@index}}]content" placeholder="Описание проекта">{{getArrayObjValue project.lang @index 'content'}}</textarea>
 												<div class="help help-block"></div>
 											</div>
 										</div>

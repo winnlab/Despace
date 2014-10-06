@@ -122,6 +122,21 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg); } }
+@-webkit-keyframes prev-project {
+  from {
+    top: -100%; }
+  to {
+    top: 0; } }
+@-moz-keyframes prev-project {
+  from {
+    top: -100%; }
+  to {
+    top: 0; } }
+@keyframes prev-project {
+  from {
+    top: -100%; }
+  to {
+    top: 0; } }
 img {
   max-width: 100% !important; }
 
@@ -240,7 +255,6 @@ img {
           cursor: default; }
 
 .projectItem {
-  position: absolute;
   left: 40%;
   top: 40%;
   width: 300px;
@@ -257,19 +271,23 @@ img {
       height: 100%; }
 
 .current {
-  display: block; }
+  display: block !important; }
+
+.item-project {
+  position: relative;
+  display: none; }
 
 .top {
   position: absolute;
-  top: 0;
-  left: 40%; }
+  top: -100%; }
+
+.prev-project {
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease; }
 
 .bottom {
   position: absolute;
-  top: 0px; }
-
-.projectsItems {
-  position: relative;
-  display: none; }
+  top: 100%; }
 
 /*# sourceMappingURL=projects.css.map */

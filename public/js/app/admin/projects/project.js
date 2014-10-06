@@ -1,8 +1,10 @@
 define(
 	[
 		'canjs',
-		'core/appState'
-	], 
+		'core/appState',
+        '../../../admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min',
+        'css!../../../admin/plugins/bootstrap-wysihtml5/css/bootstrap3-wysihtml5.min.css'
+	],
 
 	function (can, appState) {
 

@@ -16,10 +16,37 @@ define([
                 var self = this;
 
                 self.module = new can.Map({
-                    projects: appState.attr('projects'),
-                    direction: '',
-                    current: 0
+                    'projects': appState.attr('projects'),
+                    'projectsPage': [],
+                    'visibleBtn': true,
+                    'index': 1,
+                    'indexSplice': 2,
+                    'direction': '',
+                    'current': 0
                 });
+
+                /*
+                 *  push new projects 1-3
+                 */
+
+                var arr = self.module.attr('projects');
+
+                if (arr.length -1 >= 2) {
+                    var firstProject = arr[0],
+                        secondProject = arr[1],
+                        lastProject = arr[arr.length-1];
+
+                    self.module.attr('projectsPage').push(firstProject);
+                    self.module.attr('projectsPage').push(secondProject);
+                    self.module.attr('projectsPage').push(lastProject);
+
+                } else if (arr.length -1 == 1) {
+                    self.module.attr('projectsPage', arr);
+
+                } else {
+                    self.module.attr('projectsPage', arr);
+                    self.module.attr('visibleBtn', false);
+                }
 
                 can.view(self.options.viewpath + 'index.stache', self.module,
                     {
@@ -36,17 +63,17 @@ define([
 
                             if (direction == 'top') {
                                 if (current === 0 && index === projectsLength - 1) {
-                                    result = 'prev';
+                                    result = 'prev-project';
                                 } else if (current > 0 && index === current - 1) {
-                                    result = 'prev';
+                                    result = 'prev-project';
                                 }
                             }
 
                             if (direction == 'bottom') {
                                 if (current === projectsLength - 1 && index === 0) {
-                                    result = 'next';
+                                    result = 'next-project';
                                 } else if (current < projectsLength - 1 && index === current + 1) {
-                                    result = 'next';
+                                    result = 'next-project';
                                 }
                             }
 
@@ -64,9 +91,64 @@ define([
                 );
             },
 
-            '.btn-proj-t click': function () {
+            setProject: function (direction) {
                 var self = this,
-                    current = self.module.attr('current') + 1;
+                    arrIndex = self.module.attr('projects').length -1,
+                    arrPageIndex = self.module.attr('projectsPage').length -1,
+                    indexSplice = self.module.attr('indexSplice'),
+                    index = self.module.attr('index');
+
+                switch(direction) {
+                    case -1:
+                        if (arrPageIndex < arrIndex) {
+                            if (!self.findProject(index)) {
+                                self.module.attr('iprojectsPage').splice(indexSplice, 0, self.attr('projects')[index]);
+                            }
+                        }
+                        break;
+                    case 1:
+                        if (arrPageIndex < arrIndex) {
+                            if (!self.findProject(index)) {
+                                self.module.attr('indexSplice', indexSplice +1);
+                                self.module.attr('projectsPage').splice(index, 0, self.attr('projects')[index]);
+                            }
+                        }
+                        break;
+                    default:
+                        console.error('Error!');
+                }
+
+            },
+
+            findProject: function (index) {
+                var self = this,
+                    arr = self.module.attr('projects'),
+                    arrPage= self.module.attr('projectsPage');
+
+                for (var i = (arrPage.length -1); i >= 0; i--) {
+                    if (arr[index]['_id'] == arrPage[i]['_id']) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+
+            '.btn-proj-t click': function () {
+                var self = this;
+
+                var index = self.module.attr('index');
+
+                if (index == 1) {
+                    self.module.attr('index', self.module.attr('projects').length - 2);
+                } else {
+                    self.module.attr('index', index - 1);
+                }
+
+                this.setProject(-1);
+
+                //......
+
+                var current = self.module.attr('current') + 1;
 
                 if (current == self.module.attr('projects.length')) {
                     current = 0;
@@ -82,8 +164,21 @@ define([
             },
 
             '.btn-proj-b click': function () {
-                var self = this,
-                    current = self.module.attr('current') - 1;
+                var self = this;
+
+                var index = self.module.attr('index');
+
+                if (index == self.module.attr('projects').length - 2) {
+                    self.module.attr('index', 1);
+                } else {
+                    self.module.attr('index', index + 1);
+                }
+
+                this.setProject(1);
+
+                //......
+
+                var current = self.module.attr('current') - 1;
 
                 if (current < 0) {
                     current = self.module.attr('projects.length') - 1;
@@ -95,6 +190,7 @@ define([
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
                 }, 500);
+
             }
 
         });

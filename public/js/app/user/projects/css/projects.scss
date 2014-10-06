@@ -151,7 +151,7 @@ img {
 }
 
 .projectItem {
-	position: absolute;
+//	position: absolute;
 	left: 40%;
 	top: 40%;
 //	width: 100%;
@@ -175,22 +175,29 @@ img {
 }
 
 .current {
-	display: block;
+	display: block !important;
 }
-
-.top {
-	position: absolute;
-	top: 0;
-	left: 40%;
-}
-
-.bottom {
-	position: absolute;
-	top: 0px;
-}
-
-.projectsItems {
+.item-project {
 	position: relative;
 	display: none;
 }
+
+.top { // k 0
+	position: absolute;
+	top: -100%;
+}
+.prev-project {
+	@include animation(scale 1.0s ease-in, slide 2.0s ease);
+}
+
+
+.bottom {
+	position: absolute;
+	top: 100%;
+}
+.next-project { // k 0
+
+}
+
+
 

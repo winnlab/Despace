@@ -54,5 +54,11 @@ define([
         can.mustache.registerHelper('checkLanguages', function (languages, name, description) {
         });
 
+        can.mustache.registerHelper('wysihtml5', function (index) {
+            return function (el) {
+                $(el).wysihtml5();
+            };
+        });
+
 	}
 );

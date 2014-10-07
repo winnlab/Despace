@@ -1,6 +1,5 @@
 langs = [
     'ua'
-    'ru'
     'en'
 ]
 

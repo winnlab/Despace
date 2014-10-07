@@ -2,10 +2,11 @@
 @import '../../../../../css/bourbon/_bourbon.scss';
 @import '../../../../../scss/base/_variables.scss';
 @import '../../../../../scss/base/_mixins.scss';
-@import '../../../../../scss/base/_fonts.scss';
 @import '../../../../../scss/base/_placeholders.scss';
 @import '../../../../../scss/base/_scheme-p-4.scss';
 @import '../../../../../scss/modules/_animations.scss';
+
+
 
 div.page1 {
 	background-image: url("#{$img-patch}first-page-bg.png");
@@ -14,12 +15,18 @@ div.page1 {
 		left: 4%;
 		position: absolute;
 		.slg-text1 {
-			@extend %font-stl-slg;
 			width: 100%;
 			height: 50px;
+			color: #ffffff;
+			font-size: rem(38);
+			font-weight: 400;
+			text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 		}
 		.slg-text2 {
-			@extend %font-stl-slg;
+			color: #ffffff;
+			font-size: rem(38);
+			font-weight: 400;
+			text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 			padding-top: 20px;
 			width: 100%;
 			height: 50px;
@@ -59,10 +66,14 @@ div.page2 {
 		}
 		.content-text1-p2 {
 			margin: 20px 0px;
-			@extend %font-stl-text-head;
+			font-weight: bold;
+			color: #000000;
+			font-size: rem(24);
 		}
 		.content-text2-p2 {
-			@extend %font-stl-text-body;
+			font-weight: lighter;
+			color: #000000;
+			font-size: rem(22);
 		}
 	}
 }
@@ -82,11 +93,15 @@ div.page3 {
 			background-repeat: no-repeat;
 		}
 		.content-text1-p3 {
-			@extend %font-stl-text-head;
+			font-weight: bold;
 			margin: 20px 0px;
+			color: #000000;
+			font-size: rem(24);
 		}
 		.content-text2-p3 {
-			@extend %font-stl-text-body;
+			font-weight: lighter;
+			color: #000000;
+			font-size: rem(22);
 		}
 	}
 }
@@ -99,9 +114,8 @@ div.page4 {
 		top: 15%;
 		left: 5%;
 		.title-work {
-			font-family: "QuicksandRegular";
 			font-size: rem(36);
-			font-weight: 100;
+			font-weight: 400;
 			color: #000000;
 			padding-right: 15px;
 			float: left;
@@ -116,10 +130,9 @@ div.page4 {
 			}
 		}
 		.content-box-work {
-			font-family: "QuicksandLight";
 			font-size: rem(22);
-			font-weight: 200;
-			color: #000000;
+			font-weight: 400;
+			color: #424242;
 			padding-top: 30px;
 			float: left;
 		}
@@ -134,19 +147,22 @@ div.page5 {
 		top: 15%;
 		left: 20%;
 		.text-head-p5 {
-			@extend %font-stl-text-process;
+			font-weight: lighter;
+			text-align: center;
 			color: #ffffff;
 			font-size: rem(22);
 		}
 		.text-content-1-p5 {
-			@extend %font-stl-text-process;
+			font-weight: 400;
+			text-align: center;
 			color: #ffffff;
 			margin-top: 35px;
 			margin-bottom: 35px;
 			font-size: rem(34);
 		}
 		.text-content-2-p5 {
-			@extend %font-stl-text-process;
+			font-weight: lighter;
+			text-align: center;
 			color: #ffffff;
 			line-height: 1.5;
 			font-size: rem(22);
@@ -175,22 +191,22 @@ div.page5 {
 			background-color: #d9e1bf;
 		}
 		.process-text1-p5 {
-			@extend %font-stl-text-process;
+			text-align: center;
 			white-space: nowrap;
-			font-weight: bold;
+			font-weight: 400;
 			color: #000000;
 			font-size: rem(24);
 		}
 		.process-text2-p5 {
-			@extend %font-stl-text-process;
+			text-align: center;
 			white-space: nowrap;
-			font-weight: bold;
+			font-weight: 400;
 			color: #000000;
 			font-size: rem(22);
 		}
 		.circle-1-process-p5 {
 			@extend %circle-process;
-			left: 6%;
+			left: 5%;
 			.delta-1-p5 {
 				@extend %delta-top-process;
 				float: right;
@@ -200,7 +216,7 @@ div.page5 {
 		}
 		.circle-2-process-p5 {
 			@extend %circle-process;
-			left: 16%;
+			left: 15%;
 			.delta-2-p5 {
 				@extend %delta-bot-process;
 				float: right;
@@ -210,7 +226,7 @@ div.page5 {
 		}
 		.circle-3-process-p5 {
 			@extend %circle-process;
-			left: 25%;
+			left: 30%;
 			.delta-3-p5 {
 				@extend %delta-top-process;
 				float: right;
@@ -220,7 +236,7 @@ div.page5 {
 		}
 		.circle-4-process-p5 {
 			@extend %circle-process;
-			left: 40%;
+			left: 45%;
 			.delta-4-p5 {
 				@extend %delta-bot-process;
 				float: right;
@@ -233,7 +249,7 @@ div.page5 {
 			width: 42px;
 			height: 42px;
 			bottom: -15px;
-			left: 50%;
+			left: 55%;
 			border-radius: 25px;
 			border: 2px solid;
 			border-color: #d9e1bf;
@@ -300,8 +316,6 @@ div.page5 {
 	}
 }
 
-
-// contacts
 div.footer-contacts {
 	background-color: rgba(0, 0, 0, 0.7);
 	padding: 3% 0 5% 10%;
@@ -313,17 +327,15 @@ div.footer-contacts {
 		box-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 	}
 	.font-stl-contacts {
-		font-family: "QuicksandLight";
 		font-size: rem(18);
-		font-weight: bold;
+		font-weight: normal;
 		color: #ffffff;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 	}
 	.font-stl-content-con {
-		font-family: "QuicksandLight";
+		font-weight: lighter;
 		font-size: rem(14);
-		font-weight: 100;
 		color: #ffffff;
 		margin-top: 20px;
 		text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
@@ -334,13 +346,11 @@ div.footer-contacts {
 		.content-text1{
 			width: 99px;
 			height: 31px;
-			//box-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 			background-image: url("#{$img-patch}vitrage-life.png");
 		}
 		.content-text2 {
-			font-family: "QuicksandLight";
 			font-size: rem(16);
-			font-weight: 100;
+			font-weight: lighter;
 			color: #ffffff;
 			text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
 		}

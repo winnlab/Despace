@@ -1,11 +1,7 @@
 <div id="start" class="pages page1">
     <div id="content-text-p1">
-        <div class="slg-text1">
-            <h1>{{appState.locale.slogan.partOne}}</h1>
-        </div>
-        <div class="slg-text2">
-            <h1>{{appState.locale.slogan.partTwo}}</h1>
-        </div>
+            <h1 class="slg-text1">{{appState.locale.slogan.partOne}}</h1>
+            <h1 class="slg-text2">{{appState.locale.slogan.partTwo}}</h1>
     </div>
     <div id="scroll-down" class="button-scroll"> </div>
 </div>
@@ -47,15 +43,9 @@
 
 <div class="pages page5">
     <div id="view-text-p5">
-        <div class="text-head-p5">
-            <h1>{{appState.locale.theProcess.theProcess}}</h1>
-        </div>
-        <div class="text-content-1-p5">
-            <h1>{{appState.locale.theProcess.design}}</h1>
-        </div>
-        <div class="text-content-2-p5">
-            <h1>{{{appState.locale.theProcess.content}}}</h1>
-        </div>
+            <h1 class="text-head-p5">{{appState.locale.theProcess.theProcess}}</h1>
+            <h1 class="text-content-1-p5">{{appState.locale.theProcess.design}}</h1>
+            <h1 class="text-content-2-p5">{{{appState.locale.theProcess.content}}}</h1>
     </div>
     <div id="view-line-process-p5">
         <div class="circle-1-process-p5">

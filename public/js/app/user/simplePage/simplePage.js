@@ -42,6 +42,7 @@ define([
 
                     self.calculateBlockSizes();
                     self.calculateScrollArray();
+
                 });
 			},
 
@@ -91,6 +92,7 @@ define([
                 for(i = this.scrollBox.length; i--;) { // считаем индексы положения блоков для скролла
                     if(scroll_top >= this.scrollBox[i]){
                         self.scrollPage = i;
+                        console.log(i)
                         break;
                     }
                 }
@@ -122,7 +124,7 @@ define([
                         self.scrollBox[i] = ($('.footer-contacts').outerHeight() + (self.windowHeight * 4));
                         return;
                     }
-                    self.scrollBox[i] = self.windowHeight * i;
+                    self.scrollBox[i] = (self.windowHeight * i);
                 }
             },
 

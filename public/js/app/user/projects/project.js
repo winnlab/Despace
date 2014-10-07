@@ -117,7 +117,7 @@ define([
                                     '<div class="carousel-inner">' +
                                         '{{#each imagesPageArr}}' +
                                         '<div class="item {{setClass @index}}">' +
-                                            '<img src="{{uploadPath}}{{.}}">' +
+                                            '<div class="img-gallery" style="background-image: url({{uploadPath}}{{.}});"></div>' +
                                         '</div>' +
                                         '{{/each}}' +
                                     '</div>' +
@@ -175,7 +175,7 @@ define([
 
 //                    console.log(this.scope.attr('images').attr());
 //                    console.log(this.scope.attr('gid'));
-//                      console.log(this.scope.attr('content').attr());
+//                    console.log(this.scope.attr('content').attr());
 
                 }
             },

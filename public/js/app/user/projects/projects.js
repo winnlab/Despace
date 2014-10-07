@@ -85,10 +85,26 @@ define([
 
                         if (self.options.isReady) {
                             self.options.isReady.resolve();
-                            $('.carousel').carousel({interval: 0});
                         }
+
+                        self.calculateBlockSizes();
+                        $('.carousel').carousel({interval: 0});
+
                     }
                 );
+            },
+
+            calculateBlockSizes: function () {
+                var self = this,
+                    windowHeight = $(window).height(),
+                    windowWidth = $(window).width();
+
+                $('.img-gallery').css('height', windowHeight); // подгоняем background под разрешение пользователя
+            },
+
+            '{window} resize': function () {
+                var self = this;
+                self.calculateBlockSizes();
             },
 
             setProject: function (direction) {
@@ -156,13 +172,13 @@ define([
 
                 self.module.attr('direction', 'top');
 
-                $('.current').animate({top: 100+'%'}, 500);
+//                $('.current').animate({top: 100+'%'}, 500);
 //                $('.top').animate({top: 0+'%'}, 500);
 
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 1000);
+                }, 500);
 
             },
 
@@ -188,13 +204,13 @@ define([
                 }
 
                 self.module.attr('direction', 'bottom');
-                $('.current').animate({top: -100+'%'}, 500);
-                $('.top').animate({top: 0+'%'}, 500);
+//                $('.current').animate({top: -100+'%'}, 500);
+//                $('.top').animate({top: 0+'%'}, 500);
 
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 1000);
+                }, 500);
 
             }
 

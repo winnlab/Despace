@@ -2,12 +2,23 @@
 @import '../../../../../scss/base/_variables.scss';
 @import '../../../../../scss/base/_mixins.scss';
 @import '../../../../../scss/base/_placeholders.scss';
-@import '../../../../../scss/base/_fonts.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
-@include font-face(QuicksandBold, '#{$fonts-patch}Quicksand-Bold/quicksand-bold');
-@include font-face(QuicksandRegular,'#{$fonts-patch}Quicksand-Regular/quicksand-regular');
-@include font-face(QuicksandLight, '#{$fonts-patch}Quicksand-Light/quicksand-light');
+@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Bold/quicksand-bold', bold);
+@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Regular/quicksand-regular', 400);
+@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Light/quicksand-light', lighter);
+
+@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Bold/comfortaa-bold', bold);
+@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Regular/comfortaa-regular', 400);
+@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Light/comfortaa-light', lighter);
+
+body {
+	font-family: Comfortaa, sans-serif;
+}
+
+body.en {
+	font-family: Quicksand;
+}
 
 div.pages {
 	@extend %bg-image-cover;
@@ -46,7 +57,10 @@ div#header {
 			}
 		}
 		a.btm {
-			@extend %font-stl-header;
+//			@extend %font-stl-header;
+			font-weight: lighter;
+			font-size: rem(18);
+
 			color: #ffffff;
 			&:hover {
 				border-bottom: 4px solid;
@@ -94,7 +108,8 @@ div#header {
 	#header-lang {
 		float: right;
 		padding-top: 4px;
-		@extend %font-stl-header;
+		font-weight: lighter;
+		font-size: rem(18);
 		color: #767676;
 		ul.lang {
 			margin: 0px;

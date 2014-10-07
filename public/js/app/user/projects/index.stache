@@ -5,7 +5,7 @@
         <div class="btn-proj-b"></div>
         {{/if}}
         {{#each projectsPage}}
-            <project class="item-project {{getClassName @index}} {{direction}}" images="{img}" gid="{@index}" ></project>
+            <project class="item-project {{getClassName @index}} {{direction}}" content="{lang}" images="{img}" gid="{@index}" ></project>
         {{/each}}
     </div>
 </div>

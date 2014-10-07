@@ -102,7 +102,7 @@ define([
                     case -1:
                         if (arrPageIndex < arrIndex) {
                             if (!self.findProject(index)) {
-                                self.module.attr('iprojectsPage').splice(indexSplice, 0, self.attr('projects')[index]);
+                                self.module.attr('projectsPage').splice(indexSplice, 0, self.module.attr('projects')[index]);
                             }
                         }
                         break;
@@ -110,7 +110,7 @@ define([
                         if (arrPageIndex < arrIndex) {
                             if (!self.findProject(index)) {
                                 self.module.attr('indexSplice', indexSplice +1);
-                                self.module.attr('projectsPage').splice(index, 0, self.attr('projects')[index]);
+                                self.module.attr('projectsPage').splice(index, 0, self.module.attr('projects')[index]);
                             }
                         }
                         break;
@@ -146,7 +146,7 @@ define([
 
                 this.setProject(-1);
 
-                //......
+                //................................................
 
                 var current = self.module.attr('current') + 1;
 
@@ -156,10 +156,13 @@ define([
 
                 self.module.attr('direction', 'top');
 
+                $('.current').animate({top: 100+'%'}, 500);
+//                $('.top').animate({top: 0+'%'}, 500);
+
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 500);
+                }, 1000);
 
             },
 
@@ -176,7 +179,7 @@ define([
 
                 this.setProject(1);
 
-                //......
+                //................................................
 
                 var current = self.module.attr('current') - 1;
 
@@ -185,11 +188,13 @@ define([
                 }
 
                 self.module.attr('direction', 'bottom');
+                $('.current').animate({top: -100+'%'}, 500);
+                $('.top').animate({top: 0+'%'}, 500);
 
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 500);
+                }, 1000);
 
             }
 

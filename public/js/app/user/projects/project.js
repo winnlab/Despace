@@ -12,6 +12,9 @@ define([
             'imagesPageArr': [],
             'index': 1,
             'indexSplice': 2,
+            'lang': appState.attr('lang'),
+            'content': [],
+            'contentCurrentLang': '@',
             'visibleClass': true,
             'visibleInfo': false,
             'visibleButtons': true,
@@ -22,6 +25,8 @@ define([
                     arrPageIndex = self.attr('imagesPageArr').length -1,
                     indexSplice = self.attr('indexSplice'),
                     index = self.attr('index');
+
+                console.log(self.attr('content'));
 
                 switch(direction) {
                     case -1:
@@ -56,6 +61,22 @@ define([
                     }
                 }
                 return false;
+            },
+
+            setContent: function () {
+                    var self = this,
+                        langsArr = ['/', '/en/'],
+                        locale = appState.attr('locale'),
+                        content = self.attr('content'),
+                        result = '';
+
+                    if (locale == langsArr[0] ) {
+                        result = content[0];
+                    } else {
+                        result = content[1];
+                    }
+
+                    return result;
             }
 
         });
@@ -69,6 +90,8 @@ define([
                     arr = self.scope.attr('images').attr();
 
                     self.scope.attr('imagesArr', arr);
+
+                self.scope.attr('currentContentLang', self.scope.setContent());
 
                 if (arr.length -1 >= 2) {
                     var firstImg = arr[0],
@@ -106,8 +129,7 @@ define([
                             '<div class="btn-proj-info">' +
                             '{{#if visibleInfo}}' +
                                 '<div class="info-proj">' +
-                                    '<p> Donec ut lorem justo. Cras in. </p>' +
-                                    '<p> Donec ut lorem justo. Cras in. </p>' +
+                                    '{{{currentContentLang.content}}}' +
                                     '<div class="info-triangle"> </div>' +
                                 '</div>' +
                             '{{/if}}' +
@@ -153,6 +175,7 @@ define([
 
 //                    console.log(this.scope.attr('images').attr());
 //                    console.log(this.scope.attr('gid'));
+//                      console.log(this.scope.attr('content').attr());
 
                 }
             },

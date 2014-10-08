@@ -262,6 +262,7 @@
       height: 100%; }
 
 .current {
+  position: absolute;
   display: block !important; }
 
 .item-project {
@@ -269,5 +270,15 @@
   display: none;
   width: 100%;
   height: 100%; }
+
+.prev-project {
+  top: 100%;
+  position: absolute;
+  display: block !important; }
+
+.next-project {
+  top: -100%;
+  position: absolute;
+  display: block !important; }
 
 /*# sourceMappingURL=projects.css.map */

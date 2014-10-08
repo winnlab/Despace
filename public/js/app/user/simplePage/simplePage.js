@@ -4,9 +4,10 @@ define([
 	'canjs',
 	'core/appState',
 	'core/helpers/preloader',
+    'velocity',
 	'css!app/simplePage/css/simplePage.css'
 ],
-	function (can, appState, preloader) {
+	function (can, appState, preloader, velocity) {
 
 		return can.Control.extend({
 			defaults: {
@@ -99,11 +100,17 @@ define([
                 if(self.scrollPage == 5){
                     console.log('up');
                     $('#scroll-down').attr('id', 'scroll-up');
+                    $('.button-scroll').velocity({
+                        rotateZ: "-180deg"
+                    }, 500);
 
                 }
 
                 if(scroll_top == 0) {
                     $('#scroll-up').attr('id', 'scroll-down');
+                    $('.button-scroll').velocity({
+                        rotateZ: "0deg"
+                    }, 500);
                     console.log('down');
                 }
             },

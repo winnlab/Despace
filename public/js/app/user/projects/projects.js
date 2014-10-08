@@ -2,10 +2,11 @@ define([
     'canjs',
     'core/appState',
     'carousel',
+    'velocity',
     'app/projects/project',
     'css!app/projects/css/projects.css'
 ],
-    function (can, appState, carousel) {
+    function (can, appState, carousel, velocity) {
 
         return can.Control.extend({
             defaults: {
@@ -57,13 +58,13 @@ define([
                                 direction = self.module.attr('direction'),
                                 current = self.module.attr('current'),
                                 projectsLength = self.module.attr('projects.length');
-                            index = index();
+                                index = index();
 
                             if (index === current) {
                                 result = 'current';
                             }
 
-                            if (direction == 'top') {
+                            if (direction == 'bottom') {
                                 if (current === 0 && index === projectsLength - 1) {
                                     result = 'prev-project';
                                 } else if (current > 0 && index === current - 1) {
@@ -71,7 +72,7 @@ define([
                                 }
                             }
 
-                            if (direction == 'bottom') {
+                            if (direction == 'top') {
                                 if (current === projectsLength - 1 && index === 0) {
                                     result = 'next-project';
                                 } else if (current < projectsLength - 1 && index === current + 1) {
@@ -182,13 +183,14 @@ define([
 
                 self.module.attr('direction', 'top');
 
-//                $('.current').animate({top: 100+'%'}, 500);
-//                $('.top').animate({top: 0+'%'}, 500);
+                $('.current').velocity({top: 100+'%'}, 500);
+                $('.next-project').css({top: -100+'%'}).velocity({top: 0+'%'}, 500);
+
 
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 500);
+                }, 550);
 
             },
 
@@ -214,13 +216,14 @@ define([
                 }
 
                 self.module.attr('direction', 'bottom');
-//                $('.current').animate({top: -100+'%'}, 500);
-//                $('.top').animate({top: 0+'%'}, 500);
+
+                $('.current').velocity({top: -100+'%'}, 500);
+                $('.prev-project').css({top: 100+'%'}).velocity({top: 0+'%'}, 500);
 
                 setTimeout(function () {
                     self.module.attr('direction', '');
                     self.module.attr('current', current);
-                }, 500);
+                }, 550);
 
             }
 

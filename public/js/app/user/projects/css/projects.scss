@@ -179,6 +179,7 @@
 }
 
 .current {
+	position: absolute;
 	display: block !important;
 }
 .item-project {
@@ -188,20 +189,16 @@
 	height: 100%;
 }
 
-.top { // k 0
-//	position: absolute;
-//	top: -100%;
-}
 .prev-project {
-//	display: block !important;
+	top: 100%;
+	position: absolute;
+	display: block !important;
 }
 
-.bottom {
-//	position: absolute;
-//	top: 100%;
-}
-.next-project { // k 0
-//	display: block !important;
+.next-project {
+	top: -100%;
+	position: absolute;
+	display: block !important;
 }
 
 

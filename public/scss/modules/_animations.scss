@@ -14,16 +14,3 @@
 	}
 }
 
-@include keyframes(rotate-btn) {
-	10% {@include rotate (-18); }
-	20% {@include rotate (-36); }
-	30% {@include rotate (-54); }
-	40% {@include rotate (-72); }
-	50% {@include rotate (-90); }
-	60% {@include rotate (-108); }
-	70% {@include rotate (-126); }
-	80% {@include rotate (-144); }
-	90% {@include rotate (-162); }
-	100% {@include rotate (-180); }
-}
-

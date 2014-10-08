@@ -24,130 +24,6 @@ div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p5, div.page5 #vie
   height: 0;
   border-style: solid; }
 
-@-webkit-keyframes disappearing {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-moz-keyframes disappearing {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes disappearing {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes rotate-btn {
-  10% {
-    -webkit-transform: rotate(-18deg); }
-  20% {
-    -webkit-transform: rotate(-36deg); }
-  30% {
-    -webkit-transform: rotate(-54deg); }
-  40% {
-    -webkit-transform: rotate(-72deg); }
-  50% {
-    -webkit-transform: rotate(-90deg); }
-  60% {
-    -webkit-transform: rotate(-108deg); }
-  70% {
-    -webkit-transform: rotate(-126deg); }
-  80% {
-    -webkit-transform: rotate(-144deg); }
-  90% {
-    -webkit-transform: rotate(-162deg); }
-  100% {
-    -webkit-transform: rotate(-180deg); } }
-@-moz-keyframes rotate-btn {
-  10% {
-    -moz-transform: rotate(-18deg); }
-  20% {
-    -moz-transform: rotate(-36deg); }
-  30% {
-    -moz-transform: rotate(-54deg); }
-  40% {
-    -moz-transform: rotate(-72deg); }
-  50% {
-    -moz-transform: rotate(-90deg); }
-  60% {
-    -moz-transform: rotate(-108deg); }
-  70% {
-    -moz-transform: rotate(-126deg); }
-  80% {
-    -moz-transform: rotate(-144deg); }
-  90% {
-    -moz-transform: rotate(-162deg); }
-  100% {
-    -moz-transform: rotate(-180deg); } }
-@keyframes rotate-btn {
-  10% {
-    -webkit-transform: rotate(-18deg);
-    -moz-transform: rotate(-18deg);
-    -ms-transform: rotate(-18deg);
-    -o-transform: rotate(-18deg);
-    transform: rotate(-18deg); }
-  20% {
-    -webkit-transform: rotate(-36deg);
-    -moz-transform: rotate(-36deg);
-    -ms-transform: rotate(-36deg);
-    -o-transform: rotate(-36deg);
-    transform: rotate(-36deg); }
-  30% {
-    -webkit-transform: rotate(-54deg);
-    -moz-transform: rotate(-54deg);
-    -ms-transform: rotate(-54deg);
-    -o-transform: rotate(-54deg);
-    transform: rotate(-54deg); }
-  40% {
-    -webkit-transform: rotate(-72deg);
-    -moz-transform: rotate(-72deg);
-    -ms-transform: rotate(-72deg);
-    -o-transform: rotate(-72deg);
-    transform: rotate(-72deg); }
-  50% {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
-  60% {
-    -webkit-transform: rotate(-108deg);
-    -moz-transform: rotate(-108deg);
-    -ms-transform: rotate(-108deg);
-    -o-transform: rotate(-108deg);
-    transform: rotate(-108deg); }
-  70% {
-    -webkit-transform: rotate(-126deg);
-    -moz-transform: rotate(-126deg);
-    -ms-transform: rotate(-126deg);
-    -o-transform: rotate(-126deg);
-    transform: rotate(-126deg); }
-  80% {
-    -webkit-transform: rotate(-144deg);
-    -moz-transform: rotate(-144deg);
-    -ms-transform: rotate(-144deg);
-    -o-transform: rotate(-144deg);
-    transform: rotate(-144deg); }
-  90% {
-    -webkit-transform: rotate(-162deg);
-    -moz-transform: rotate(-162deg);
-    -ms-transform: rotate(-162deg);
-    -o-transform: rotate(-162deg);
-    transform: rotate(-162deg); }
-  100% {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg); } }
 div.page1 {
   background-image: url("/img/user/first-page-bg.png"); }
   div.page1 #content-text-p1 {
@@ -174,16 +50,12 @@ div.page1 {
     width: 59px;
     height: 58px;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 49%;
     background-image: url("/img/user/button-arrow.png");
     background-repeat: no-repeat; }
     div.page1 .button-scroll:hover {
       cursor: pointer; }
-    div.page1 .button-scroll.button-rotate {
-      -webkit-animation: rotate-btn 1s ease-in;
-      -moz-animation: rotate-btn 1s ease-in;
-      animation: rotate-btn 1s ease-in; }
 
 div.page2 {
   background-image: url("/img/user/about-1-bg-2.png"); }

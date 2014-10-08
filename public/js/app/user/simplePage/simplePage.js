@@ -98,11 +98,10 @@ define([
                 }
 
                 if(self.scrollPage == 5){
-                    console.log('up');
                     $('#scroll-down').attr('id', 'scroll-up');
                     $('.button-scroll').velocity({
                         rotateZ: "-180deg"
-                    }, 500);
+                    }, 300);
 
                 }
 
@@ -110,8 +109,7 @@ define([
                     $('#scroll-up').attr('id', 'scroll-down');
                     $('.button-scroll').velocity({
                         rotateZ: "0deg"
-                    }, 500);
-                    console.log('down');
+                    }, 300);
                 }
             },
 

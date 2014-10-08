@@ -6,8 +6,6 @@
 @import '../../../../../scss/base/_scheme-p-4.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
-
-
 div.page1 {
 	background-image: url("#{$img-patch}first-page-bg.png");
 	#content-text-p1 {
@@ -37,15 +35,12 @@ div.page1 {
 		width: 59px;
 		height: 58px;
 		position: fixed;
-		bottom: 0;
+		bottom: 5px;
 		left: 49%;
 		background-image: url("#{$img-patch}button-arrow.png");
 		background-repeat: no-repeat;
 		&:hover {
 			cursor: pointer;
-		}
-		&.button-rotate {
-			@include animation(rotate-btn 1.0s ease-in);
 		}
 	}
 }

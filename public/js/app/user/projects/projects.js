@@ -31,6 +31,8 @@ define([
 
                 var arr = self.module.attr('projects');
 
+                self.calculateHeaderSize();
+
                 if (arr.length -1 >= 2) {
                     var firstProject = arr[0],
                         secondProject = arr[1],
@@ -87,24 +89,32 @@ define([
                             self.options.isReady.resolve();
                         }
 
-                        self.calculateBlockSizes();
+                        self.calculateHeaderSize();
+//                        self.calculateBlockSizes();
                         $('.carousel').carousel({interval: 0});
 
                     }
                 );
             },
 
-            calculateBlockSizes: function () {
-                var self = this,
-                    windowHeight = $(window).height(),
-                    windowWidth = $(window).width();
+            calculateHeaderSize: function () {
+                var $header = $('#header'),
+                    height = 45,
+                    padding_top = (1 + '%'),
+                    padding_bottom = (3 + '%');
 
-                $('.img-gallery').css('height', windowHeight); // подгоняем background под разрешение пользователя
+                $header.css({'height': height,
+                            'padding-top': padding_top,
+                            'padding-bottom': padding_bottom
+                });
+
             },
 
-            '{window} resize': function () {
-                var self = this;
-                self.calculateBlockSizes();
+            calculateBlockSizes: function () {
+//                var self = this,
+//                    windowHeight = $(window).height();
+
+//                $('.img-gallery').css('height', windowHeight);
             },
 
             setProject: function (direction) {

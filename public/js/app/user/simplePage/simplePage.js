@@ -66,7 +66,7 @@ define([
                 var $window = $(window),
                     max_scroll = 200,// промежуток за который все должно быть
                     start = 70, // размер блока
-                    max = 30, // размер блока стремится к размеру
+                    max = 45, // размер блока стремится к размеру
                     ratio,
                     scroll_top,
                     result_header,
@@ -92,7 +92,6 @@ define([
                 for(i = this.scrollBox.length; i--;) { // считаем индексы положения блоков для скролла
                     if(scroll_top >= this.scrollBox[i]){
                         self.scrollPage = i;
-                        console.log(i)
                         break;
                     }
                 }

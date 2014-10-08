@@ -1,10 +1,9 @@
 define([
     'canjs',
-    'carousel',
     'core/appState',
     'css!app/projects/css/projects.css'
 ],
-    function (can, carousel, appState) {
+    function (can, appState) {
 
         var Gallery = can.Map.extend({
             'uploadPath': appState.attr('uploadPath'),
@@ -25,8 +24,6 @@ define([
                     arrPageIndex = self.attr('imagesPageArr').length -1,
                     indexSplice = self.attr('indexSplice'),
                     index = self.attr('index');
-
-                console.log(self.attr('content'));
 
                 switch(direction) {
                     case -1:
@@ -66,7 +63,7 @@ define([
             setContent: function () {
                     var self = this,
                         langsArr = ['/', '/en/'],
-                        locale = appState.attr('locale'),
+                        locale = appState.attr('lang'),
                         content = self.attr('content'),
                         result = '';
 

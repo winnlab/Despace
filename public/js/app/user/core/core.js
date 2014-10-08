@@ -8,8 +8,8 @@ require.config({
 		jquery: 'jquery/dist/jquery',
 		underscore: 'underscore/underscore',
 		managers: '../app/user/managers',
-        carousel: 'carousel/carousel',
 
+        carousel: 'carousel/carousel',
 		Class: 'jsOOP/Class',
 		baseClass: 'jsOOP/baseClass',
 		three: 'three.r60',

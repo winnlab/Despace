@@ -27,7 +27,7 @@ getData = (req, lang, cb) ->
 		simplePages: (proceed) ->
 			Model 'SimplePage', 'find', proceed
 		projects: (proceed) ->
-			Model 'Project', 'find', proceed, {active: 'true'}
+			Model 'Project', 'find', proceed, {active: 'true'}, null, {sort: 'position'}
 
 	, (err, data) ->
 		return cb err if err

@@ -28,7 +28,6 @@ define(
 			},
 			uploaded: function (name, value) {
 
-                console.log(this.attr('img'));
                 if (!this.attr('img')) {
                     this.attr('img', []);
                 }

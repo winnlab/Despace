@@ -125,7 +125,7 @@ define(
                 var name = project.attr('lang.0.name') ? project.attr('lang.0.name') : '';
 				if (confirm('Вы действительно хотите удалить проект: "' + name + '"?')) {
                     project.destroy().always(function (project, status, def) {
-                        console.log(arguments);
+
 						appState.attr('notification', {
 							status: status,
 							msg: project['lang'][0]['name'] + '. '+ def.responseJSON.message

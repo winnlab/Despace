@@ -3,7 +3,14 @@ define([
     'underscore'
 ],
 	function (can, _) {
-		
+
+        function computedVal (value) {
+            if (typeof value === 'function') {
+                value = value();
+            }
+            return value;
+        };
+
 		can.mustache.registerHelper('checkState', function (options) {
 			return options.context.attr('viewState') === 'list'
 				? options.fn()
@@ -16,20 +23,31 @@ define([
 
 		can.mustache.registerHelper('getArrayObjValue', function (array, index, key) {			
 			return array() ? array().attr(index + '.' + key) : '';
-		});		
-
-		can.mustache.registerHelper('sortedBy', function (collection, prop, options) {
-			if (collection && collection.length) {
-				var sorted = _.sortBy(collection, function (member) {
-                    console.log(member);
-					return member.attr(prop);
-				});
-				
-				return _.map(sorted, function (member) {
-					return options.fn(member);
-				}).join('');
-			}
 		});
+
+        can.mustache.registerHelper('sortedBy', function (collection, prop, direction, options) {
+            if (arguments.length == 3) {
+                options = direction;
+                direction = false;
+            }
+            collection = computedVal(collection);
+            if (collection && collection.attr('length') && prop) {
+                var sorted = _.sortBy(collection, function (member) {
+                    return member.attr(prop);
+                });
+
+                if (direction && direction == 'desc') {
+                    sorted.reverse();
+                }
+
+                return _.map(sorted, function (member, index) {
+                    return options.fn(options.scope
+                        .add({'@index': index})
+                        .add(member)
+                    );
+                }).join('');
+            }
+        });
 		
 		can.mustache.registerHelper('createForm', function (id, className) {
 			return '<div id="' + id() + '" class="right-side ' + className + '"></div>';
@@ -45,7 +63,7 @@ define([
 
 		can.mustache.registerHelper('getBoxName', function (index) {
 			var classes = ['bg-light-blue', 'bg-red', 'bg-green', 'bg-yellow', 'bg-maroon', 'bg-purple', 'bg-aqua'];
-			return classes[index() % classes.length]
+			return classes[computedVal(index) % classes.length]
 		});
 
 		can.mustache.registerHelper('make3Col', function (index) {

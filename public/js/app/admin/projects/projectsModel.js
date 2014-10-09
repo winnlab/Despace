@@ -28,7 +28,12 @@ define(
 			},
 			uploaded: function (name, value) {
 
+                console.log(this.attr('img'));
+                if (!this.attr('img')) {
+                    this.attr('img', []);
+                }
                 var images = this.attr('img').attr();
+
 
                 if(value instanceof Array){
                     value.forEach(function (val){

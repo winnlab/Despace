@@ -21,6 +21,7 @@ define([
 		can.mustache.registerHelper('sortedBy', function (collection, prop, options) {
 			if (collection && collection.length) {
 				var sorted = _.sortBy(collection, function (member) {
+                    console.log(member);
 					return member.attr(prop);
 				});
 				

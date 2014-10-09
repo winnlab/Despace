@@ -137,6 +137,9 @@ define([
 
                         if (!_.isEmpty(routeObj)) {
                             can.route.attr(routeObj, true);
+                            if (el.data('scroll') && el.data('scroll').length > 0) {
+                                appState.attr('scrollTo', el.data('scroll'));
+                            }
                         } else {
                             throw new  Error("There now such routing rule for '" + href + "', please check your configuration file");
                         }

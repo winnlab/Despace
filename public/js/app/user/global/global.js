@@ -1,7 +1,6 @@
 define([
 	'canjs',
 	'core/appState',
-	
 	'css!app/global/css/global.css'
 ],
 	function (can) {
@@ -23,9 +22,14 @@ define([
 			},
 
             '.scroll click': function(el, ev) {
-                var navi = el.data();
-                $('html, body').animate({scrollTop: $(navi['scroll']).offset().top}, 1000);
+                var element = el.data(),
+                    elementScrollOffset = $(element['scroll']).offset();
+
+                if (elementScrollOffset) {
+                    $('html, body').animate({scrollTop: $(element['scroll']).offset().top}, 1000);
+                }
             }
+
 		});
 	}
 );

@@ -24,6 +24,27 @@ div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p5, div.page5 #vie
   height: 0;
   border-style: solid; }
 
+@-webkit-keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes disappearing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 div.page1 {
   background-image: url("/img/user/first-page-bg.png"); }
   div.page1 #content-text-p1 {
@@ -47,7 +68,7 @@ div.page1 {
       height: 50px; }
   div.page1 .button-scroll {
     z-index: 2;
-    width: 59px;
+    width: 50px;
     height: 58px;
     position: fixed;
     bottom: 5px;

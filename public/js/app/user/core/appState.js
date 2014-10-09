@@ -15,8 +15,9 @@ define([
 				langs: data && data.langs ? data.langs : false,
 
                 simplePages: data && data.simplePages ? data.simplePages : false,
-                projects: data && data.projects ? data.projects : false
+                projects: data && data.projects ? data.projects : false,
 
+                scrollTo: null
 			}),
 			appState = new AppState();
 

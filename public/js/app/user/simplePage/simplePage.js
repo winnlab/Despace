@@ -23,7 +23,6 @@ define([
                 self.scrollPage = 0;
                 self.scrollBox = [];
 
-
 				var simplePage = self.getSimplePage();
 
 				var viewfile =
@@ -43,6 +42,7 @@ define([
 
                     self.calculateBlockSizes();
                     self.calculateScrollArray();
+                    self.scrollTo();
 
                 });
 			},
@@ -53,6 +53,18 @@ define([
 					return element.url == id;
 				});
 			},
+
+            scrollTo: function () {
+                var elScrollTo = appState.attr('scrollTo');
+
+                console.log(elScrollTo);
+
+                if (elScrollTo) {
+                    $('html, body').animate({scrollTop: $(elScrollTo['scroll']).offset().top}, 500);
+                    appState.attr('scrollTo', 0);
+                }
+
+            },
 
             '{window} resize': function () {
                 var self = this;

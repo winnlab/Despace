@@ -97,6 +97,7 @@ div#header {
         display: inline;
         padding-right: 30px; }
     div#header #header-menu a.btm {
+      text-decoration: none;
       font-weight: lighter;
       font-size: 1.125rem;
       color: #ffffff; }

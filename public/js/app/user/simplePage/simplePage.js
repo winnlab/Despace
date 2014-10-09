@@ -102,6 +102,7 @@ define([
                 for(i = this.scrollBox.length; i--;) { // считаем индексы положения блоков для скролла
                     if(scroll_top >= this.scrollBox[i]){
                         self.scrollPage = i;
+                        console.log(i);
                         break;
                     }
                 }
@@ -130,11 +131,12 @@ define([
             },
 
             'calculateScrollArray': function () {
-                var self = this;
+                var self = this,
+                    footer = $('.footer-contacts').outerHeight();
 
                 for(var i = 0; i < 6; i++) {
                     if(i == 5) {
-                        self.scrollBox[i] = ($('.footer-contacts').outerHeight() + (self.windowHeight * 4));
+                        self.scrollBox[i] = (footer + (self.windowHeight * 4));
                         return;
                     }
                     self.scrollBox[i] = (self.windowHeight * i);

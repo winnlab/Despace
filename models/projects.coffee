@@ -25,6 +25,9 @@ ProjectSchemaFields =
 		trim: true
 	alternateView:
 		type: String
+	active:
+		type: Boolean
+		default: true
 
 options =
 	collection: 'projects'

@@ -119,8 +119,7 @@ define([
                 $(options.modulesContainer).prepend(html);
 
                 can.on.call(hub, 'silentModule', can.proxy(this.Modules.silentInit, this.Modules));
-
-                can.route.bindings.pushstate.root = appState.lang;
+                can.route.bindings.pushstate.root = appState.attr('lang');
                 can.route.ready(false);
 
             },

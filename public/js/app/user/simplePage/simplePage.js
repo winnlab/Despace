@@ -17,7 +17,6 @@ define([
 		}, {
 			init: function () {
 				var self = this;
-                self.$header = $('#header');
                 self.$body_html= $('html, body');
                 self.windowHeight = $(window).height();
                 self.scrollPage = 0;
@@ -57,8 +56,6 @@ define([
             scrollTo: function () {
                 var elScrollTo = appState.attr('scrollTo');
 
-                console.log(elScrollTo);
-
                 if (elScrollTo) {
                     $('html, body').animate({scrollTop: $(elScrollTo['scroll']).offset().top}, 500);
                     appState.attr('scrollTo', 0);
@@ -95,7 +92,7 @@ define([
                 result_header_top = 2 + (1 - 2) * ratio; // подсчет padding-top (2 - начальное, 1 - нужный)
                 result_header_bot = 4 + (3 - 4) * ratio; // подсчет padding-bottom
 
-                self.$header.css({'height': result_header,
+                $('#header').css({'height': result_header,
                                   'padding-top': result_header_top + '%',
                                   'padding-bottom': result_header_bot + '%'
                 });

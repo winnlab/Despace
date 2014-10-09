@@ -6,6 +6,114 @@
 @import '../../../../../scss/base/_scheme-p-4.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
+#header {
+	z-index: 1;
+	padding: 2% 5% 4% 5%;
+	min-width: 1000px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 7px 5px 3px rgba(0, 0, 0, 0.7);
+	.logo {
+		float: left;
+		display: table-cell;
+		vertical-align: middle;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	#header-menu {
+		float: right;
+		padding-top: 4px;
+		ul.menu {
+			margin: 0px;
+			padding: 0px;
+			li {
+				display: inline;
+				padding-right: 30px;
+			}
+		}
+		a.btm {
+			text-decoration: none;
+			font-weight: lighter;
+			font-size: rem(18);
+
+			color: #ffffff;
+			&:hover {
+				border-bottom: 4px solid;
+				border-bottom-color: #daa503;
+				cursor: pointer;
+			}
+
+		}
+	}
+	#header-scl {
+		float: right;
+		padding-left: 37px;
+		padding-right: 37px;
+		ul.social {
+			margin: 0px;
+			padding: 0px;
+			li {
+				display: inline;
+				padding-right: 7px;
+			}
+		}
+		div.scl-btm {
+			display: inline-block;
+			width: 33px;
+			height: 33px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		div.scl-facebook {
+			background-image: url(("#{$img-patch}social/facebook.png"));
+			background-repeat: no-repeat;
+		}
+
+		div.scl-pinterest {
+			background-image: url(("#{$img-patch}social/pinterest.png"));
+			background-repeat: no-repeat;
+		}
+
+		div.scl-tumblr {
+			background-image: url(("#{$img-patch}social/tumblr.png"));
+			background-repeat: no-repeat;
+		}
+	}
+	#header-lang {
+		float: right;
+		padding-top: 4px;
+		font-weight: lighter;
+		font-size: rem(18);
+		color: #767676;
+		ul.lang {
+			margin: 0px;
+			padding: 0px;
+			li {
+				display: inline;
+				a.lang-btm {
+					text-decoration: none;
+					&:hover {
+						cursor: pointer;
+					}
+					&:link {
+						color: #767676;
+					}
+					&:visited {
+						color: #767676;
+					}
+				}
+			}
+
+		}
+	}
+}
+
 div.page1 {
 	background-image: url("#{$img-patch}first-page-bg.png");
 	#content-text-p1 {

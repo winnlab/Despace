@@ -32,8 +32,6 @@ define([
 
                 var arr = self.module.attr('projects');
 
-                self.calculateHeaderSize();
-
                 if (arr.length -1 >= 2) {
                     var firstProject = arr[0],
                         secondProject = arr[1],
@@ -51,7 +49,10 @@ define([
                     self.module.attr('visibleBtn', false);
                 }
 
-                can.view(self.options.viewpath + 'index.stache', self.module,
+                can.view(self.options.viewpath + 'index.stache',{
+                       module: self.module,
+                       appState: appState
+                  },
                     {
                         getClassName: function (index, options) {
                             var result = '',
@@ -90,32 +91,10 @@ define([
                             self.options.isReady.resolve();
                         }
 
-                        self.calculateHeaderSize();
-//                        self.calculateBlockSizes();
                         $('.carousel').carousel({interval: 0});
 
                     }
                 );
-            },
-
-            calculateHeaderSize: function () {
-                var $header = $('#header'),
-                    height = 45,
-                    padding_top = (1 + '%'),
-                    padding_bottom = (3 + '%');
-
-                $header.css({'height': height,
-                            'padding-top': padding_top,
-                            'padding-bottom': padding_bottom
-                });
-
-            },
-
-            calculateBlockSizes: function () {
-//                var self = this,
-//                    windowHeight = $(window).height();
-
-//                $('.img-gallery').css('height', windowHeight);
             },
 
             setProject: function (direction) {

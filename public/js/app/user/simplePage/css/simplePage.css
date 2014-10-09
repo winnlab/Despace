@@ -45,6 +45,86 @@ div.page5 #view-line-process-p5 .circle-2-process-p5 .delta-2-p5, div.page5 #vie
     opacity: 1; }
   100% {
     opacity: 0; } }
+#header {
+  z-index: 1;
+  padding: 2% 5% 4% 5%;
+  min-width: 1000px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 7px 5px 3px rgba(0, 0, 0, 0.7); }
+  #header .logo {
+    float: left;
+    display: table-cell;
+    vertical-align: middle; }
+    #header .logo:hover {
+      cursor: pointer; }
+  #header #header-menu {
+    float: right;
+    padding-top: 4px; }
+    #header #header-menu ul.menu {
+      margin: 0px;
+      padding: 0px; }
+      #header #header-menu ul.menu li {
+        display: inline;
+        padding-right: 30px; }
+    #header #header-menu a.btm {
+      text-decoration: none;
+      font-weight: lighter;
+      font-size: 1.125rem;
+      color: #ffffff; }
+      #header #header-menu a.btm:hover {
+        border-bottom: 4px solid;
+        border-bottom-color: #daa503;
+        cursor: pointer; }
+  #header #header-scl {
+    float: right;
+    padding-left: 37px;
+    padding-right: 37px; }
+    #header #header-scl ul.social {
+      margin: 0px;
+      padding: 0px; }
+      #header #header-scl ul.social li {
+        display: inline;
+        padding-right: 7px; }
+    #header #header-scl div.scl-btm {
+      display: inline-block;
+      width: 33px;
+      height: 33px; }
+      #header #header-scl div.scl-btm:hover {
+        cursor: pointer; }
+    #header #header-scl div.scl-facebook {
+      background-image: url("/img/user/social/facebook.png");
+      background-repeat: no-repeat; }
+    #header #header-scl div.scl-pinterest {
+      background-image: url("/img/user/social/pinterest.png");
+      background-repeat: no-repeat; }
+    #header #header-scl div.scl-tumblr {
+      background-image: url("/img/user/social/tumblr.png");
+      background-repeat: no-repeat; }
+  #header #header-lang {
+    float: right;
+    padding-top: 4px;
+    font-weight: lighter;
+    font-size: 1.125rem;
+    color: #767676; }
+    #header #header-lang ul.lang {
+      margin: 0px;
+      padding: 0px; }
+      #header #header-lang ul.lang li {
+        display: inline; }
+        #header #header-lang ul.lang li a.lang-btm {
+          text-decoration: none; }
+          #header #header-lang ul.lang li a.lang-btm:hover {
+            cursor: pointer; }
+          #header #header-lang ul.lang li a.lang-btm:link {
+            color: #767676; }
+          #header #header-lang ul.lang li a.lang-btm:visited {
+            color: #767676; }
+
 div.page1 {
   background-image: url("/img/user/first-page-bg.png"); }
   div.page1 #content-text-p1 {
@@ -69,7 +149,7 @@ div.page1 {
   div.page1 .button-scroll {
     z-index: 2;
     width: 50px;
-    height: 58px;
+    height: 50px;
     position: fixed;
     bottom: 5px;
     left: 49%;

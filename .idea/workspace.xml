@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f490043-b98a-4021-b6b3-2b23afc6a0af" name="Default" comment="" />
+    <ignored path="Despace.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Despace" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="simplePage.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="0" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="3006">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projects.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/css/projects.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="11" selection-start="347" selection-end="347" vertical-scroll-proportion="0.20089285" vertical-offset="0" max-vertical-offset="5706">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projects.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/projects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="0" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="3924">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.stache" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/index.stache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="10" selection-start="1184" selection-end="1184" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/public/js/app/admin/simplePages/views/set.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/123" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/css/projects.scss" />
+        <option value="$PROJECT_DIR$/controllers/admin/simplePages.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/core/config.js" />
+        <option value="$PROJECT_DIR$/views/admin/layout.jade" />
+        <option value="$PROJECT_DIR$/meta/migrate.coffee" />
+        <option value="$PROJECT_DIR$/controllers/admin.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/core/css/upload.scss" />
+        <option value="$PROJECT_DIR$/controllers/admin/projects.js" />
+        <option value="$PROJECT_DIR$/controllers/admin/projects.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/core/upload.js" />
+        <option value="$PROJECT_DIR$/controllers/user.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/project-ppppp.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/project3333.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/project6.js" />
+        <option value="$USER_HOME$/Рабочий стол/bootstrap-3.2.0-dist/js/index.html" />
+        <option value="$PROJECT_DIR$/public/scss/base/_scheme-p-4.scss" />
+        <option value="$PROJECT_DIR$/public/js/app/user/core/config.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/project.stache" />
+        <option value="$PROJECT_DIR$/locale/en.coffee" />
+        <option value="$PROJECT_DIR$/public/js/lib/carousel/carousel.js" />
+        <option value="$USER_HOME$/Dropbox/Work/Projects/bootstrap-3.2.0-dist/js/index.html" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/views/set.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/project.js" />
+        <option value="$PROJECT_DIR$/public/scss/base/_fonts.scss" />
+        <option value="$PROJECT_DIR$/locale/index.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/project.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/core/core.js" />
+        <option value="$PROJECT_DIR$/locale/ua.coffee" />
+        <option value="$PROJECT_DIR$/public/scss/framework/_grid.scss" />
+        <option value="$PROJECT_DIR$/public/js/app/user/core/css/global.scss" />
+        <option value="$PROJECT_DIR$/public/scss/modules/_animations.scss" />
+        <option value="$PROJECT_DIR$/models/projects.coffee" />
+        <option value="$PROJECT_DIR$/controllers/user/main.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/projects.js" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/views/index.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/core/viewHelpers.js" />
+        <option value="$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/core/appState.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/core/router.js" />
+        <option value="$PROJECT_DIR$/init/index.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/user/global/global.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/alternateViews/main-page.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss" />
+        <option value="$PROJECT_DIR$/public/js/app/user/global/css/global.scss" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/projects.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/global/index.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/index.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/css/projects.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1615" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Despace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Despace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Despace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="settings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/admin/plugins/bootstrap-wysihtml5" />
+      <recent name="$PROJECT_DIR$/public/js/lib/carousel" />
+      <recent name="$PROJECT_DIR$/public/js/app/user/projects" />
+      <recent name="$PROJECT_DIR$/public/js/app/admin/projects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/admin/plugins/bootstrap-wysihtml5/css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f490043-b98a-4021-b6b3-2b23afc6a0af" name="Default" comment="" />
+      <created>1410203538080</created>
+      <updated>1410203538080</updated>
+    </task>
+    <task id="LOCAL-00001" summary="it works">
+      <created>1410361423271</created>
+      <updated>1410361423271</updated>
+    </task>
+    <task id="LOCAL-00002" summary="it works 2">
+      <created>1410448255006</created>
+      <updated>1410448255006</updated>
+    </task>
+    <task id="LOCAL-00003" summary="some problems with footer height">
+      <created>1410530466065</created>
+      <updated>1410530466065</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed problems with footer height">
+      <created>1410732287277</created>
+      <updated>1410732287277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creation of the controller">
+      <created>1410792495357</created>
+      <updated>1410792495357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="creation of the projects (back-end)">
+      <created>1411052828641</created>
+      <updated>1411052828641</updated>
+    </task>
+    <task id="LOCAL-00007" summary="creation of the projects (back-end) 2">
+      <created>1411139988228</created>
+      <updated>1411139988228</updated>
+    </task>
+    <task id="LOCAL-00008" summary="creation of the projects (back-end) 3">
+      <created>1411400061747</created>
+      <updated>1411400061747</updated>
+    </task>
+    <task id="LOCAL-00009" summary="projectsModel need fix function 'uploaded'">
+      <created>1411486076324</created>
+      <updated>1411486076324</updated>
+    </task>
+    <task id="LOCAL-00010" summary="projectsModel corrected function 'uploaded'">
+      <created>1411568507773</created>
+      <updated>1411568507773</updated>
+    </task>
+    <task id="LOCAL-00011" summary="user 'projects.js'">
+      <created>1411745753043</created>
+      <updated>1411745753043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="user projects gallery">
+      <created>1412006208903</created>
+      <updated>1412006208903</updated>
+    </task>
+    <task id="LOCAL-00013" summary="user projects gallery, fix css/html">
+      <created>1412345926459</created>
+      <updated>1412345926459</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix gallery , fix css/html, add eng lang">
+      <created>1412540825876</created>
+      <updated>1412540825876</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix project.js">
+      <created>1412554592050</created>
+      <updated>1412554592050</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix view, projects.js">
+      <created>1412595726124</created>
+      <updated>1412595726124</updated>
+    </task>
+    <task id="LOCAL-00017" summary="some fix in project, added new logic in projects (not tested xD)">
+      <created>1412638548940</created>
+      <updated>1412638548940</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added content in project">
+      <created>1412684923730</created>
+      <updated>1412684923730</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added in gallery resolution">
+      <created>1412722267897</created>
+      <updated>1412722267897</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix">
+      <created>1412726590206</created>
+      <updated>1412726590206</updated>
+    </task>
+    <task id="LOCAL-00021" summary="some fix button scroll, added animation on gallery top, bottom">
+      <created>1412775014269</created>
+      <updated>1412775014269</updated>
+    </task>
+    <task id="LOCAL-00022" summary="some fix font-size">
+      <created>1412776801688</created>
+      <updated>1412776801688</updated>
+    </task>
+    <task id="LOCAL-00023" summary="some fix admin project">
+      <created>1412854069696</created>
+      <updated>1412854069696</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added func active / not active project">
+      <created>1412855600666</created>
+      <updated>1412855600666</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added sort projects on the user side">
+      <created>1412855938980</created>
+      <updated>1412855938981</updated>
+    </task>
+    <task id="LOCAL-00026" summary="some fix projects on the admin side">
+      <created>1412857519122</created>
+      <updated>1412857519122</updated>
+    </task>
+    <task id="LOCAL-00027" summary="some fix projects on the admin side 2">
+      <created>1412858148565</created>
+      <updated>1412858148565</updated>
+    </task>
+    <task id="LOCAL-00028" summary="some fix projects on the admin side 3">
+      <created>1412859841503</created>
+      <updated>1412859841503</updated>
+    </task>
+    <task id="LOCAL-00029" summary="big fix">
+      <created>1412881094955</created>
+      <updated>1412881094955</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1615" height="1026" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23405573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23405573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="creation of the projects (back-end)" />
+    <MESSAGE value="creation of the projects (back-end) 2" />
+    <MESSAGE value="creation of the projects (back-end) 3" />
+    <MESSAGE value="projectsModel need fix function 'uploaded'" />
+    <MESSAGE value="projectsModel corrected function 'uploaded'" />
+    <MESSAGE value="user 'projects.js'" />
+    <MESSAGE value="user projects gallery" />
+    <MESSAGE value="user projects gallery, fix css/html" />
+    <MESSAGE value="fix gallery / 2, fix css/html" />
+    <MESSAGE value="fix gallery , fix css/html, add eng lang" />
+    <MESSAGE value="fix project.js" />
+    <MESSAGE value="fix view, projects.js" />
+    <MESSAGE value="some fix in project, added new logic in projects (not tested xD)" />
+    <MESSAGE value="added content in project" />
+    <MESSAGE value="added in gallery resolution" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="some fix button scroll, added animation on gallery top, bottom" />
+    <MESSAGE value="some fix font-size" />
+    <MESSAGE value="some fix admin project" />
+    <MESSAGE value="added func active / not active project" />
+    <MESSAGE value="added sort projects on the user side" />
+    <MESSAGE value="some fix projects on the admin side" />
+    <MESSAGE value="some fix projects on the admin side 2" />
+    <MESSAGE value="some fix projects on the admin side 3" />
+    <MESSAGE value="big fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="big fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Despace" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Despace" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/scss/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/base/_scheme-p-4.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="0.58258927" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Work/Projects/bootstrap-3.2.0-dist/js/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/carousel/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="85" selection-start="8850" selection-end="8862" vertical-scroll-proportion="0.42637363" vertical-offset="4364" max-vertical-offset="5274" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/days/views/set.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/fragments/views/set.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1328671" vertical-offset="972" max-vertical-offset="2466" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/core/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="388" selection-end="388" vertical-scroll-proportion="0.37582418" vertical-offset="0" max-vertical-offset="3942" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Work/Projects/bootstrap-3.2.0-dist/js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="67" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.0" vertical-offset="1138" max-vertical-offset="2250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/admin/plugins/bootstrap-wysihtml5/css/bootstrap3-wysihtml5.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/core/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/core/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="51" selection-end="51" vertical-scroll-proportion="0.06013363" vertical-offset="0" max-vertical-offset="972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/views/set.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="99" selection-start="2067" selection-end="2076" vertical-scroll-proportion="0.9173273" vertical-offset="108" max-vertical-offset="1728" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/en.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="0" selection-end="2264" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.1403118" vertical-offset="0" max-vertical-offset="898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/projects.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="19" selection-start="709" selection-end="709" vertical-scroll-proportion="0.3900325" vertical-offset="162" max-vertical-offset="2034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="3" selection-start="424" selection-end="424" vertical-scroll-proportion="0.35102925" vertical-offset="0" max-vertical-offset="923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="41" selection-start="563" selection-end="563" vertical-scroll-proportion="0.37053087" vertical-offset="0" max-vertical-offset="1404" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/ua.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.48754063" vertical-offset="0" max-vertical-offset="1548" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/blocks/socIcons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/base/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.68537074" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/css/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="226" selection-end="281" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1242" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/modules/_animations.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.32142857" vertical-offset="0" max-vertical-offset="896">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scss/framework/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/product.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="513" selection-end="553" vertical-scroll-proportion="0.7216036" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/projects.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="8" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/days.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="43" selection-start="422" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="88" selection-start="811" selection-end="811" vertical-scroll-proportion="0.4988864" vertical-offset="74" max-vertical-offset="1512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="24" selection-start="3088" selection-end="3088" vertical-scroll-proportion="0.7269772" vertical-offset="1615" max-vertical-offset="2808">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/views/index.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="59" selection-start="690" selection-end="690" vertical-scroll-proportion="0.3169643" vertical-offset="94" max-vertical-offset="990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5655471" vertical-offset="0" max-vertical-offset="1062" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="0" selection-start="3880" selection-end="3880" vertical-scroll-proportion="0.6815145" vertical-offset="1566" max-vertical-offset="3312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/index.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/appState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.08017817" vertical-offset="0" max-vertical-offset="898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/Despace/public/js/app/admin/core/viewHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="370" selection-end="370" vertical-scroll-proportion="-0.43541202" vertical-offset="661" max-vertical-offset="1584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/core/viewHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="44" selection-start="2237" selection-end="2237" vertical-scroll-proportion="1.2676057" vertical-offset="0" max-vertical-offset="1584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="47" selection-start="863" selection-end="863" vertical-scroll-proportion="-1.2263737" vertical-offset="1566" max-vertical-offset="3636" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init/auth.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="307" selection-end="307" vertical-scroll-proportion="0.16592428" vertical-offset="49" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="834" selection-end="834" vertical-scroll-proportion="0.5709643" vertical-offset="49" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/global/css/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="1" selection-start="956" selection-end="956" vertical-scroll-proportion="0.53731346" vertical-offset="0" max-vertical-offset="871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/global/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="11" selection-start="740" selection-end="740" vertical-scroll-proportion="0.6414254" vertical-offset="0" max-vertical-offset="898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/alternateViews/main-page.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.46205357" vertical-offset="0" max-vertical-offset="3186">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="225" selection-end="225" vertical-scroll-proportion="0.020089285" vertical-offset="54" max-vertical-offset="9270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/global/index.stache">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="3006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="3924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/index.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="10" selection-start="1184" selection-end="1184" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/css/projects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="347" selection-end="347" vertical-scroll-proportion="0.20089285" vertical-offset="0" max-vertical-offset="5706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

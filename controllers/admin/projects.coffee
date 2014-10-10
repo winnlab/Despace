@@ -28,10 +28,9 @@ exports.findAll = (req, res) ->
 
 exports.save = (req, res) ->
 	data = req.body
-	_id = data._id
+	_id = if req.params.id then req.params.id else req.body._id
 
 	async.waterfall [
-
 		(next) ->
 			if _id
 				Model 'Project', 'findOne', next, {_id}

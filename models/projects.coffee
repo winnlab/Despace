@@ -33,5 +33,5 @@ options =
 	collection: 'projects'
 
 ProjectSchema = new mongoose.Schema ProjectSchemaFields, options
-
+ProjectSchema.set 'versionKey', false
 module.exports =  mongoose.model 'Project', ProjectSchema

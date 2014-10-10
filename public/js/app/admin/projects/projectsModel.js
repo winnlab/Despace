@@ -7,11 +7,7 @@ define(
 
 		return can.Model.extend({
 			id: "_id",
-			findAll: "GET /admin/project",
-			findOne: "GET /admin/project/{id}",
-			create:  'POST /admin/project',
-			update:  'PUT /admin/project',
-			destroy: 'DELETE /admin/project/{id}',
+            resource: '/admin/project',
 			parseModel: function (data) {
 				if (data.success) {
 					data = data.message;

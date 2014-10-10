@@ -27,9 +27,13 @@ define(
 			'{projectForm} submit': function (el, ev) {
 				ev.preventDefault();
 
+
+
 				var self = this,
                     projectData = can.deparam(el.serialize()),
                     project = self.options.project;
+
+                console.log(project.attr());
 
 				if (!projectData.active) {
                     projectData.active = false;

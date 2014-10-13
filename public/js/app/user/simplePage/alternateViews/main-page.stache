@@ -136,37 +136,39 @@
     </div>
 </div>
 
-<div id="contact" class="footer-contacts">
-    <div id="partners-cont">
-        <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> {{appState.locale.conctact.ourPartners}} </h1>
-        <div class="content-text1"></div>
-        <h1 class="content-text2"> Vitrage-life </h1>
-    </div>
-    <div id="follow-cont">
-        <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> {{appState.locale.conctact.followUs}}</h1>
-        <div id="header-scl-cont">
-            <ul class="social-cont">
-                <li> <div class="scl-btm-cont scl-pinterest-cnt"> </div> </li>
-                <li> <div class="scl-btm-cont scl-facebook-cnt"> </div> </li>
-                <li> <div class="scl-btm-cont scl-vk-cnt"> </div> </li>
-                <li> <div class="scl-btm-cont scl-vimeo-cnt"> </div> </li>
-                <li> <div class="scl-btm-cont scl-google-cnt"> </div> </li>
-            </ul>
-            <h1 class="font-stl-content-con"> {{{appState.locale.conctact.content}}}</h1>
+<div class="block-contacts">
+    <div id="contact" class="footer-contacts">
+        <div id="partners-cont">
+            <div class="line-cont"> </div>
+            <h1 class="font-stl-contacts"> {{appState.locale.conctact.ourPartners}} </h1>
+            <div class="content-text1"></div>
+            <h1 class="content-text2"> Vitrage-life </h1>
         </div>
+        <div id="follow-cont">
+            <div class="line-cont"> </div>
+            <h1 class="font-stl-contacts"> {{appState.locale.conctact.followUs}}</h1>
+            <div id="header-scl-cont">
+                <ul class="social-cont">
+                    <li> <div class="scl-btm-cont scl-pinterest-cnt"> </div> </li>
+                    <li> <div class="scl-btm-cont scl-facebook-cnt"> </div> </li>
+                    <li> <div class="scl-btm-cont scl-vk-cnt"> </div> </li>
+                    <li> <div class="scl-btm-cont scl-vimeo-cnt"> </div> </li>
+                    <li> <div class="scl-btm-cont scl-google-cnt"> </div> </li>
+                </ul>
+                <h1 class="font-stl-content-con"> {{{appState.locale.conctact.content}}}</h1>
+            </div>
+        </div>
+        <div id="contact-cont">
+            <div class="line-cont"> </div>
+            <h1 class="font-stl-contacts"> {{appState.locale.conctact.contactUs}}</h1>
+            <h1 class="font-stl-content-con">
+                <p>{{appState.locale.conctact.address}}</p>
+                <br>
+                <p>{{appState.locale.conctact.tel}}</p>
+                <p>{{appState.locale.conctact.cell}}</p>
+                <p>{{appState.locale.conctact.email}}</p>
+            </h1>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div id="contact-cont">
-        <div class="line-cont"> </div>
-        <h1 class="font-stl-contacts"> {{appState.locale.conctact.contactUs}}</h1>
-        <h1 class="font-stl-content-con">
-            <p>{{appState.locale.conctact.address}}</p>
-            <br>
-            <p>{{appState.locale.conctact.tel}}</p>
-            <p>{{appState.locale.conctact.cell}}</p>
-            <p>{{appState.locale.conctact.email}}</p>
-        </h1>
-    </div>
-    <div class="clear"></div>
 </div>

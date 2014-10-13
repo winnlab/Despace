@@ -417,89 +417,95 @@ div.page5 {
 	}
 }
 
-div.footer-contacts {
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 3% 0 5% 10%;
+.block-contacts {
 	width: 100%;
-	height: 280px;
-	.line-cont {
-		width: 70px;
-		height: 3px;
-		margin-bottom: 10px;
-		background-color: #ffffff;
-	}
-	.font-stl-contacts {
-		font-size: rem(18);
-		font-weight: normal;
-		color: #ffffff;
-		margin-bottom: 30px;
-	}
-	.font-stl-content-con {
-		font-weight: lighter;
-		font-size: rem(14);
-		color: #ffffff;
-		margin-top: 20px;
-	}
-	#partners-cont {
-		float: left;
-		width: 25%;
-		.content-text1{
-			width: 99px;
-			height: 31px;
-			background-image: url("#{$img-patch}vitrage-life.png");
+	height: 290px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.701961);
+	.footer-contacts {
+		padding: 2% 0px;
+		width: 1000px;
+		height: 100%;
+		margin: auto;
+		.line-cont {
+			width: 70px;
+			height: 3px;
+			margin-bottom: 10px;
+			background-color: #ffffff;
 		}
-		.content-text2 {
-			font-size: rem(16);
-			font-weight: lighter;
+		.font-stl-contacts {
+			font-size: rem(18);
+			font-weight: normal;
 			color: #ffffff;
+			margin-bottom: 30px;
 		}
-	}
-	#follow-cont {
-		float: left;
-		padding: 0 8%;
-		border-right: 1px solid;
-		border-left: 1px solid;
-		border-color: #ffffff;
-		ul.social-cont {
-			margin: 0px;
-			padding: 0px;
-			li {
-				display: inline;
-				padding-right: 7px;
+		.font-stl-content-con {
+			font-weight: lighter;
+			font-size: rem(14);
+			color: #ffffff;
+			margin-top: 20px;
+		}
+		#partners-cont {
+			float: left;
+			width: 26%;
+			.content-text1{
+				width: 99px;
+				height: 31px;
+				background-image: url("#{$img-patch}vitrage-life.png");
+			}
+			.content-text2 {
+				font-size: rem(16);
+				font-weight: lighter;
+				color: #ffffff;
 			}
 		}
-		div.scl-btm-cont {
-			display: inline-block;
-			width: 33px;
-			height: 33px;
-			&:hover {
-				cursor: pointer;
+		#follow-cont {
+			float: left;
+			padding: 0 6%;
+			border-right: 1px solid;
+			border-left: 1px solid;
+			border-color: rgb(255, 255, 255);
+			ul.social-cont {
+				margin: 0px;
+				padding: 0px;
+				li {
+					display: inline;
+					padding-right: 7px;
+				}
+			}
+			div.scl-btm-cont {
+				display: inline-block;
+				width: 33px;
+				height: 33px;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			div.scl-pinterest-cnt {
+				background-image: url(("#{$img-patch}social/pinterest-cnt.png"));
+				background-repeat: no-repeat;
+			}
+			div.scl-facebook-cnt {
+				background-image: url(("#{$img-patch}social/facebook-cnt.png"));
+				background-repeat: no-repeat;
+			}
+			div.scl-vk-cnt {
+				background-image: url(("#{$img-patch}social/vk-cnt.png"));
+				background-repeat: no-repeat;
+			}
+			div.scl-vimeo-cnt {
+				background-image: url(("#{$img-patch}social/vimeo-cnt.png"));
+				background-repeat: no-repeat;
+			}
+			div.scl-google-cnt {
+				background-image: url(("#{$img-patch}social/google-cnt.png"));
+				background-repeat: no-repeat;
 			}
 		}
-		div.scl-pinterest-cnt {
-			background-image: url(("#{$img-patch}social/pinterest-cnt.png"));
-			background-repeat: no-repeat;
+		#contact-cont {
+			float: left;
+			padding-left: 7%;
 		}
-		div.scl-facebook-cnt {
-			background-image: url(("#{$img-patch}social/facebook-cnt.png"));
-			background-repeat: no-repeat;
-		}
-		div.scl-vk-cnt {
-			background-image: url(("#{$img-patch}social/vk-cnt.png"));
-			background-repeat: no-repeat;
-		}
-		div.scl-vimeo-cnt {
-			background-image: url(("#{$img-patch}social/vimeo-cnt.png"));
-			background-repeat: no-repeat;
-		}
-		div.scl-google-cnt {
-			background-image: url(("#{$img-patch}social/google-cnt.png"));
-			background-repeat: no-repeat;
-		}
-	}
-	#contact-cont {
-		float: left;
-		padding-left: 5%;
 	}
 }
 

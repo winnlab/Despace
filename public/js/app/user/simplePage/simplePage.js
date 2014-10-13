@@ -131,7 +131,7 @@ define([
 
             'calculateScrollArray': function () {
                 var self = this,
-                    footer = $('.footer-contacts').outerHeight();
+                    footer = $('.block-contacts').outerHeight();
 
                 for(var i = 0; i < 6; i++) {
                     if(i == 5) {

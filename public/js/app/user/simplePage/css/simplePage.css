@@ -392,7 +392,10 @@ div.page5 {
       margin-top: 20px; }
     .block-contacts .footer-contacts #partners-cont {
       float: left;
-      width: 33%; }
+      width: 27%;
+      border-right: 1px solid;
+      border-color: white;
+      height: 160px; }
       .block-contacts .footer-contacts #partners-cont .content-text1 {
         width: 99px;
         height: 31px;
@@ -401,43 +404,48 @@ div.page5 {
         font-size: 1rem;
         font-weight: lighter;
         color: #ffffff; }
-    .block-contacts .footer-contacts #follow-cont {
+    .block-contacts .footer-contacts .block-follow {
+      text-align: center;
       float: left;
-      padding: 0 8%;
-      width: 33%;
-      border-right: 1px solid;
-      border-left: 1px solid;
-      border-color: white; }
-      .block-contacts .footer-contacts #follow-cont ul.social-cont {
-        margin: 0px;
-        padding: 0px; }
-        .block-contacts .footer-contacts #follow-cont ul.social-cont li {
-          display: inline;
-          padding-right: 7px; }
-      .block-contacts .footer-contacts #follow-cont div.scl-btm-cont {
+      width: 44%;
+      height: 100%; }
+      .block-contacts .footer-contacts .block-follow #follow-cont {
+        text-align: left;
         display: inline-block;
-        width: 33px;
-        height: 33px; }
-        .block-contacts .footer-contacts #follow-cont div.scl-btm-cont:hover {
-          cursor: pointer; }
-      .block-contacts .footer-contacts #follow-cont div.scl-pinterest-cnt {
-        background-image: url("/img/user/social/pinterest-cnt.png");
-        background-repeat: no-repeat; }
-      .block-contacts .footer-contacts #follow-cont div.scl-facebook-cnt {
-        background-image: url("/img/user/social/facebook-cnt.png");
-        background-repeat: no-repeat; }
-      .block-contacts .footer-contacts #follow-cont div.scl-vk-cnt {
-        background-image: url("/img/user/social/vk-cnt.png");
-        background-repeat: no-repeat; }
-      .block-contacts .footer-contacts #follow-cont div.scl-vimeo-cnt {
-        background-image: url("/img/user/social/vimeo-cnt.png");
-        background-repeat: no-repeat; }
-      .block-contacts .footer-contacts #follow-cont div.scl-google-cnt {
-        background-image: url("/img/user/social/google-cnt.png");
-        background-repeat: no-repeat; }
+        vertical-align: top; }
+        .block-contacts .footer-contacts .block-follow #follow-cont ul.social-cont {
+          margin: 0px;
+          padding: 0px; }
+          .block-contacts .footer-contacts .block-follow #follow-cont ul.social-cont li {
+            display: inline;
+            padding-right: 7px; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-btm-cont {
+          display: inline-block;
+          width: 33px;
+          height: 33px; }
+          .block-contacts .footer-contacts .block-follow #follow-cont div.scl-btm-cont:hover {
+            cursor: pointer; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-pinterest-cnt {
+          background-image: url("/img/user/social/pinterest-cnt.png");
+          background-repeat: no-repeat; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-facebook-cnt {
+          background-image: url("/img/user/social/facebook-cnt.png");
+          background-repeat: no-repeat; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-vk-cnt {
+          background-image: url("/img/user/social/vk-cnt.png");
+          background-repeat: no-repeat; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-vimeo-cnt {
+          background-image: url("/img/user/social/vimeo-cnt.png");
+          background-repeat: no-repeat; }
+        .block-contacts .footer-contacts .block-follow #follow-cont div.scl-google-cnt {
+          background-image: url("/img/user/social/google-cnt.png");
+          background-repeat: no-repeat; }
     .block-contacts .footer-contacts #contact-cont {
       float: left;
-      padding-left: 7%;
-      width: 33%; }
+      padding-left: 6%;
+      width: 29%;
+      border-left: 1px solid;
+      border-color: white;
+      height: 160px; }
 
 /*# sourceMappingURL=simplePage.css.map */

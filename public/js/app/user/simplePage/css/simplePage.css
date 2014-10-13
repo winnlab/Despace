@@ -136,13 +136,11 @@ div.page1 {
       height: 50px;
       color: #ffffff;
       font-size: 2.375rem;
-      font-weight: 400;
-      text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
+      font-weight: 400; }
     div.page1 #content-text-p1 .slg-text2 {
       color: #ffffff;
       font-size: 2.375rem;
       font-weight: 400;
-      text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9);
       padding-top: 20px;
       width: 100%;
       height: 50px; }
@@ -375,20 +373,17 @@ div.footer-contacts {
     width: 70px;
     height: 3px;
     margin-bottom: 10px;
-    background-color: #ffffff;
-    box-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
+    background-color: #ffffff; }
   div.footer-contacts .font-stl-contacts {
     font-size: 1.125rem;
     font-weight: normal;
     color: #ffffff;
-    margin-bottom: 30px;
-    text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
+    margin-bottom: 30px; }
   div.footer-contacts .font-stl-content-con {
     font-weight: lighter;
     font-size: 0.875rem;
     color: #ffffff;
-    margin-top: 20px;
-    text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
+    margin-top: 20px; }
   div.footer-contacts #partners-cont {
     float: left;
     width: 25%; }
@@ -399,8 +394,7 @@ div.footer-contacts {
     div.footer-contacts #partners-cont .content-text2 {
       font-size: 1rem;
       font-weight: lighter;
-      color: #ffffff;
-      text-shadow: -6px 8px 6px rgba(0, 0, 0, 0.9); }
+      color: #ffffff; }
   div.footer-contacts #follow-cont {
     float: left;
     padding: 0 8%;

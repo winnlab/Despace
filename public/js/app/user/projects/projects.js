@@ -23,7 +23,9 @@ define([
                     'index': 1,
                     'indexSplice': 2,
                     'direction': '',
-                    'current': 0
+                    'current': 0,
+                    'animationTop': true,
+                    'animationBottom': true
                 });
 
                 /*
@@ -140,69 +142,86 @@ define([
             },
 
             '.btn-proj-t click': function () {
-                var self = this;
+                var self = this,
+                    animationTop = self.module.attr('animationTop');
 
                 var index = self.module.attr('index');
 
-                if (index == 1) {
-                    self.module.attr('index', self.module.attr('projects').length - 2);
-                } else {
-                    self.module.attr('index', index - 1);
+                if(animationTop) {
+
+                    if (index == 1) {
+                        self.module.attr('index', self.module.attr('projects').length - 2);
+                    } else {
+                        self.module.attr('index', index - 1);
+                    }
+
+                    this.setProject(-1);
+
+                    //................................................
+
+                    var current = self.module.attr('current') + 1;
+
+                    if (current == self.module.attr('projects.length')) {
+                        current = 0;
+                    }
+
+                    self.module.attr('direction', 'top');
+
+                    $('.current').velocity({top: 100+'%'}, 400);
+                    $('.next-project').css({top: -100+'%'}).velocity({top: 0+'%'}, 400, function () {
+                        self.module.attr('direction', '');
+                        self.module.attr('current', current);
+                    });
+
+                    self.module.attr('animationTop', false);
+
+                    setTimeout(function (){
+                        self.module.attr('animationTop', true);
+                    }, 550);
                 }
 
-                this.setProject(-1);
-
-                //................................................
-
-                var current = self.module.attr('current') + 1;
-
-                if (current == self.module.attr('projects.length')) {
-                    current = 0;
-                }
-
-                self.module.attr('direction', 'top');
-
-                $('.current').velocity({top: 100+'%'}, 500);
-                $('.next-project').css({top: -100+'%'}).velocity({top: 0+'%'}, 500);
-
-
-                setTimeout(function () {
-                    self.module.attr('direction', '');
-                    self.module.attr('current', current);
-                }, 550);
 
             },
 
             '.btn-proj-b click': function () {
-                var self = this;
+                var self = this,
+                    animationBottom = self.module.attr('animationBottom');
 
                 var index = self.module.attr('index');
 
-                if (index == self.module.attr('projects').length - 2) {
-                    self.module.attr('index', 1);
-                } else {
-                    self.module.attr('index', index + 1);
+                if(animationBottom) {
+
+                    if (index == self.module.attr('projects').length - 2) {
+                        self.module.attr('index', 1);
+                    } else {
+                        self.module.attr('index', index + 1);
+                    }
+
+                    this.setProject(1);
+
+                    //................................................
+
+                    var current = self.module.attr('current') - 1;
+
+                    if (current < 0) {
+                        current = self.module.attr('projects.length') - 1;
+                    }
+
+                    self.module.attr('direction', 'bottom');
+
+                    $('.current').velocity({top: -100+'%'}, 500);
+                    $('.prev-project').css({top: 100+'%'}).velocity({top: 0+'%'}, 500, function() {
+                        self.module.attr('direction', '');
+                        self.module.attr('current', current);
+                    });
+
+                    self.module.attr('animationBottom', false);
+
+                    setTimeout(function (){
+                        self.module.attr('animationBottom', true);
+                    }, 550);
+
                 }
-
-                this.setProject(1);
-
-                //................................................
-
-                var current = self.module.attr('current') - 1;
-
-                if (current < 0) {
-                    current = self.module.attr('projects.length') - 1;
-                }
-
-                self.module.attr('direction', 'bottom');
-
-                $('.current').velocity({top: -100+'%'}, 500);
-                $('.prev-project').css({top: 100+'%'}).velocity({top: 0+'%'}, 500);
-
-                setTimeout(function () {
-                    self.module.attr('direction', '');
-                    self.module.attr('current', current);
-                }, 550);
 
             }
 

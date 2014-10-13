@@ -102,7 +102,6 @@ define([
                 for(i = this.scrollBox.length; i--;) { // считаем индексы положения блоков для скролла
                     if(scroll_top >= this.scrollBox[i]){
                         self.scrollPage = i;
-                        console.log(i);
                         break;
                     }
                 }
@@ -146,17 +145,17 @@ define([
             '#scroll-down click': function () {
                 var self = this;
 
-                self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage+1]},'slow');
+                self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage+1]}, 300);
             },
 
             '#scroll-up click': function () {
                 var self = this;
 
                 if($(window).scrollTop() == self.scrollBox[self.scrollPage]) {
-                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage-1]},'slow');
+                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage-1]},300);
 
                 } else {
-                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage]},'slow');
+                    self.$body_html.animate({'scrollTop': self.scrollBox[self.scrollPage]}, 300);
                 }
             }
 		});

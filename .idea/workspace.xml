@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f490043-b98a-4021-b6b3-2b23afc6a0af" name="Default" comment="fix model projects, added new version canjs">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/global/index.stache" afterPath="$PROJECT_DIR$/public/js/app/user/global/index.stache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/projects/projects.js" afterPath="$PROJECT_DIR$/public/js/app/user/projects/projects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.css.map" afterPath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.css" afterPath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js" afterPath="$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss" afterPath="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Despace.iws" />
@@ -25,55 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="simplePage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js">
+      <file leaf-file-name="projects.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="28" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0" vertical-offset="1957" max-vertical-offset="3042">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/project.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projects.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="14" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="2808">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="set.stache" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/views/set.stache">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="34" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-15.333333" vertical-offset="216" max-vertical-offset="1728">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectsModel.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="49" selection-start="710" selection-end="710" vertical-scroll-proportion="0.6435536" vertical-offset="0" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simplePage.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="419" column="1" selection-start="8191" selection-end="8191" vertical-scroll-proportion="0.0" vertical-offset="7402" max-vertical-offset="9306">
+            <state line="227" column="11" selection-start="8239" selection-end="8239" vertical-scroll-proportion="1.1170098" vertical-offset="3055" max-vertical-offset="4266">
               <folding />
             </state>
           </provider>
@@ -131,18 +92,18 @@
         <option value="$PROJECT_DIR$/public/js/app/user/global/global.js" />
         <option value="$PROJECT_DIR$/public/js/app/user/simplePage/alternateViews/main-page.stache" />
         <option value="$PROJECT_DIR$/public/js/app/user/global/css/global.scss" />
-        <option value="$PROJECT_DIR$/public/js/app/user/projects/projects.js" />
-        <option value="$PROJECT_DIR$/public/js/app/user/global/index.stache" />
         <option value="$PROJECT_DIR$/public/js/app/user/projects/index.stache" />
         <option value="$PROJECT_DIR$/public/js/app/user/projects/css/projects.scss" />
-        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss" />
-        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js" />
         <option value="$PROJECT_DIR$/public/js/app/admin/projects/project.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js" />
         <option value="$PROJECT_DIR$/public/css/admin/AdminLTE.css" />
         <option value="$PROJECT_DIR$/models/projects.coffee" />
         <option value="$PROJECT_DIR$/controllers/admin/projects.coffee" />
+        <option value="$PROJECT_DIR$/public/js/app/user/global/index.stache" />
+        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js" />
+        <option value="$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss" />
+        <option value="$PROJECT_DIR$/public/js/app/user/projects/projects.js" />
       </list>
     </option>
   </component>
@@ -204,7 +165,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,30 +240,8 @@
               <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="simplePage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,7 +267,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simplePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Despace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Despace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -359,15 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,124 +353,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminLTE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Despace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -697,7 +550,6 @@
     <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -711,11 +563,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -734,9 +587,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23405573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -794,16 +647,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/lib/carousel/carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="85" selection-start="8850" selection-end="8862" vertical-scroll-proportion="0.42637363" vertical-offset="4364" max-vertical-offset="5274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/admin/days/views/set.stache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/admin/fragments/views/set.stache">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1328671" vertical-offset="972" max-vertical-offset="2466" />
@@ -866,7 +709,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scss/base/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.68537074" vertical-offset="0" max-vertical-offset="504" />
+        <state line="19" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.68537074" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/core/css/global.scss">
@@ -876,7 +721,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scss/modules/_animations.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.32142857" vertical-offset="0" max-vertical-offset="896" />
+        <state line="16" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.32142857" vertical-offset="0" max-vertical-offset="896">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scss/framework/_grid.scss">
@@ -921,9 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/core/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3880" selection-end="3880" vertical-scroll-proportion="0.6815145" vertical-offset="1566" max-vertical-offset="3312">
-          <folding />
-        </state>
+        <state line="121" column="0" selection-start="3880" selection-end="3880" vertical-scroll-proportion="0.6815145" vertical-offset="1566" max-vertical-offset="3312" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/index.stache">
@@ -966,22 +811,11 @@
         <state line="23" column="13" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.46205357" vertical-offset="0" max-vertical-offset="3186" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/user/global/index.stache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.08450704" vertical-offset="1614" max-vertical-offset="3924" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/index.stache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.48214287" vertical-offset="0" max-vertical-offset="896" />
+        <state line="24" column="10" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.48214287" vertical-offset="0" max-vertical-offset="896">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/css/projects.scss">
@@ -989,95 +823,96 @@
         <state line="15" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="-0.421875" vertical-offset="648" max-vertical-offset="5724" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="419" column="1" selection-start="8191" selection-end="8191" vertical-scroll-proportion="0.0" vertical-offset="7402" max-vertical-offset="9306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="47" selection-start="863" selection-end="863" vertical-scroll-proportion="-1.2263737" vertical-offset="1566" max-vertical-offset="3636">
-          <folding />
-        </state>
+        <state line="25" column="47" selection-start="863" selection-end="863" vertical-scroll-proportion="-1.2263737" vertical-offset="1566" max-vertical-offset="3636" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/document.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/canjs/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0826636" vertical-offset="0" max-vertical-offset="871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/admin/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="61398" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="49" selection-start="710" selection-end="710" vertical-scroll-proportion="0.6435536" vertical-offset="0" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/views/set.stache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-15.333333" vertical-offset="216" max-vertical-offset="1728">
-          <folding />
-        </state>
+        <state line="35" column="34" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.4688562" vertical-offset="216" max-vertical-offset="1728" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="28" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0" vertical-offset="1957" max-vertical-offset="3042">
+        <state line="93" column="14" selection-start="2017" selection-end="2017" vertical-scroll-proportion="1.0" vertical-offset="751" max-vertical-offset="2808">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/canjs/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0826636" vertical-offset="0" max-vertical-offset="871">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="14" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="2808">
-          <folding />
-        </state>
+        <state line="34" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.48754063" vertical-offset="162" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/projects.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="363" selection-end="363" vertical-scroll-proportion="0.5011136" vertical-offset="0" max-vertical-offset="898">
-          <folding />
-        </state>
+        <state line="25" column="18" selection-start="363" selection-end="363" vertical-scroll-proportion="0.48754063" vertical-offset="0" max-vertical-offset="923" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/admin/AdminLTE.css">
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/views/socIcons.stache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="61398">
-          <folding>
-            <marker date="1412948160700" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/core/views/route.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="9" selection-start="94" selection-end="94" vertical-scroll-proportion="0.04017857" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/simplePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="64" selection-start="4701" selection-end="4701" vertical-scroll-proportion="1.2903575" vertical-offset="1329" max-vertical-offset="3024" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/global/index.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="26" selection-end="26" vertical-scroll-proportion="0.020089285" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/admin/projects.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.66146994" vertical-offset="270" max-vertical-offset="2016">
+        <state line="48" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.87757313" vertical-offset="54" max-vertical-offset="2016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/simplePage/css/simplePage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.32142857" vertical-offset="1782" max-vertical-offset="9198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/admin/projects/projectsModel.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app/user/projects/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="49" selection-start="710" selection-end="710" vertical-scroll-proportion="0.6435536" vertical-offset="0" max-vertical-offset="990">
+        <state line="227" column="11" selection-start="8239" selection-end="8239" vertical-scroll-proportion="1.1170098" vertical-offset="3055" max-vertical-offset="4266">
           <folding />
         </state>
       </provider>

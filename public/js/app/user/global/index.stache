@@ -1,27 +1,2 @@
-<!--<div id="header">-->
-    <!--<a class="scroll logo module" data-scroll="#start" data-href="/">-->
-        <!--<img src="{{appState.imgPath}}logo.png" alt="Despace">-->
-    <!--</a>-->
-    <!--<div id="header-lang">-->
-        <!--<ul class="lang">-->
-            <!--<li> <a class="lang-btm" href="/en">en</a> </li> /-->
-            <!--<li> <a class="lang-btm" href="/">uk</a></li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--<div id="header-scl">-->
-        <!--<ul class="social">-->
-            <!--<li> <div class="scl-btm scl-facebook"> </div> </li>-->
-            <!--<li> <div class="scl-btm scl-tumblr"> </div> </li>-->
-            <!--<li> <div class="scl-btm scl-pinterest"> </div> </li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--<div id="header-menu">-->
-        <!--<ul class="menu">-->
-            <!--<li> <a class="scroll btm" data-scroll="#about"> {{appState.locale.menu.about}}</a> </li>-->
-            <!--<li> <a class="scroll btm" data-scroll="#work"> {{appState.locale.menu.work}}</a> </li>-->
-            <!--<li> <a class="scroll btm"> {{appState.locale.menu.blog}}</a> </li>-->
-            <!--<li> <a class="scroll btm" data-scroll="#contact"> {{appState.locale.menu.contact}}</a> </li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--<div class="clear"></div>-->
+<!--<div>-->
 <!--</div>-->

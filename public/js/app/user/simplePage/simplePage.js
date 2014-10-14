@@ -18,7 +18,6 @@ define([
 			init: function () {
 				var self = this;
                 self.$body_html= $('html, body');
-                self.windowHeight = $(window).height();
                 self.scrollPage = 0;
                 self.scrollBox = [];
 
@@ -123,9 +122,8 @@ define([
             },
 
             calculateBlockSizes: function () {
-                var self = this;
 
-                $('.pages').css('height', self.windowHeight); // подгоняем background под разрешение пользователя
+                $('.pages').css('height', $(window).outerHeight()); // подгоняем background под разрешение пользователя
 
             },
 
@@ -135,10 +133,10 @@ define([
 
                 for(var i = 0; i < 6; i++) {
                     if(i == 5) {
-                        self.scrollBox[i] = (footer + (self.windowHeight * 4));
+                        self.scrollBox[i] = (footer + ($(window).outerHeight() * 4));
                         return;
                     }
-                    self.scrollBox[i] = (self.windowHeight * i);
+                    self.scrollBox[i] = ($(window).outerHeight() * i);
                 }
             },
 

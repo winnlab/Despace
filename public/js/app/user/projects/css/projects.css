@@ -1,5 +1,5 @@
 .projectItem .bgWrapper .img-gallery {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -104,6 +104,20 @@
           #header-project #header-lang-project ul.lang li a.lang-btm:visited {
             color: #767676; }
 
+.projectItem {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .projectItem .bgWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; }
+    .projectItem .bgWrapper .img-gallery {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+
 .carousel {
   position: relative;
   width: 100%;
@@ -164,6 +178,22 @@
     position: absolute;
     width: 100%;
     height: 100%; }
+    .projects .projectsWrapper .current {
+      position: absolute;
+      display: block !important; }
+    .projects .projectsWrapper .item-project {
+      position: relative;
+      display: none;
+      width: 100%;
+      height: 100%; }
+    .projects .projectsWrapper .prev-project {
+      top: 100%;
+      position: absolute;
+      display: block !important; }
+    .projects .projectsWrapper .next-project {
+      top: -100%;
+      position: absolute;
+      display: block !important; }
   .projects .btn-project {
     background-repeat: no-repeat;
     position: fixed;
@@ -224,38 +254,5 @@
         border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; }
         .projects .btn-proj-info .info-proj .info-triangle:hover {
           cursor: default; }
-
-.projectItem {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-  .projectItem .bgWrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-    .projectItem .bgWrapper .img-gallery {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-
-.current {
-  position: absolute;
-  display: block !important; }
-
-.item-project {
-  position: relative;
-  display: none;
-  width: 100%;
-  height: 100%; }
-
-.prev-project {
-  top: 100%;
-  position: absolute;
-  display: block !important; }
-
-.next-project {
-  top: -100%;
-  position: absolute;
-  display: block !important; }
 
 /*# sourceMappingURL=projects.css.map */

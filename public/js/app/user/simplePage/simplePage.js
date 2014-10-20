@@ -56,10 +56,9 @@ define([
                 var elScrollTo = appState.attr('scrollTo');
 
                 if (elScrollTo) {
-                    $('html, body').animate({scrollTop: $(elScrollTo['scroll']).offset().top}, 500);
+                    $('html, body').animate({scrollTop: $(elScrollTo).offset().top}, 500);
                     appState.attr('scrollTo', 0);
                 }
-
             },
 
             '{window} resize': function () {

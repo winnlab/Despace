@@ -20,7 +20,7 @@ define([
                     'projects': appState.attr('projects'),
                     'projectsPage': [],
                     'visibleBtn': true,
-                    'index': 1,
+                    'index': 1, //1
                     'indexSplice': 2,
                     'direction': '',
                     'current': 0,
@@ -60,11 +60,11 @@ define([
                             var result = '',
                                 direction = self.module.attr('direction'),
                                 current = self.module.attr('current'),
-                                projectsLength = self.module.attr('projects.length');
+                                projectsLength = self.module.attr('projectsPage.length');
                                 index = index();
 
                             if (index === current) {
-                                result = 'current';
+                                 result = 'current';
                             }
 
                             if (direction == 'bottom') {
@@ -155,20 +155,20 @@ define([
                         self.module.attr('index', index - 1);
                     }
 
-                    this.setProject(-1);
+                    self.setProject(-1);
 
                     //................................................
 
-                    var current = self.module.attr('current') + 1;
+                    var current = (self.module.attr('current') + 1);
 
-                    if (current == self.module.attr('projects.length')) {
+                    if (current == self.module.attr('projectsPage.length')) {
                         current = 0;
                     }
 
                     self.module.attr('direction', 'top');
 
-                    $('.current').velocity({top: 100+'%'}, 400);
-                    $('.next-project').css({top: -100+'%'}).velocity({top: 0+'%'}, 400, function () {
+                    $('.current').velocity({top: 100+'%'}, 500);
+                    $('.next-project').css({top: -100+'%'}).velocity({top: 0+'%'}, 500, function () {
                         self.module.attr('direction', '');
                         self.module.attr('current', current);
                     });
@@ -197,14 +197,14 @@ define([
                         self.module.attr('index', index + 1);
                     }
 
-                    this.setProject(1);
+                    self.setProject(1);
 
                     //................................................
 
-                    var current = self.module.attr('current') - 1;
+                    var current = (self.module.attr('current') - 1);
 
                     if (current < 0) {
-                        current = self.module.attr('projects.length') - 1;
+                        current = self.module.attr('projectsPage.length') - 1;
                     }
 
                     self.module.attr('direction', 'bottom');

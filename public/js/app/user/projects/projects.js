@@ -22,15 +22,14 @@ define([
                     'visibleBtn': true,
                     'index': 1, //1
                     'indexSplice': 2,
+                    'indexBotDirection': appState.attr('projects.length') - 4,
+                    'indexTopDirection': 0,
+                    'indexCurrentNew': 1,
                     'direction': '',
                     'current': 0,
                     'animationTop': true,
                     'animationBottom': true
                 });
-
-                /*
-                 *  push new projects 1-3
-                 */
 
                 var arr = self.module.attr('projects');
 
@@ -104,7 +103,9 @@ define([
                     arrIndex = self.module.attr('projects').length -1,
                     arrPageIndex = self.module.attr('projectsPage').length -1,
                     indexSplice = self.module.attr('indexSplice'),
-                    index = self.module.attr('index');
+                    index = self.module.attr('index'),
+                    indexBotDirection = self.module.attr('indexBotDirection');
+
 
                 switch(direction) {
                     case -1:
@@ -119,6 +120,7 @@ define([
                             if (!self.findProject(index)) {
                                 self.module.attr('indexSplice', indexSplice +1);
                                 self.module.attr('projectsPage').splice(index, 0, self.module.attr('projects')[index]);
+                                self.module.attr('indexBotDirection', indexBotDirection - 1);
                             }
                         }
                         break;
@@ -143,19 +145,22 @@ define([
 
             '.btn-proj-t click': function () {
                 var self = this,
-                    animationTop = self.module.attr('animationTop');
-
-                var index = self.module.attr('index');
+                    animationTop = self.module.attr('animationTop'),
+                    index = self.module.attr('index'),
+                    indexTopDirection = self.module.attr('indexTopDirection');
 
                 if(animationTop) {
 
-                    if (index == 1) {
-                        self.module.attr('index', self.module.attr('projects').length - 2);
+
+                    if (index == self.module.attr('projects').length - 2) {
+                        self.module.attr('index', 1);
                     } else {
-                        self.module.attr('index', index - 1);
+                        self.module.attr('index', index + 1);
                     }
 
-                    self.setProject(-1);
+                    self.setProject(1);
+
+                    self.module.attr('indexTopDirection', indexTopDirection + 1);
 
                     //................................................
 
@@ -185,27 +190,37 @@ define([
 
             '.btn-proj-b click': function () {
                 var self = this,
-                    animationBottom = self.module.attr('animationBottom');
-
-                var index = self.module.attr('index');
+                    animationBottom = self.module.attr('animationBottom'),
+                    index = self.module.attr('index'),
+                    indexTopDirection = self.module.attr('indexTopDirection');
 
                 if(animationBottom) {
 
-                    if (index == self.module.attr('projects').length - 2) {
-                        self.module.attr('index', 1);
+                    if (index == 1) {
+                        self.module.attr('index', self.module.attr('projects').length - 2);
                     } else {
-                        self.module.attr('index', index + 1);
+                        self.module.attr('index', index - 1);
                     }
 
-                    self.setProject(1);
+                    self.setProject(-1);
 
                     //................................................
 
-                    var current = (self.module.attr('current') - 1);
+                    var current = (self.module.attr('current')),
+                        indexBotDirection = self.module.attr('indexBotDirection'),
+                        indexCurrentNew = self.module.attr('indexCurrentNew');
 
-                    if (current < 0) {
+                    if (current == 0) {
                         current = self.module.attr('projectsPage.length') - 1;
+                    } else if (indexBotDirection > 0 && indexTopDirection <= 0) {
+                        self.module.attr('current', self.module.attr('projectsPage.length') - indexCurrentNew);
+                        self.module.attr('indexCurrentNew', indexCurrentNew + 1);
+                        self.module.attr('indexBotDirection', indexBotDirection - 1);
+                    } else {
+                        current = current - 1;
                     }
+
+                    self.module.attr('indexTopDirection', indexTopDirection - 1);
 
                     self.module.attr('direction', 'bottom');
 

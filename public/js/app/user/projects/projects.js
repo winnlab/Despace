@@ -92,7 +92,7 @@ define([
                             self.options.isReady.resolve();
                         }
 
-                        $('.carousel').carousel({interval: 0});
+                        $('.carousel').carousel('pause');
 
                     }
                 );

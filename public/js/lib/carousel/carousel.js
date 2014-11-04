@@ -86,10 +86,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         this.$indicators = this.$element.find('.carousel-indicators')
         this.options     = options
         this.paused      =
-            this.sliding     =
-                this.interval    =
-                    this.$active     =
-                        this.$items      = null
+        this.sliding     =
+        this.interval    =
+        this.$active     =
+        this.$items      = null
 
         this.options.pause == 'hover' && this.$element
             .on('mouseenter.bs.carousel', $.proxy(this.pause, this))

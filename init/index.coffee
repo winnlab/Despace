@@ -12,7 +12,7 @@ Notifier = require '../lib/notifier'
 AuthStartegies = require './auth'
 ModelPreloader = require './mpload'
 
-appPort = 3000
+appPort = 69
 
 async.waterfall [
 	(next) ->

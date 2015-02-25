@@ -1,8 +1,28 @@
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
 div.pages {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
 @-webkit-keyframes disappearing {
   0% {
     opacity: 0; }
@@ -24,48 +44,6 @@ div.pages {
     opacity: 1; }
   100% {
     opacity: 0; } }
-@font-face {
-  font-family: Quicksand;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot");
-  src: url("/fonts/Quicksand-Bold/quicksand-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Bold/quicksand-bold.woff") format("woff"), url("/fonts/Quicksand-Bold/quicksand-bold.ttf") format("truetype"), url("/fonts/Quicksand-Bold/quicksand-bold.svg#Quicksand") format("svg"); }
-@font-face {
-  font-family: Quicksand;
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot");
-  src: url("/fonts/Quicksand-Regular/quicksand-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Regular/quicksand-regular.woff") format("woff"), url("/fonts/Quicksand-Regular/quicksand-regular.ttf") format("truetype"), url("/fonts/Quicksand-Regular/quicksand-regular.svg#Quicksand") format("svg"); }
-@font-face {
-  font-family: Quicksand;
-  font-weight: lighter;
-  font-style: normal;
-  src: url("/fonts/Quicksand-Light/quicksand-light.eot");
-  src: url("/fonts/Quicksand-Light/quicksand-light.eot?#iefix") format("embedded-opentype"), url("/fonts/Quicksand-Light/quicksand-light.woff") format("woff"), url("/fonts/Quicksand-Light/quicksand-light.ttf") format("truetype"), url("/fonts/Quicksand-Light/quicksand-light.svg#Quicksand") format("svg"); }
-@font-face {
-  font-family: Comfortaa;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/fonts/Comfortaa-Bold/comfortaa-bold.eot");
-  src: url("/fonts/Comfortaa-Bold/comfortaa-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa-Bold/comfortaa-bold.woff") format("woff"), url("/fonts/Comfortaa-Bold/comfortaa-bold.ttf") format("truetype"), url("/fonts/Comfortaa-Bold/comfortaa-bold.svg#Comfortaa") format("svg"); }
-@font-face {
-  font-family: Comfortaa;
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/Comfortaa-Regular/comfortaa-regular.eot");
-  src: url("/fonts/Comfortaa-Regular/comfortaa-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa-Regular/comfortaa-regular.woff") format("woff"), url("/fonts/Comfortaa-Regular/comfortaa-regular.ttf") format("truetype"), url("/fonts/Comfortaa-Regular/comfortaa-regular.svg#Comfortaa") format("svg"); }
-@font-face {
-  font-family: Comfortaa;
-  font-weight: lighter;
-  font-style: normal;
-  src: url("/fonts/Comfortaa-Light/comfortaa-light.eot");
-  src: url("/fonts/Comfortaa-Light/comfortaa-light.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa-Light/comfortaa-light.woff") format("woff"), url("/fonts/Comfortaa-Light/comfortaa-light.ttf") format("truetype"), url("/fonts/Comfortaa-Light/comfortaa-light.svg#Comfortaa") format("svg"); }
-body {
-  font-family: Comfortaa, sans-serif; }
-
-body.en {
-  font-family: Quicksand; }
-
 div.pages {
   position: relative;
   width: 100%; }

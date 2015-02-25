@@ -1,8 +1,28 @@
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
 .projectItem .bgWrapper .img-gallery {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
 
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
 @-webkit-keyframes disappearing {
   0% {
     opacity: 0; }

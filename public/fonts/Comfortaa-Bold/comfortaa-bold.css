@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ComfortaaBold';
-    src: url('comfortaa-bold.eot');
-    src: url('comfortaa-bold.eot') format('embedded-opentype'),
-         url('comfortaa-bold.woff2') format('woff2'),
-         url('comfortaa-bold.woff') format('woff'),
-         url('comfortaa-bold.ttf') format('truetype'),
-         url('comfortaa-bold.svg#ComfortaaBold') format('svg');
-}

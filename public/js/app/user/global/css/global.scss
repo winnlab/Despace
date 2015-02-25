@@ -4,26 +4,11 @@
 @import '../../../../../scss/base/_placeholders.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
-@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Bold/quicksand-bold', bold);
-@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Regular/quicksand-regular', 400);
-@include font-face(Quicksand, '#{$fonts-patch}Quicksand-Light/quicksand-light', lighter);
-
-@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Bold/comfortaa-bold', bold);
-@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Regular/comfortaa-regular', 400);
-@include font-face(Comfortaa, '#{$fonts-patch}Comfortaa-Light/comfortaa-light', lighter);
-
-body {
-	font-family: Comfortaa, sans-serif;
-}
-
-body.en {
-	font-family: Quicksand;
-}
-
 div.pages {
 	@extend %bg-image-cover;
 	position: relative;
 	width: 100%;
+//	min-height: 768px;
 }
 
 header, footer {

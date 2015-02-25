@@ -1,3 +1,23 @@
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
 @-webkit-keyframes disappearing {
   0% {
     opacity: 0; }
@@ -19,6 +39,12 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
+@font-face {
+  font-family: HeliosExtThinC;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts//HeliosExtThinC/heliosextthinc.eot");
+  src: url("/fonts//HeliosExtThinC/heliosextthinc.eot?#iefix") format("embedded-opentype"), url("/fonts//HeliosExtThinC/heliosextthinc.woff") format("woff"), url("/fonts//HeliosExtThinC/heliosextthinc.ttf") format("truetype"), url("/fonts//HeliosExtThinC/heliosextthinc.svg#HeliosExtThinC") format("svg"); }
 *,
 *:before,
 *:after {
@@ -35,6 +61,7 @@ body {
   padding: 0; }
 
 body {
+  font-family: HeliosExtThinC, sans-serif;
   min-width: 1000px;
   position: relative; }
 
@@ -62,21 +89,21 @@ module {
     font-size: 14px; } }
 @media (min-width: 1366px) {
   html {
-    font-size: 16px; } }
+    font-size: 14px; } }
 @media (min-width: 1440px) {
   html {
-    font-size: 16px; } }
+    font-size: 14px; } }
 @media (min-width: 1536px) {
   html {
-    font-size: 17px; } }
+    font-size: 14px; } }
 @media (min-width: 1600px) {
   html {
-    font-size: 17px; } }
+    font-size: 16px; } }
 @media (min-width: 1680px) {
   html {
-    font-size: 18px; } }
+    font-size: 16px; } }
 @media (min-width: 1920px) {
   html {
-    font-size: 18px; } }
+    font-size: 16px; } }
 
 /*# sourceMappingURL=global.css.map */

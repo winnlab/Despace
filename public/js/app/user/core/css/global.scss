@@ -5,6 +5,8 @@
 @import '../../../../../scss/base/_placeholders.scss';
 @import '../../../../../scss/modules/_animations.scss';
 
+@include font-face(HeliosExtThinC, '#{$fonts-patch}/HeliosExtThinC/heliosextthinc');
+
 *,
 *:before,
 *:after {
@@ -21,12 +23,10 @@ body {
 	padding: 0;
 }
 
-
 body {
-//	font-family: PFDinTextCondPro;
+	font-family: HeliosExtThinC, sans-serif;
 	min-width: 1000px;
 	position: relative;
-
 }
 
 .clearfix {

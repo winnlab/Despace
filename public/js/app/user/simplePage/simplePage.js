@@ -21,6 +21,11 @@ define([
                 self.scrollPage = 0;
                 self.scrollBox = [];
 
+                this.map_options = {
+                    zoom: 17,
+                    scrollwheel: false
+                };
+
 				var simplePage = self.getSimplePage();
 
 				var viewfile =
@@ -40,6 +45,8 @@ define([
 
                     self.calculateBlockSizes();
                     self.calculateScrollArray();
+                    self.initializeMap();
+                    self.mapReSize();
                     self.scrollTo();
 
                 });
@@ -61,11 +68,36 @@ define([
                 }
             },
 
+            mapReSize: function() {
+                var displayWidth = $(window).width(),
+                   officePic = $('.cont-r').outerWidth() + 30,
+                   result = displayWidth - officePic - 30;
+
+                if(displayWidth >= 980) {
+                    $('.cont-l').css({'width': result});
+                }
+            },
+
+            initializeMap: function() {
+                var self = this,
+                    map = $("#googleMap");
+
+                self.map_options.center = new google.maps.LatLng(50.438833, 30.478147);
+                self.googlemap = new google.maps.Map(map[0], self.map_options);
+
+                new google.maps.Marker({
+                    position: self.map_options.center,
+                    map: self.googlemap
+                });
+            },
+
             '{window} resize': function () {
                 var self = this;
 
                 self.calculateBlockSizes();
                 self.calculateScrollArray();
+                self.mapReSize();
+                self.googlemap.setCenter(self.map_options.center);
             },
 
             '{window} scroll': function (el, ev) {
@@ -104,7 +136,7 @@ define([
                     }
                 }
 
-                if(self.scrollPage == 5){
+                if(self.scrollPage == 4){
                     $('#scroll-down').attr('id', 'scroll-up');
                     $('.button-scroll').velocity({
                         rotateZ: "-180deg"
@@ -121,20 +153,13 @@ define([
             },
 
             calculateBlockSizes: function () {
-
-                $('.pages').css('height', $(window).outerHeight()); // подгоняем background под разрешение пользователя
-
+               $('.pages').css('height', $(window).outerHeight()); // подгоняем background под разрешение пользователя
             },
 
             'calculateScrollArray': function () {
-                var self = this,
-                    footer = $('.block-contacts').outerHeight();
+                var self = this;
 
                 for(var i = 0; i < 6; i++) {
-                    if(i == 5) {
-                        self.scrollBox[i] = (footer + ($(window).outerHeight() * 4));
-                        return;
-                    }
                     self.scrollBox[i] = ($(window).outerHeight() * i);
                 }
             },

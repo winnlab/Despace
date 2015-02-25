@@ -153,14 +153,25 @@ define([
             },
 
             calculateBlockSizes: function () {
-               $('.pages').css('height', $(window).outerHeight()); // подгоняем background под разрешение пользователя
+                var userHeight = $(window).outerHeight();
+
+                if(userHeight < 825) {
+                    userHeight = 825;
+                }
+
+               $('.pages').css('height', userHeight); // подгоняем background под разрешение пользователя
             },
 
             'calculateScrollArray': function () {
-                var self = this;
+                var self = this,
+                    userHeight = $(window).outerHeight();
 
-                for(var i = 0; i < 6; i++) {
-                    self.scrollBox[i] = ($(window).outerHeight() * i);
+                if(userHeight < 825) {
+                    userHeight = 825;
+                }
+
+                for(var i = 0; i < 5; i++) {
+                    self.scrollBox[i] = (userHeight * i);
                 }
             },
 

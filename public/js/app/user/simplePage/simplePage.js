@@ -21,6 +21,8 @@ define([
                 self.scrollPage = 0;
                 self.scrollBox = [];
 
+                //this.routeChanged(can.route.attr());
+
                 this.map_options = {
                     zoom: 17,
                     scrollwheel: false
@@ -149,6 +151,19 @@ define([
                     $('.button-scroll').velocity({
                         rotateZ: "0deg"
                     }, 300);
+                }
+            },
+
+            '/ route': 'routeChanged',
+            ':module route': 'routeChanged',
+            ':module/:id route': 'routeChanged',
+
+            routeChanged: function (data) {
+                var self = this;
+
+                if(!data.module) {
+                    self.mapReSize();
+                    self.initializeMap();
                 }
             },
 

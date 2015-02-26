@@ -84,21 +84,24 @@ module {
   .module:hover p, .module:hover span, .module:hover h1, .module:hover h2, .module:hover h3, .module:hover h4, .module:hover h5, .module:hover h6 {
     cursor: pointer; }
 
+@media (min-width: 1px) {
+  html {
+    font-size: 10px; } }
 @media (min-width: 1150px) {
   html {
-    font-size: 14px; } }
+    font-size: 12px; } }
 @media (min-width: 1366px) {
   html {
-    font-size: 14px; } }
+    font-size: 12px; } }
 @media (min-width: 1440px) {
   html {
-    font-size: 14px; } }
+    font-size: 12px; } }
 @media (min-width: 1536px) {
   html {
     font-size: 14px; } }
 @media (min-width: 1600px) {
   html {
-    font-size: 16px; } }
+    font-size: 14px; } }
 @media (min-width: 1680px) {
   html {
     font-size: 16px; } }

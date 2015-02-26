@@ -11,9 +11,9 @@
         </div>
         <div id="header-scl-project">
             <ul class="social">
-                <li> <div class="scl-btm scl-facebook"> </div> </li>
-                <li> <div class="scl-btm scl-tumblr"> </div> </li>
-                <li> <div class="scl-btm scl-pinterest"> </div> </li>
+                <li> <a class="scl-btm scl-facebook" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
+                <li> <a class="scl-btm scl-tumblr" href="http://despacer.tumblr.com"> </a> </li>
+                <li> <a class="scl-btm scl-pinterest" href="https://instagram.com/despace_ua/"> </a> </li>
             </ul>
         </div>
         <div id="header-menu-project">

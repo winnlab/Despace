@@ -136,21 +136,23 @@
       margin: 0;
       padding: 0; }
       #header #header-scl ul.social li {
-        display: inline;
+        display: inline-block;
         padding-right: 7px; }
-    #header #header-scl div.scl-btm {
+        #header #header-scl ul.social li a {
+          display: block; }
+    #header #header-scl .scl-btm {
       display: inline-block; }
-      #header #header-scl div.scl-btm:hover {
+      #header #header-scl .scl-btm:hover {
         cursor: pointer; }
-    #header #header-scl div.scl-facebook {
+    #header #header-scl .scl-facebook {
       background: url("/img/user/social/social.png") no-repeat 0 0;
       width: 32px;
       height: 38px; }
-    #header #header-scl div.scl-pinterest {
+    #header #header-scl .scl-pinterest {
       background: url("/img/user/social/social.png") no-repeat -46px 0;
       width: 40px;
       height: 38px; }
-    #header #header-scl div.scl-tumblr {
+    #header #header-scl .scl-tumblr {
       background: url("/img/user/social/social.png") no-repeat -108px 0;
       width: 33px;
       height: 38px; }
@@ -330,6 +332,8 @@
       width: 100%;
       margin-top: 18px;
       text-align: center; }
+      .page5 .wrapper-social .social a {
+        display: block; }
       .page5 .wrapper-social .social .facebook {
         background: url("/img/user/social/social.png") no-repeat 0 0;
         width: 32px;

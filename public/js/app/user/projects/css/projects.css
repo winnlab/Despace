@@ -87,23 +87,23 @@
       margin: 0;
       padding: 0; }
       #header-project #header-scl-project ul.social li {
-        display: inline;
+        display: inline-block;
         padding-right: 7px; }
-    #header-project #header-scl-project div.scl-btm {
-      display: inline-block;
-      width: 33px;
-      height: 33px; }
-      #header-project #header-scl-project div.scl-btm:hover {
+        #header-project #header-scl-project ul.social li a {
+          display: block; }
+    #header-project #header-scl-project .scl-btm {
+      display: inline-block; }
+      #header-project #header-scl-project .scl-btm:hover {
         cursor: pointer; }
-    #header-project #header-scl-project div.scl-facebook {
+    #header-project #header-scl-project .scl-facebook {
       background: url("/img/user/social/social.png") no-repeat 0 0;
       width: 32px;
       height: 38px; }
-    #header-project #header-scl-project div.scl-pinterest {
+    #header-project #header-scl-project .scl-pinterest {
       background: url("/img/user/social/social.png") no-repeat -46px 0;
       width: 40px;
       height: 38px; }
-    #header-project #header-scl-project div.scl-tumblr {
+    #header-project #header-scl-project .scl-tumblr {
       background: url("/img/user/social/social.png") no-repeat -108px 0;
       width: 33px;
       height: 38px; }

@@ -11,16 +11,16 @@
         </div>
         <div id="header-scl">
             <ul class="social">
-                <li> <div class="scl-btm scl-facebook"> </div> </li>
-                <li> <div class="scl-btm scl-tumblr"> </div> </li>
-                <li> <div class="scl-btm scl-pinterest"> </div> </li>
+                <li> <a class="scl-btm scl-facebook" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
+                <li> <a class="scl-btm scl-tumblr" href="http://despacer.tumblr.com"> </a> </li>
+                <li> <a class="scl-btm scl-pinterest" href="https://instagram.com/despace_ua/"> </a> </li>
             </ul>
         </div>
         <div id="header-menu">
             <ul class="menu">
                 <li> <a class="scroll btm" data-scroll="#about"> {{appState.locale.menu.about}}</a> </li>
                 <li> <a class="scroll btm" data-scroll="#work"> {{appState.locale.menu.work}}</a> </li>
-                <li> <a class="scroll btm"> {{appState.locale.menu.blog}}</a> </li>
+                <li> <a class="scroll btm" href="http://despacer.tumblr.com"> {{appState.locale.menu.blog}}</a> </li>
                 <li> <a class="scroll btm" data-scroll="#contact"> {{appState.locale.menu.contact}}</a> </li>
             </ul>
         </div>
@@ -114,10 +114,10 @@
         </div>
         <div class="social">
             <ul>
-                <li><div class="facebook"></div></li>
-                <li><div class="inst"></div></li>
-                <li><div class="twitter"></div></li>
-                <li><div class="google-plus"></div></li>
+                <li> <a class="facebook" href="https://www.facebook.com/despacer?fref=ts"></a> </li>
+                <li> <a class="inst" href="https://instagram.com/despace_ua/"></a> </li>
+                <li> <a class="twitter" href="http://despacer.tumblr.com"></a> </li>
+                <li> <a class="google-plus" href="https://plus.google.com/u/0/b/106698848921685472259/106698848921685472259/about"></a> </li>
             </ul>
         </div>
     </div>

@@ -33,31 +33,32 @@
 		ul.menu {
 			margin: 0;
 			padding: 0;
+
 			li {
 				display: inline;
-				padding-right: 5%;
+			}
+
+			li + li {
+				margin-left: 20px;
 			}
 		}
 
 		a.btm {
 			text-decoration: none;
-			font-weight: lighter;
 			font-size: rem(18);
-
 			color: #ffffff;
 
 			&:hover {
 				border-bottom: #daa503 4px solid;
 				cursor: pointer;
 			}
-
 		}
 	}
 
 	#header-scl {
 		float: right;
-		padding-left: 3%;
-		padding-right: 4%;
+		margin-left: 3%;
+		margin-right: 4%;
 
 		ul.social {
 			margin: 0;
@@ -114,7 +115,7 @@
 
 					&:hover, &:link, &:visited {
 						cursor: pointer;
-						color: #767676;
+						color: #ffffff;
 					}
 				}
 			}

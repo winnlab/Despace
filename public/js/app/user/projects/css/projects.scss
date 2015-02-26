@@ -28,27 +28,29 @@
 
 	#header-menu-project {
 		float: right;
-		padding-top: 4px;
+		white-space: nowrap;
+		padding-top: 10px;
 
 		ul.menu {
-			margin: 0px;
-			padding: 0px;
+			margin: 0;
+			padding: 0;
 
 			li {
 				display: inline;
-				padding-right: 30px;
+			}
+
+			li + li {
+				margin-left: 20px;
 			}
 		}
 
 		a.btm {
 			text-decoration: none;
-			font-weight: lighter;
 			font-size: rem(18);
 			color: #ffffff;
 
 			&:hover {
-				border-bottom: 4px solid;
-				border-bottom-color: #daa503;
+				border-bottom: #daa503 4px solid;
 				cursor: pointer;
 			}
 
@@ -57,12 +59,12 @@
 
 	#header-scl-project {
 		float: right;
-		padding-left: 37px;
-		padding-right: 37px;
+		margin-left: 3%;
+		margin-right: 4%;
 
 		ul.social {
-			margin: 0px;
-			padding: 0px;
+			margin: 0;
+			padding: 0;
 
 			li {
 				display: inline;
@@ -81,31 +83,33 @@
 		}
 
 		div.scl-facebook {
-			background-image: url(("#{$img-patch}social/facebook.png"));
-			background-repeat: no-repeat;
+			background: url("#{$img-patch}social/social.png") no-repeat 0 0;
+			width: 32px;
+			height: 38px;
 		}
 
 		div.scl-pinterest {
-			background-image: url(("#{$img-patch}social/pinterest.png"));
-			background-repeat: no-repeat;
+			background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
+			width: 40px;
+			height: 38px;
 		}
 
 		div.scl-tumblr {
-			background-image: url(("#{$img-patch}social/tumblr.png"));
-			background-repeat: no-repeat;
+			background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
+			width: 33px;
+			height: 38px;
 		}
 	}
 
 	#header-lang-project {
 		float: right;
-		padding-top: 4px;
-		font-weight: lighter;
+		padding-top: 10px;
 		font-size: rem(18);
-		color: #767676;
+		color: #ffffff;
 
 		ul.lang {
-			margin: 0px;
-			padding: 0px;
+			margin: 0;
+			padding: 0;
 
 			li {
 				display: inline;
@@ -113,20 +117,12 @@
 				a.lang-btm {
 					text-decoration: none;
 
-					&:hover {
+					&:hover, &:link, &:visited {
 						cursor: pointer;
-					}
-
-					&:link {
-						color: #767676;
-					}
-
-					&:visited {
-						color: #767676;
+						color: #ffffff;
 					}
 				}
 			}
-
 		}
 	}
 }

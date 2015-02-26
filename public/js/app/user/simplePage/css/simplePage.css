@@ -118,11 +118,11 @@
       margin: 0;
       padding: 0; }
       #header #header-menu ul.menu li {
-        display: inline;
-        padding-right: 5%; }
+        display: inline; }
+      #header #header-menu ul.menu li + li {
+        margin-left: 20px; }
     #header #header-menu a.btm {
       text-decoration: none;
-      font-weight: lighter;
       font-size: 1.125rem;
       color: #ffffff; }
       #header #header-menu a.btm:hover {
@@ -130,8 +130,8 @@
         cursor: pointer; }
   #header #header-scl {
     float: right;
-    padding-left: 3%;
-    padding-right: 4%; }
+    margin-left: 3%;
+    margin-right: 4%; }
     #header #header-scl ul.social {
       margin: 0;
       padding: 0; }
@@ -168,7 +168,7 @@
           text-decoration: none; }
           #header #header-lang ul.lang li a.lang-btm:hover, #header #header-lang ul.lang li a.lang-btm:link, #header #header-lang ul.lang li a.lang-btm:visited {
             cursor: pointer;
-            color: #767676; }
+            color: #ffffff; }
 
 .page1 {
   background: url("/img/user/bg-1.jpg") no-repeat; }

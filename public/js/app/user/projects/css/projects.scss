@@ -88,21 +88,24 @@
 			}
 
 			.scl-facebook {
-				background: url("#{$img-patch}social/social.png") no-repeat 0 0;
-				width: 32px;
-				height: 38px;
+				background: url("#{$img-patch}social/facebook.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(32);
+				height: rem(38);
 			}
 
 			.scl-pinterest {
-				background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
-				width: 40px;
-				height: 38px;
+				background: url("#{$img-patch}social/instagram.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(40);
+				height: rem(38);
 			}
 
 			.scl-tumblr {
-				background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
-				width: 33px;
-				height: 38px;
+				background: url("#{$img-patch}social/t.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(33);
+				height: rem(38);
 			}
 		}
 	}

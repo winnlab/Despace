@@ -143,17 +143,20 @@
       #header .wrapper-scl #header-scl .scl-btm:hover {
         cursor: pointer; }
     #header .wrapper-scl #header-scl .scl-facebook {
-      background: url("/img/user/social/social.png") no-repeat 0 0;
-      width: 32px;
-      height: 38px; }
+      background: url("/img/user/social/facebook.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2rem;
+      height: 2.375rem; }
     #header .wrapper-scl #header-scl .scl-pinterest {
-      background: url("/img/user/social/social.png") no-repeat -46px 0;
-      width: 40px;
-      height: 38px; }
+      background: url("/img/user/social/instagram.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2.5rem;
+      height: 2.375rem; }
     #header .wrapper-scl #header-scl .scl-tumblr {
-      background: url("/img/user/social/social.png") no-repeat -108px 0;
-      width: 33px;
-      height: 38px; }
+      background: url("/img/user/social/t.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2.0625rem;
+      height: 2.375rem; }
   #header .wrapper-lng {
     float: right;
     height: 100%; }
@@ -179,12 +182,12 @@
     top: 31.4%; }
     .page1 .main-block p.slogan {
       color: #000000;
-      font-size: 40px;
+      font-size: 2.5rem;
       margin-bottom: 6.5%; }
     .page1 .main-block p {
       color: #ffffff;
       font-size: 2.3125rem;
-      line-height: 40px; }
+      line-height: 2.5rem; }
   .page1 .button-scroll {
     z-index: 2;
     width: 50px;
@@ -284,21 +287,23 @@
   .page4 .works-r .wrapper-nav {
     width: 100%; }
     .page4 .works-r .wrapper-nav .nav {
-      height: 49px;
+      height: 2.5rem;
       margin: 0 auto;
       display: inline-block; }
       .page4 .works-r .wrapper-nav .nav .label {
         height: 100%;
         float: left; }
         .page4 .works-r .wrapper-nav .nav .label p {
+          padding-top: 0.3125rem;
           font-size: 1.375rem;
           color: #000000; }
       .page4 .works-r .wrapper-nav .nav .btn-arrow-work {
         float: left;
-        width: 49px;
-        height: 49px;
+        width: 2.5rem;
+        height: 2.5rem;
         background: url("/img/user/btn-arrow-r.png") no-repeat;
-        margin-left: 10px; }
+        background-size: 100% 100%;
+        margin-left: 0.625rem; }
         .page4 .works-r .wrapper-nav .nav .btn-arrow-work:hover {
           cursor: pointer; }
 
@@ -335,21 +340,25 @@
       .page5 .wrapper-social .social a {
         display: block; }
       .page5 .wrapper-social .social .facebook {
-        background: url("/img/user/social/social.png") no-repeat 0 0;
-        width: 32px;
-        height: 38px; }
+        background: url("/img/user/social/facebook.png") no-repeat;
+        background-size: 100% 100%;
+        width: 2rem;
+        height: 2.375rem; }
       .page5 .wrapper-social .social .inst {
-        background: url("/img/user/social/social.png") no-repeat -46px 0;
-        width: 40px;
-        height: 38px; }
+        background: url("/img/user/social/instagram.png") no-repeat;
+        background-size: 100% 100%;
+        width: 2.5rem;
+        height: 2.375rem; }
       .page5 .wrapper-social .social .twitter {
-        background: url("/img/user/social/social.png") no-repeat -108px 0;
-        width: 33px;
-        height: 38px; }
+        background: url("/img/user/social/t.png") no-repeat;
+        background-size: 100% 100%;
+        width: 2.0625rem;
+        height: 2.375rem; }
       .page5 .wrapper-social .social .google-plus {
-        background: url("/img/user/social/social.png") no-repeat -156px 0;
-        width: 38px;
-        height: 38px; }
+        background: url("/img/user/social/google.png") no-repeat;
+        background-size: 100% 100%;
+        width: 2.375rem;
+        height: 2.375rem; }
       .page5 .wrapper-social .social .facebook:hover, .page5 .wrapper-social .social .inst:hover, .page5 .wrapper-social .social .twitter:hover, .page5 .wrapper-social .social .google-plus:hover {
         cursor: pointer; }
     .page5 .wrapper-social ul {
@@ -371,33 +380,36 @@
       .page5 .wrapper-address .line-1:after {
         content: '';
         position: absolute;
-        left: -39px;
+        left: -2.4375rem;
         top: 0;
-        background: url("/img/user/icons.png") no-repeat 0 0;
-        width: 21px;
-        height: 29px; }
+        background: url("/img/user/ico/ico-1.png") no-repeat;
+        background-size: 100% 100%;
+        width: 1.3125rem;
+        height: 1.8125rem; }
     .page5 .wrapper-address .line-2 {
       position: relative;
       padding: 1px; }
       .page5 .wrapper-address .line-2:after {
         content: '';
         position: absolute;
-        left: -39px;
+        left: -2.4375rem;
         top: 0;
-        background: url("/img/user/icons.png") no-repeat -23px 0;
-        width: 18px;
-        height: 24px; }
+        background: url("/img/user//ico/ico-2.png") no-repeat;
+        background-size: 100% 100%;
+        width: 1.125rem;
+        height: 1.5rem; }
     .page5 .wrapper-address .line-3 {
       position: relative;
       padding: 1px; }
       .page5 .wrapper-address .line-3:after {
         content: '';
         position: absolute;
-        left: -39px;
+        left: -2.4375rem;
         top: 0;
-        background: url("/img/user/icons.png") no-repeat -43px 0;
-        width: 26px;
-        height: 15px; }
+        background: url("/img/user/ico/ico-3.png") no-repeat;
+        background-size: 100% 100%;
+        width: 1.625rem;
+        height: 0.9375rem; }
     .page5 .wrapper-address ul {
       margin: 0;
       padding: 0; }

@@ -113,7 +113,7 @@
                         <div class="label">
                             <div class="adorable_table">
                                 <div class="adorable_cell">
-                                    <p>{{appState.locale.ourWorks.ourWorks}}</p>
+                                     <p>{{appState.locale.ourWorks.ourWorks}}</p>
                                 </div>
                             </div>
                         </div>

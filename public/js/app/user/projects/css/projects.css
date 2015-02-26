@@ -189,17 +189,20 @@
       #header-project .wrapper-scl #header-scl-project .scl-btm:hover {
         cursor: pointer; }
     #header-project .wrapper-scl #header-scl-project .scl-facebook {
-      background: url("/img/user/social/social.png") no-repeat 0 0;
-      width: 32px;
-      height: 38px; }
+      background: url("/img/user/social/facebook.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2rem;
+      height: 2.375rem; }
     #header-project .wrapper-scl #header-scl-project .scl-pinterest {
-      background: url("/img/user/social/social.png") no-repeat -46px 0;
-      width: 40px;
-      height: 38px; }
+      background: url("/img/user/social/instagram.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2.5rem;
+      height: 2.375rem; }
     #header-project .wrapper-scl #header-scl-project .scl-tumblr {
-      background: url("/img/user/social/social.png") no-repeat -108px 0;
-      width: 33px;
-      height: 38px; }
+      background: url("/img/user/social/t.png") no-repeat;
+      background-size: 100% 100%;
+      width: 2.0625rem;
+      height: 2.375rem; }
   #header-project .wrapper-lng {
     float: right;
     height: 100%; }

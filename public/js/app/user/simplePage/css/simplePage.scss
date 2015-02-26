@@ -87,21 +87,24 @@
 			}
 
 			.scl-facebook {
-				background: url("#{$img-patch}social/social.png") no-repeat 0 0;
-				width: 32px;
-				height: 38px;
+				background: url("#{$img-patch}social/facebook.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(32);
+				height: rem(38);
 			}
 
 			.scl-pinterest {
-				background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
-				width: 40px;
-				height: 38px;
+				background: url("#{$img-patch}social/instagram.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(40);
+				height: rem(38);
 			}
 
 			.scl-tumblr {
-				background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
-				width: 33px;
-				height: 38px;
+				background: url("#{$img-patch}social/t.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(33);
+				height: rem(38);
 			}
 		}
 	}
@@ -145,14 +148,14 @@
 
 		p.slogan {
 			color: #000000;
-			font-size: 40px;
+			font-size: rem(40);
 			margin-bottom: 6.5%;
 		}
 
 		p {
 			color: #ffffff;
 			font-size: rem(37);
-			line-height: 40px;
+			line-height: rem(40);
 		}
 	}
 
@@ -296,7 +299,7 @@
 			width: 100%;
 
 			.nav {
-				height: 49px;
+				height: rem(40);
 				margin: 0 auto;
 				display: inline-block;
 
@@ -305,6 +308,7 @@
 					float: left;
 
 					p {
+						padding-top: rem(5);
 						font-size: rem(22);
 						color: #000000;
 					}
@@ -312,10 +316,11 @@
 
 				.btn-arrow-work {
 					float: left;
-					width: 49px;
-					height: 49px;
+					width: rem(40);
+					height: rem(40);
 					background: url("#{$img-patch}btn-arrow-r.png") no-repeat;
-					margin-left: 10px;
+					background-size: 100% 100%;
+					margin-left: rem(10);
 
 					&:hover {
 						cursor: pointer;
@@ -374,27 +379,31 @@
 			}
 
 			.facebook {
-				background: url("#{$img-patch}social/social.png") no-repeat 0 0;
-				width: 32px;
-				height: 38px;
+				background: url("#{$img-patch}social/facebook.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(32);
+				height: rem(38);
 			}
 
 			.inst {
-				background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
-				width: 40px;
-				height: 38px;
+				background: url("#{$img-patch}social/instagram.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(40);
+				height: rem(38);
 			}
 
 			.twitter {
-				background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
-				width: 33px;
-				height: 38px;
+				background: url("#{$img-patch}social/t.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(33);
+				height: rem(38);
 			}
 
 			.google-plus {
-				background: url("#{$img-patch}social/social.png") no-repeat -156px 0;
-				width: 38px;
-				height: 38px;
+				background: url("#{$img-patch}social/google.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(38);
+				height: rem(38);
 			}
 
 			.facebook, .inst, .twitter, .google-plus {
@@ -432,11 +441,12 @@
 			&:after {
 				content: '';
 				position: absolute;
-				left: -39px;
+				left: rem(-39);
 				top: 0;
-				background: url("#{$img-patch}icons.png") no-repeat 0 0;
-				width: 21px;
-				height: 29px;
+				background: url("#{$img-patch}ico/ico-1.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(21);
+				height: rem(29);
 			}
 		}
 
@@ -447,11 +457,12 @@
 			&:after {
 				content: '';
 				position: absolute;
-				left: -39px;
+				left: rem(-39);
 				top: 0;
-				background: url("#{$img-patch}icons.png") no-repeat -23px 0;
-				width: 18px;
-				height: 24px;
+				background: url("#{$img-patch}/ico/ico-2.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(18);
+				height: rem(24);
 			}
 		}
 
@@ -462,11 +473,12 @@
 			&:after {
 				content: '';
 				position: absolute;
-				left: -39px;
+				left: rem(-39);
 				top: 0;
-				background: url("#{$img-patch}icons.png") no-repeat -43px 0;
-				width: 26px;
-				height: 15px;
+				background: url("#{$img-patch}ico/ico-3.png") no-repeat;
+				background-size: 100% 100%;
+				width: rem(26);
+				height: rem(15);
 			}
 		}
 

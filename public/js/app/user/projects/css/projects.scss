@@ -3,124 +3,131 @@
 @import '../../../../../scss/base/_mixins.scss';
 @import '../../../../../scss/base/_placeholders.scss';
 @import '../../../../../scss/modules/_animations.scss';
+@import '../../../../../scss/base/_useful.scss';
 
 #header-project {
 	z-index: 1;
-	padding: 1% 5% 3% 5%;
+	padding: 0 5%;
 	min-width: 1000px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 45px;
+	height: 65px;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.7);
 
-	.logo {
+	.wrapper-logo {
 		float: left;
-		display: table-cell;
-		vertical-align: middle;
+		height: 100%;
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
-
-	#header-menu-project {
-		float: right;
-		white-space: nowrap;
-		padding-top: 10px;
-
-		ul.menu {
-			margin: 0;
-			padding: 0;
-
-			li {
-				display: inline;
-			}
-
-			li + li {
-				margin-left: 20px;
-			}
-		}
-
-		a.btm {
-			text-decoration: none;
-			font-size: rem(18);
-			color: #ffffff;
-
+		.logo {
 			&:hover {
-				border-bottom: #daa503 4px solid;
 				cursor: pointer;
 			}
-
 		}
 	}
 
-	#header-scl-project {
+	.wrapper-nav {
 		float: right;
-		margin-left: 3%;
-		margin-right: 4%;
+		height: 100%;
 
-		ul.social {
-			margin: 0;
-			padding: 0;
+		#header-menu-project {
+			ul.menu {
+				margin: 0;
+				padding: 0;
 
-			li {
-				display: inline-block;
-				padding-right: 7px;
+				li {
+					display: inline;
+				}
 
-				a {
-					display: block;
+				li + li {
+					margin-left: 20px;
+				}
+			}
+
+			a.btm {
+				text-decoration: none;
+				font-size: rem(18);
+				color: #ffffff;
+
+				&:hover {
+					border-bottom: #daa503 rem(4) solid;
+					cursor: pointer;
 				}
 			}
 		}
-
-		.scl-btm {
-			display: inline-block;
-
-			&:hover {
-				cursor: pointer;
-			}
-		}
-
-		.scl-facebook {
-			background: url("#{$img-patch}social/social.png") no-repeat 0 0;
-			width: 32px;
-			height: 38px;
-		}
-
-		.scl-pinterest {
-			background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
-			width: 40px;
-			height: 38px;
-		}
-
-		.scl-tumblr {
-			background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
-			width: 33px;
-			height: 38px;
-		}
 	}
 
-	#header-lang-project {
+	.wrapper-scl {
 		float: right;
-		padding-top: 10px;
-		font-size: rem(18);
-		color: #ffffff;
+		height: 100%;
+		margin: 0 rem(30);
 
-		ul.lang {
-			margin: 0;
-			padding: 0;
+		#header-scl-project {
+			ul.social {
+				margin: 0;
+				padding: 0;
 
-			li {
-				display: inline;
+				li {
+					display: inline-block;
+					padding-right: 7px;
 
-				a.lang-btm {
-					text-decoration: none;
+					a {
+						display: block;
+					}
 
-					&:hover, &:link, &:visited {
-						cursor: pointer;
-						color: #ffffff;
+				}
+			}
+
+			.scl-btm {
+				display: inline-block;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.scl-facebook {
+				background: url("#{$img-patch}social/social.png") no-repeat 0 0;
+				width: 32px;
+				height: 38px;
+			}
+
+			.scl-pinterest {
+				background: url("#{$img-patch}social/social.png") no-repeat -46px 0;
+				width: 40px;
+				height: 38px;
+			}
+
+			.scl-tumblr {
+				background: url("#{$img-patch}social/social.png") no-repeat -108px 0;
+				width: 33px;
+				height: 38px;
+			}
+		}
+	}
+	.wrapper-lng {
+		float: right;
+		height: 100%;
+
+		#header-lang-project {
+			font-size: rem(18);
+			color: #ffffff;
+
+			ul.lang {
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: inline;
+
+					a.lang-btm {
+						text-decoration: none;
+
+						&:hover, &:link, &:visited {
+							cursor: pointer;
+							color: #ffffff;
+						}
 					}
 				}
 			}

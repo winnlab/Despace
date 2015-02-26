@@ -1,29 +1,54 @@
 <header>
     <div id="header">
-        <a class="scroll logo module" data-scroll="#start" data-href="/">
-            <img src="{{appState.imgPath}}logo.png" alt="Despace">
-        </a>
-        <div id="header-lang">
-            <ul class="lang">
-                <li> <a class="lang-btm" href="/">RU</a> </li> /
-                <li> <a class="lang-btm" href="/en">EN</a></li>
-            </ul>
+        <div class="wrapper-logo">
+            <div class="adorable_table">
+                <div class="adorable_cell">
+                    <a class="scroll logo module" data-scroll="#start" data-href="/">
+                        <img src="{{appState.imgPath}}logo.png" alt="Despace">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div id="header-scl">
-            <ul class="social">
-                <li> <a class="scl-btm scl-facebook" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
-                <li> <a class="scl-btm scl-tumblr" href="http://despacer.tumblr.com"> </a> </li>
-                <li> <a class="scl-btm scl-pinterest" href="https://instagram.com/despace_ua/"> </a> </li>
-            </ul>
+        <div class="wrapper-lng">
+            <div class="adorable_table">
+                <div class="adorable_cell">
+                    <div id="header-lang">
+                        <ul class="lang">
+                            <li> <a class="lang-btm" href="/">RU</a> </li> /
+                            <li> <a class="lang-btm" href="/en">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="header-menu">
-            <ul class="menu">
-                <li> <a class="scroll btm" data-scroll="#about"> {{appState.locale.menu.about}}</a> </li>
-                <li> <a class="scroll btm" data-scroll="#work"> {{appState.locale.menu.work}}</a> </li>
-                <li> <a class="scroll btm" href="http://despacer.tumblr.com"> {{appState.locale.menu.blog}}</a> </li>
-                <li> <a class="scroll btm" data-scroll="#contact"> {{appState.locale.menu.contact}}</a> </li>
-            </ul>
+        <div class="wrapper-scl">
+            <div class="adorable_table">
+                <div class="adorable_cell">
+                    <div id="header-scl">
+                        <ul class="social">
+                            <li> <a class="scl-btm scl-facebook" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
+                            <li> <a class="scl-btm scl-tumblr" href="http://despacer.tumblr.com"> </a> </li>
+                            <li> <a class="scl-btm scl-pinterest" href="https://instagram.com/despace_ua/"> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="wrapper-nav">
+            <div class="adorable_table">
+                <div class="adorable_cell">
+                    <div id="header-menu">
+                        <ul class="menu">
+                            <li> <a class="scroll btm" data-scroll="#about"> {{appState.locale.menu.about}}</a> </li>
+                            <li> <a class="scroll btm" data-scroll="#work"> {{appState.locale.menu.work}}</a> </li>
+                            <li> <a class="scroll btm" href="http://despacer.tumblr.com"> {{appState.locale.menu.blog}}</a> </li>
+                            <li> <a class="scroll btm" data-scroll="#contact"> {{appState.locale.menu.contact}}</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="clear"></div>
     </div>
 </header>
@@ -104,9 +129,8 @@
 
 <div id="contact" class="pages page5">
     <div class="wrapper-contact">
-        <div class="cont-l" id="googleMap"></div>
         <div class="cont-r"></div>
-        <div class="clear"></div>
+        <div class="cont-l" id="googleMap"></div>
     </div>
     <div class="wrapper-social">
         <div class="label">

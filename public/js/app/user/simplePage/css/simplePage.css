@@ -96,80 +96,80 @@
 
 #header {
   z-index: 1;
-  padding: 2% 5% 4% 5%;
+  padding: 0 5%;
   min-width: 1000px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 90px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7); }
-  #header .logo {
+  #header .wrapper-logo {
     float: left;
-    display: table-cell;
-    vertical-align: middle; }
-    #header .logo:hover {
+    height: 100%; }
+    #header .wrapper-logo .logo:hover {
       cursor: pointer; }
-  #header #header-menu {
+  #header .wrapper-nav {
     float: right;
-    padding-top: 10px; }
-    #header #header-menu ul.menu {
+    height: 100%; }
+    #header .wrapper-nav #header-menu ul.menu {
       margin: 0;
       padding: 0; }
-      #header #header-menu ul.menu li {
+      #header .wrapper-nav #header-menu ul.menu li {
         display: inline; }
-      #header #header-menu ul.menu li + li {
+      #header .wrapper-nav #header-menu ul.menu li + li {
         margin-left: 20px; }
-    #header #header-menu a.btm {
+    #header .wrapper-nav #header-menu a.btm {
       text-decoration: none;
       font-size: 1.125rem;
       color: #ffffff; }
-      #header #header-menu a.btm:hover {
-        border-bottom: #daa503 4px solid;
+      #header .wrapper-nav #header-menu a.btm:hover {
+        border-bottom: #daa503 0.25rem solid;
         cursor: pointer; }
-  #header #header-scl {
+  #header .wrapper-scl {
     float: right;
-    margin-left: 3%;
-    margin-right: 4%; }
-    #header #header-scl ul.social {
+    height: 100%;
+    margin: 0 1.875rem; }
+    #header .wrapper-scl #header-scl ul.social {
       margin: 0;
       padding: 0; }
-      #header #header-scl ul.social li {
+      #header .wrapper-scl #header-scl ul.social li {
         display: inline-block;
         padding-right: 7px; }
-        #header #header-scl ul.social li a {
+        #header .wrapper-scl #header-scl ul.social li a {
           display: block; }
-    #header #header-scl .scl-btm {
+    #header .wrapper-scl #header-scl .scl-btm {
       display: inline-block; }
-      #header #header-scl .scl-btm:hover {
+      #header .wrapper-scl #header-scl .scl-btm:hover {
         cursor: pointer; }
-    #header #header-scl .scl-facebook {
+    #header .wrapper-scl #header-scl .scl-facebook {
       background: url("/img/user/social/social.png") no-repeat 0 0;
       width: 32px;
       height: 38px; }
-    #header #header-scl .scl-pinterest {
+    #header .wrapper-scl #header-scl .scl-pinterest {
       background: url("/img/user/social/social.png") no-repeat -46px 0;
       width: 40px;
       height: 38px; }
-    #header #header-scl .scl-tumblr {
+    #header .wrapper-scl #header-scl .scl-tumblr {
       background: url("/img/user/social/social.png") no-repeat -108px 0;
       width: 33px;
       height: 38px; }
-  #header #header-lang {
+  #header .wrapper-lng {
     float: right;
-    padding-top: 10px;
-    font-size: 1.125rem;
-    color: #ffffff; }
-    #header #header-lang ul.lang {
-      margin: 0;
-      padding: 0; }
-      #header #header-lang ul.lang li {
-        display: inline; }
-        #header #header-lang ul.lang li a.lang-btm {
-          text-decoration: none; }
-          #header #header-lang ul.lang li a.lang-btm:hover, #header #header-lang ul.lang li a.lang-btm:link, #header #header-lang ul.lang li a.lang-btm:visited {
-            cursor: pointer;
-            color: #ffffff; }
+    height: 100%; }
+    #header .wrapper-lng #header-lang {
+      font-size: 1.125rem;
+      color: #ffffff; }
+      #header .wrapper-lng #header-lang ul.lang {
+        margin: 0;
+        padding: 0; }
+        #header .wrapper-lng #header-lang ul.lang li {
+          display: inline; }
+          #header .wrapper-lng #header-lang ul.lang li a.lang-btm {
+            text-decoration: none; }
+            #header .wrapper-lng #header-lang ul.lang li a.lang-btm:hover, #header .wrapper-lng #header-lang ul.lang li a.lang-btm:link, #header .wrapper-lng #header-lang ul.lang li a.lang-btm:visited {
+              cursor: pointer;
+              color: #ffffff; }
 
 .page1 {
   background: url("/img/user/bg-1.jpg") no-repeat; }
@@ -210,7 +210,7 @@
   .page2 .about-r p {
     font-size: 1.375rem;
     color: #000000;
-    line-height: 31px;
+    line-height: 1.9375rem;
     text-align: left; }
 
 .page3 {
@@ -219,54 +219,55 @@
     position: relative;
     left: 10.85%;
     top: 17%;
-    width: 825px;
-    height: 528px;
+    width: 51.5625rem;
+    height: 33rem;
     background: url("/img/user/howItWork.png") no-repeat;
+    background-size: 100% 100%;
     color: #000000;
-    font-size: 30px; }
+    font-size: 1.875rem; }
     .page3 .howItWork .capital {
       font-size: 1.5rem;
       font-weight: bold;
       text-align: center;
-      width: 300px; }
+      width: 18.75rem; }
       .page3 .howItWork .capital.t-1 {
         position: absolute;
-        left: -86px;
-        top: -32px; }
+        left: -5.375rem;
+        top: -2rem; }
       .page3 .howItWork .capital.t-2 {
         position: absolute;
-        right: 115px;
-        top: -32px; }
+        right: 7.1875rem;
+        top: -2rem; }
       .page3 .howItWork .capital.t-3 {
         position: absolute;
-        left: 175px;
-        bottom: -63px; }
+        left: 10.9375rem;
+        bottom: -3.9375rem; }
       .page3 .howItWork .capital.t-4 {
         position: absolute;
-        right: -82px;
-        bottom: -63px; }
+        right: -5.125rem;
+        bottom: -3.9375rem; }
     .page3 .howItWork .content {
       position: relative;
       left: 0;
-      top: 200px; }
+      top: 12.5rem; }
       .page3 .howItWork .content .desc {
-        width: 275px;
+        width: 17.1875rem;
         font-size: 1.125rem;
         font-weight: bold;
-        line-height: 20px; }
+        line-height: 1.25rem; }
         .page3 .howItWork .content .desc.b-1 {
           position: absolute;
-          left: -8px;
+          left: -0.5rem;
           top: 0;
           text-align: left; }
         .page3 .howItWork .content .desc.b-2 {
           position: absolute;
-          left: 281px;
+          left: 17.5625rem;
           top: 0;
           text-align: left; }
         .page3 .howItWork .content .desc.b-3 {
           position: absolute;
-          right: -38px;
+          right: -2.375rem;
           top: 0;
           text-align: right; }
 
@@ -303,21 +304,21 @@
 
 .page5 {
   background-color: #262626;
-  padding: 15px; }
+  padding: 0.9375rem; }
   .page5 .wrapper-contact {
-    width: 100%;
-    height: 602px;
+    overflow: hidden;
+    height: 37.625rem;
     margin-top: 6%; }
     .page5 .wrapper-contact .cont-l {
-      float: left;
       height: 100%;
-      background-color: white; }
+      margin-right: 28.3125rem; }
     .page5 .wrapper-contact .cont-r {
-      float: left;
-      width: 423px;
+      float: right;
+      width: 26.4375rem;
       height: 100%;
-      margin-left: 30px;
-      background: url("/img/user/we.jpg") no-repeat; }
+      margin-left: 1.875rem;
+      background: url("/img/user/we.jpg") no-repeat;
+      background-size: 100% 100%; }
   .page5 .wrapper-social {
     float: left;
     margin: 3.5% 0 0 5%; }

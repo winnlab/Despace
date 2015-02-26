@@ -39,6 +39,7 @@ define([
                     simplePage: simplePage,
                     appState: appState
                 }, function(html) {
+
                     self.element.html(html);
 
                     if (self.options.isReady) {
@@ -48,9 +49,7 @@ define([
                     self.calculateBlockSizes();
                     self.calculateScrollArray();
                     self.initializeMap();
-                    self.mapReSize();
                     self.scrollTo();
-
                 });
 			},
 
@@ -67,16 +66,6 @@ define([
                 if (elScrollTo) {
                     $('html, body').animate({scrollTop: $(elScrollTo).offset().top}, 500);
                     appState.attr('scrollTo', 0);
-                }
-            },
-
-            mapReSize: function() {
-                var displayWidth = $(window).width(),
-                   officePic = $('.cont-r').outerWidth() + 30,
-                   result = displayWidth - officePic - 30;
-
-                if(displayWidth >= 980) {
-                    $('.cont-l').css({'width': result});
                 }
             },
 
@@ -98,7 +87,6 @@ define([
 
                 self.calculateBlockSizes();
                 self.calculateScrollArray();
-                self.mapReSize();
                 self.googlemap.setCenter(self.map_options.center);
             },
 
@@ -107,13 +95,11 @@ define([
 
                 var $window = $(window),
                     max_scroll = 200,// промежуток за который все должно быть
-                    start = 70, // размер блока
-                    max = 45, // размер блока стремится к размеру
+                    start = 90, // размер блока
+                    max = 65, // размер блока стремится к размеру
                     ratio,
                     scroll_top,
                     result_header,
-                    result_header_top,
-                    result_header_bot,
                     i;
 
                 scroll_top = $window.scrollTop(); // реальное положение скролла
@@ -121,13 +107,9 @@ define([
                 ratio = scroll_top / max_scroll; // подсчет коэффициента
 
                 result_header = start + (max - start) * ratio;
-                result_header_top = 2 + (1 - 2) * ratio; // подсчет padding-top (2 - начальное, 1 - нужный)
-                result_header_bot = 4 + (3 - 4) * ratio; // подсчет padding-bottom
+                //result_header_top = 2 + (1 - 2) * ratio; // подсчет padding-top (2 - начальное, 1 - нужный)
 
-                $('#header').css({'height': result_header,
-                                  'padding-top': result_header_top + '%',
-                                  'padding-bottom': result_header_bot + '%'
-                });
+                $('#header').css({'height': result_header});
 
                 scroll_top = $window.scrollTop();
 
@@ -162,7 +144,6 @@ define([
                 var self = this;
 
                 if(!data.module) {
-                    self.mapReSize();
                     self.initializeMap();
                 }
             },
@@ -170,8 +151,8 @@ define([
             calculateBlockSizes: function () {
                 var userHeight = $(window).outerHeight();
 
-                if(userHeight < 825) {
-                    userHeight = 825;
+                if(userHeight < 768) {
+                    userHeight = 768;
                 }
 
                $('.pages').css('height', userHeight); // подгоняем background под разрешение пользователя
@@ -181,8 +162,8 @@ define([
                 var self = this,
                     userHeight = $(window).outerHeight();
 
-                if(userHeight < 825) {
-                    userHeight = 825;
+                if(userHeight < 768) {
+                    userHeight = 768;
                 }
 
                 for(var i = 0; i < 5; i++) {

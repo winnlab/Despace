@@ -44,83 +44,178 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
+/*
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+*/
+/* useful */
+.error {
+  color: #fd7b6a; }
+
+.half {
+  float: left;
+  width: 50%;
+  height: 100%; }
+
+/* Useful stuff */
+.adorable_container {
+  /* Should have width */
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: table;
+  position: relative; }
+  .adorable_container:before {
+    content: "";
+    display: block;
+    margin-top: 100%; }
+
+.inline_adorable_container {
+  /* Should have width */
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  letter-spacing: -1px;
+  vertical-align: top; }
+  .inline_adorable_container .adorable {
+    line-height: normal;
+    letter-spacing: normal; }
+  .inline_adorable_container:before {
+    content: "";
+    display: block;
+    margin-top: 100%; }
+
+.adorable {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  max-height: 100%;
+  max-width: 100%; }
+
+.adorable_table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+.adorable_cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  white-space: normal; }
+  .adorable_cell.left {
+    text-align: left; }
+  .adorable_cell.right {
+    text-align: right; }
+
+.inline_container {
+  display: inline-block;
+  line-height: 0;
+  letter-spacing: -1px; }
+  .inline_container .inline {
+    line-height: normal;
+    letter-spacing: normal; }
+
+.rounded {
+  -moz-border-radius: 99999em;
+  -webkit-border-radius: 99999em;
+  -khtml-border-radius: 99999em;
+  border-radius: 99999em; }
+
+.border_boxed {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 #header-project {
   z-index: 1;
-  padding: 1% 5% 3% 5%;
+  padding: 0 5%;
   min-width: 1000px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 45px;
+  height: 65px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7); }
-  #header-project .logo {
+  #header-project .wrapper-logo {
     float: left;
-    display: table-cell;
-    vertical-align: middle; }
-    #header-project .logo:hover {
+    height: 100%; }
+    #header-project .wrapper-logo .logo:hover {
       cursor: pointer; }
-  #header-project #header-menu-project {
+  #header-project .wrapper-nav {
     float: right;
-    white-space: nowrap;
-    padding-top: 10px; }
-    #header-project #header-menu-project ul.menu {
+    height: 100%; }
+    #header-project .wrapper-nav #header-menu-project ul.menu {
       margin: 0;
       padding: 0; }
-      #header-project #header-menu-project ul.menu li {
+      #header-project .wrapper-nav #header-menu-project ul.menu li {
         display: inline; }
-      #header-project #header-menu-project ul.menu li + li {
+      #header-project .wrapper-nav #header-menu-project ul.menu li + li {
         margin-left: 20px; }
-    #header-project #header-menu-project a.btm {
+    #header-project .wrapper-nav #header-menu-project a.btm {
       text-decoration: none;
       font-size: 1.125rem;
       color: #ffffff; }
-      #header-project #header-menu-project a.btm:hover {
-        border-bottom: #daa503 4px solid;
+      #header-project .wrapper-nav #header-menu-project a.btm:hover {
+        border-bottom: #daa503 0.25rem solid;
         cursor: pointer; }
-  #header-project #header-scl-project {
+  #header-project .wrapper-scl {
     float: right;
-    margin-left: 3%;
-    margin-right: 4%; }
-    #header-project #header-scl-project ul.social {
+    height: 100%;
+    margin: 0 1.875rem; }
+    #header-project .wrapper-scl #header-scl-project ul.social {
       margin: 0;
       padding: 0; }
-      #header-project #header-scl-project ul.social li {
+      #header-project .wrapper-scl #header-scl-project ul.social li {
         display: inline-block;
         padding-right: 7px; }
-        #header-project #header-scl-project ul.social li a {
+        #header-project .wrapper-scl #header-scl-project ul.social li a {
           display: block; }
-    #header-project #header-scl-project .scl-btm {
+    #header-project .wrapper-scl #header-scl-project .scl-btm {
       display: inline-block; }
-      #header-project #header-scl-project .scl-btm:hover {
+      #header-project .wrapper-scl #header-scl-project .scl-btm:hover {
         cursor: pointer; }
-    #header-project #header-scl-project .scl-facebook {
+    #header-project .wrapper-scl #header-scl-project .scl-facebook {
       background: url("/img/user/social/social.png") no-repeat 0 0;
       width: 32px;
       height: 38px; }
-    #header-project #header-scl-project .scl-pinterest {
+    #header-project .wrapper-scl #header-scl-project .scl-pinterest {
       background: url("/img/user/social/social.png") no-repeat -46px 0;
       width: 40px;
       height: 38px; }
-    #header-project #header-scl-project .scl-tumblr {
+    #header-project .wrapper-scl #header-scl-project .scl-tumblr {
       background: url("/img/user/social/social.png") no-repeat -108px 0;
       width: 33px;
       height: 38px; }
-  #header-project #header-lang-project {
+  #header-project .wrapper-lng {
     float: right;
-    padding-top: 10px;
-    font-size: 1.125rem;
-    color: #ffffff; }
-    #header-project #header-lang-project ul.lang {
-      margin: 0;
-      padding: 0; }
-      #header-project #header-lang-project ul.lang li {
-        display: inline; }
-        #header-project #header-lang-project ul.lang li a.lang-btm {
-          text-decoration: none; }
-          #header-project #header-lang-project ul.lang li a.lang-btm:hover, #header-project #header-lang-project ul.lang li a.lang-btm:link, #header-project #header-lang-project ul.lang li a.lang-btm:visited {
-            cursor: pointer;
-            color: #ffffff; }
+    height: 100%; }
+    #header-project .wrapper-lng #header-lang-project {
+      font-size: 1.125rem;
+      color: #ffffff; }
+      #header-project .wrapper-lng #header-lang-project ul.lang {
+        margin: 0;
+        padding: 0; }
+        #header-project .wrapper-lng #header-lang-project ul.lang li {
+          display: inline; }
+          #header-project .wrapper-lng #header-lang-project ul.lang li a.lang-btm {
+            text-decoration: none; }
+            #header-project .wrapper-lng #header-lang-project ul.lang li a.lang-btm:hover, #header-project .wrapper-lng #header-lang-project ul.lang li a.lang-btm:link, #header-project .wrapper-lng #header-lang-project ul.lang li a.lang-btm:visited {
+              cursor: pointer;
+              color: #ffffff; }
 
 .projectItem {
   position: absolute;

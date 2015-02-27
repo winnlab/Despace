@@ -26,9 +26,9 @@
                 <div class="adorable_cell">
                     <div id="header-scl-project">
                         <ul class="social">
-                            <li> <a class="scl-btm scl-facebook" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
-                            <li> <a class="scl-btm scl-tumblr" href="http://despacer.tumblr.com"> </a> </li>
-                            <li> <a class="scl-btm scl-pinterest" href="https://instagram.com/despace_ua/"> </a> </li>
+                            <li> <a class="scl-btm scl-facebook" target="_blank" href="https://www.facebook.com/despacer?fref=ts"> </a> </li>
+                            <li> <a class="scl-btm scl-tumblr" target="_blank" href="http://despacer.tumblr.com"> </a> </li>
+                            <li> <a class="scl-btm scl-pinterest" target="_blank" href="https://instagram.com/despace_ua/"> </a> </li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <ul class="menu">
                             <li> <a class="scroll btm module" href="/" data-scroll="#about"> {{appState.locale.menu.about}}</a> </li>
                             <li> <a class="scroll btm module" href="/" data-scroll="#work"> {{appState.locale.menu.work}}</a> </li>
-                            <li> <a class="scroll btm module"> {{appState.locale.menu.blog}}</a> </li>
+                            <li> <a class="scroll btm" target="_blank" href="http://despacer.tumblr.com"> {{appState.locale.menu.blog}}</a> </li>
                             <li> <a class="scroll btm module" href="/" data-scroll="#contact"> {{appState.locale.menu.contact}}</a> </li>
                         </ul>
                     </div>

@@ -17,6 +17,7 @@ define([
             'visibleClass': true,
             'visibleInfo': false,
             'visibleButtons': true,
+            'visibleInfoBtn': false,
 
             setImg: function (direction) {
                 var self = this,
@@ -61,19 +62,22 @@ define([
             },
 
             setContent: function () {
-                    var self = this,
-                        langsArr = ['/', '/en/'],
-                        locale = appState.attr('lang'),
-                        content = self.attr('content'),
-                        result = '';
+                var self = this,
+                    langsArr = ['/', '/en/'],
+                    locale = appState.attr('lang'),
+                    content = self.attr('content'),
+                    result = '';
 
-                    if (locale == langsArr[0] ) {
-                        result = content[0];
-                    } else {
-                        result = content[1];
-                    }
+                if(content[0].content.length && content[1].content.length) {
+                    self.attr('visibleInfoBtn', true);
+                }
 
+                if (locale == langsArr[0]) {
+                    result = content[0];
+                } else {
+                    result = content[1];
                     return result;
+                }
             }
 
         });
@@ -123,14 +127,16 @@ define([
                                 '<a class="btn-project btn-proj-l carousel-control" data-gallery="#carousel{{gid}}" role="button" data-slide="prev"> </a>' +
                                 '{{/if}}' +
                                 '</div>' +
-                            '<div class="btn-proj-info">' +
-                            '{{#if visibleInfo}}' +
-                                '<div class="info-proj">' +
-                                    '{{{currentContentLang.content}}}' +
-                                    '<div class="info-triangle"> </div>' +
-                                '</div>' +
+                            '{{#if visibleInfoBtn}}' +
+                                '<div class="btn-proj-info">' +
+                                '{{#if visibleInfo}}' +
+                                    '<div class="info-proj">' +
+                                        '{{{currentContentLang.content}}}' +
+                                        '<div class="info-triangle"> </div>' +
+                                    '</div>' +
+                                '{{/if}}' +
+                                 '</div>' +
                             '{{/if}}' +
-                             '</div>' +
                         '</div>',
 
             events: {

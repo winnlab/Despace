@@ -63,7 +63,11 @@ body {
 body {
   font-family: HeliosExtThinC, sans-serif;
   min-width: 1000px;
-  position: relative; }
+  position: relative;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased; }
 
 .clearfix:after {
   content: "";

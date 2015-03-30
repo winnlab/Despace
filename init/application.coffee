@@ -55,7 +55,7 @@ configure = () ->
 		res.set 'Content-Type', 'text/plain'
 		res.send "User-agent: *\nDisallow: /"
 	@use '/mailru-domain5mWmxH74tnB0XKIY.html', (req, res) ->
-		res.sendfile '/mailru-domain5mWmxH74tnB0XKIY.html'
+		res.sendfile './mailru-domain5mWmxH74tnB0XKIY.html'
 	@use multer
 			dest: './uploads/',
 			rename: (fieldname, filename) ->

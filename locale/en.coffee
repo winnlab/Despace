@@ -38,4 +38,4 @@ module.exports =
 		followUs: "Follow us to stay in the loop<br>on what's new with Despace"
 		lineOne: "<p>Kyiv, Ukraine, 03049<br>Povitroflots'kyi Avenue 11/15, DESPACE</p>"
 		lineTwo: '<p>(044) 249-42-43<br>(097) 866-02-75</p>'
-		lineThree: '<p>office@despace.com</p>'
+		lineThree: '<p>office@despace.com.ua</p>'
